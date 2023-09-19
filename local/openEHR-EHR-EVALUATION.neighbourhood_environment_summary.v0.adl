@@ -1,0 +1,126 @@
+archetype (adl_version=1.4; uid=f440abe4-cd19-49a9-b21d-dcd29c7beda5)
+	openEHR-EHR-EVALUATION.neighbourhood_environment_summary.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2022-10-29">
+		["name"] = <"Heather Leslie">
+		["organisation"] = <"Atomica Informatics">
+		["email"] = <"heather.leslie@atomicainformatics.com">
+	>
+	lifecycle_state = <"in_development">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To record information about the local neighbourhood, built & natural environment, and available infrastructure, especially as it relates to social determinants of health.">
+			copyright = <"© openEHR Foundation">
+			use = <"Use to record information about the local neighbourhood, built & natural environment, and available infrastructure, especially as it relates to social determinants of health.">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["references"] = <"Defining urban contexts. World Vision International, 2017. Available from https://www.wvi.org/sites/default/files/Defining%20urban%20contexts%2012.11.17.pdf.">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"A6A0BE2CBC11966A7D2D9A0AFA137AD6">
+		["build_uid"] = <"4f9e917e-0494-4e80-a966-0d667d7352df">
+		["revision"] = <"0.0.1-alpha">
+	>
+
+definition
+	EVALUATION[at0000] matches {    -- Neighbourhood & environment summary
+		data matches {
+			ITEM_TREE[at0001] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Description
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Type of locality
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0004,    -- Urban
+									at0005,    -- Peri-urban
+									at0006]    -- Rural
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0007] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0008] occurrences matches {0..*} matches {    -- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
+					ELEMENT[at0009] occurrences matches {0..1} matches {    -- Last updated
+						value matches {
+							DV_DATE_TIME matches {*}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Neighbourhood & environment summary">
+					description = <"Information about the local neighbourhood, built & natural environment, and local infrastructure.">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Description">
+					description = <"Narrative and description about the local neighbourhood, and environment.">
+				>
+				["at0003"] = <
+					text = <"Type of locality">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Urban">
+					description = <"Within an area of high population density relative to other areas, often characterised by a relatively high presence of administrative structures, government services and other infrastructure.">
+				>
+				["at0005"] = <
+					text = <"Peri-urban">
+					description = <"Location with mixed urban and rural characteristics, often on the outskirts of cities or large urban areas.">
+				>
+				["at0006"] = <
+					text = <"Rural">
+					description = <"Within an area of low population density relative to other areas, often characterised by low presence of administrative structures, government services and other infrastructure. Livelihood is predominantly centred on agricultural production.">
+				>
+				["at0007"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0008"] = <
+					text = <"Extension">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Last updated">
+					description = <"">
+				>
+			>
+		>
+	>
