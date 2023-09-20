@@ -21,7 +21,7 @@
       "custodian_namespace" : "",
       "sem_ver" : "17.2.0",
       "build_uid" : "3cb7438c-0c74-4ef9-85f2-875ea8e99d4d",
-      "MD5-CAM-1.0.1" : "b37d431eb0309349d1e076a85c02de6d",
+      "MD5-CAM-1.0.1" : "0581bb4e220aa0190d2e9d72b0104ad9",
       "PARENT:MD5-CAM-1.0.1" : "F2C3BD9252691BB3975C53648208D672"
     },
     "details" : {
@@ -91,41 +91,6 @@
               "@type" : "C_ATTRIBUTE",
               "rmAttributeName" : "items",
               "children" : [ {
-                "@type" : "ARCHETYPE_SLOT",
-                "rmTypeName" : "CLUSTER",
-                "occurrences" : "1..1",
-                "nodeId" : "at0005",
-                "includes" : [ {
-                  "@type" : "ASSERTION",
-                  "stringExpression" : "archetype_id/value matches {/.*/}",
-                  "expression" : {
-                    "@type" : "BINARY_OPERATOR",
-                    "type" : "BOOLEAN",
-                    "operator" : "matches",
-                    "leftOperand" : {
-                      "@type" : "MODEL_REFERENCE",
-                      "type" : "STRING",
-                      "precedenceOverriden" : false,
-                      "referenceType" : "Attribute",
-                      "path" : "archetype_id/value"
-                    },
-                    "rightOperand" : {
-                      "@type" : "CONSTRAINT",
-                      "type" : "STRING",
-                      "precedenceOverriden" : false,
-                      "referenceType" : "Constraint",
-                      "item" : {
-                        "@type" : "C_STRING",
-                        "constraint" : [ "/.*/" ]
-                      }
-                    },
-                    "precedenceOverriden" : false
-                  },
-                  "variables" : [ ]
-                } ],
-                "excludes" : [ ],
-                "closed" : false
-              }, {
                 "@type" : "C_ARCHETYPE_ROOT",
                 "rmTypeName" : "CLUSTER",
                 "occurrences" : "0..1",
@@ -191,35 +156,9 @@
           "code" : "at0000.1",
           "text" : "Vaccination List",
           "description" : "Een permanente en beheerde lijst van toegediende vaccinaties aan een persoon over een periode van tijd"
-        },
-        "at0000" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "Vaccination list",
-          "description" : "A persistent and managed list of vaccinations that have been administered to an individual over time."
-        },
-        "at0005" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0005",
-          "text" : "Extension",
-          "description" : "Additional information required to capture local context or to align with other reference models/formalisms.",
-          "comment" : "For example: Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents."
         }
       },
       "ca" : {
-        "at0000" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "Llistat de vacunacio",
-          "description" : "*A persistent and managed list of vaccinations that have been administered to an individual over time. (en)"
-        },
-        "at0005" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0005",
-          "text" : "Extensio",
-          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms. (en)",
-          "comment" : "*For example: Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents. (en)"
-        },
         "at0005.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0005",
@@ -673,18 +612,6 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Immunization list",
-            "description" : "Framework for consistent modelling of content within a template for an Vaccination List."
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Immunizations",
-            "description" : "Positive statements about vaccinations that have been administered."
-          },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000",
@@ -699,32 +626,6 @@
           }
         },
         "ca" : {
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "*Immunization list (en)",
-            "description" : "*Framework for consistent modelling of content within a template for an Vaccination List. (en)"
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "*Immunizations (en)",
-            "description" : "*Positive statements about vaccinations that have been administered. (en)"
-          },
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Declaracio d'exclusio",
-            "description" : "*A positive statement about the exclusion of vaccinations administered. (en)",
-            "comment" : "*For example: \"No vaccinations administered\". (en)"
-          },
-          "at0003" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003",
-            "text" : "Declaracio d'absencia",
-            "description" : "*A positive statement that no information is available about vaccinations administered. (en)",
-            "comment" : "*For example: \"No information available about vaccinations administered\". (en)"
-          },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000",
@@ -2267,85 +2168,6 @@
               } ],
               "attributeTuples" : [ ]
             }, {
-              "@type" : "ARCHETYPE_SLOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
-              "nodeId" : "at0104",
-              "includes" : [ {
-                "@type" : "ASSERTION",
-                "stringExpression" : "archetype_id/value matches {/openEHR-EHR-CLUSTER\\.medication(-[a-zA-Z0-9_]+)*\\.v1/}",
-                "expression" : {
-                  "@type" : "BINARY_OPERATOR",
-                  "type" : "BOOLEAN",
-                  "operator" : "matches",
-                  "leftOperand" : {
-                    "@type" : "MODEL_REFERENCE",
-                    "type" : "STRING",
-                    "precedenceOverriden" : false,
-                    "referenceType" : "Attribute",
-                    "path" : "archetype_id/value"
-                  },
-                  "rightOperand" : {
-                    "@type" : "CONSTRAINT",
-                    "type" : "STRING",
-                    "precedenceOverriden" : false,
-                    "referenceType" : "Constraint",
-                    "item" : {
-                      "@type" : "C_STRING",
-                      "constraint" : [ "/openEHR-EHR-CLUSTER\\.medication(-[a-zA-Z0-9_]+)*\\.v1/" ]
-                    }
-                  },
-                  "precedenceOverriden" : false
-                },
-                "variables" : [ ]
-              } ],
-              "excludes" : [ ],
-              "closed" : false
-            }, {
-              "@type" : "C_ARCHETYPE_ROOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
-              "nodeId" : "at0104.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ],
-              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-medication-001.v2",
-              "referenceType" : "archetypeOverlay"
-            }, {
-              "@type" : "ARCHETYPE_SLOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
-              "nodeId" : "at0131",
-              "includes" : [ {
-                "@type" : "ASSERTION",
-                "stringExpression" : "archetype_id/value matches {/openEHR-EHR-CLUSTER\\.medication_supply_amount(-[a-zA-Z0-9_]+)*\\.v0|openEHR-EHR-CLUSTER\\.medication_supply_amount(-[a-zA-Z0-9_]+)*\\.v1|openEHR-EHR-CLUSTER\\.dosage(-[a-zA-Z0-9_]+)*\\.v1/}",
-                "expression" : {
-                  "@type" : "BINARY_OPERATOR",
-                  "type" : "BOOLEAN",
-                  "operator" : "matches",
-                  "leftOperand" : {
-                    "@type" : "MODEL_REFERENCE",
-                    "type" : "STRING",
-                    "precedenceOverriden" : false,
-                    "referenceType" : "Attribute",
-                    "path" : "archetype_id/value"
-                  },
-                  "rightOperand" : {
-                    "@type" : "CONSTRAINT",
-                    "type" : "STRING",
-                    "precedenceOverriden" : false,
-                    "referenceType" : "Constraint",
-                    "item" : {
-                      "@type" : "C_STRING",
-                      "constraint" : [ "/openEHR-EHR-CLUSTER\\.medication_supply_amount(-[a-zA-Z0-9_]+)*\\.v0|openEHR-EHR-CLUSTER\\.medication_supply_amount(-[a-zA-Z0-9_]+)*\\.v1|openEHR-EHR-CLUSTER\\.dosage(-[a-zA-Z0-9_]+)*\\.v1/" ]
-                    }
-                  },
-                  "precedenceOverriden" : false
-                },
-                "variables" : [ ]
-              } ],
-              "excludes" : [ ],
-              "closed" : false
-            }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
@@ -2495,14 +2317,6 @@
               } ],
               "attributeTuples" : [ ]
             }, {
-              "@type" : "ARCHETYPE_SLOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..*",
-              "nodeId" : "at0053",
-              "includes" : [ ],
-              "excludes" : [ ],
-              "closed" : false
-            }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
@@ -2521,17 +2335,7 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0025.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "occurrences" : "1..1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -2540,6 +2344,15 @@
               "nodeId" : "at0024.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0104.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-medication-001.v2",
+              "referenceType" : "archetypeOverlay"
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -2573,41 +2386,6 @@
                 } ]
               } ],
               "attributeTuples" : [ ]
-            }, {
-              "@type" : "ARCHETYPE_SLOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..*",
-              "nodeId" : "at0085",
-              "includes" : [ {
-                "@type" : "ASSERTION",
-                "stringExpression" : "archetype_id/value matches {/openEHR-EHR-CLUSTER\\.protocol\\.v0|openEHR-EHR-CLUSTER\\.vaccination_protocol\\.v0/}",
-                "expression" : {
-                  "@type" : "BINARY_OPERATOR",
-                  "type" : "BOOLEAN",
-                  "operator" : "matches",
-                  "leftOperand" : {
-                    "@type" : "MODEL_REFERENCE",
-                    "type" : "STRING",
-                    "precedenceOverriden" : false,
-                    "referenceType" : "Attribute",
-                    "path" : "archetype_id/value"
-                  },
-                  "rightOperand" : {
-                    "@type" : "CONSTRAINT",
-                    "type" : "STRING",
-                    "precedenceOverriden" : false,
-                    "referenceType" : "Constraint",
-                    "item" : {
-                      "@type" : "C_STRING",
-                      "constraint" : [ "/openEHR-EHR-CLUSTER\\.protocol\\.v0|openEHR-EHR-CLUSTER\\.vaccination_protocol\\.v0/" ]
-                    }
-                  },
-                  "precedenceOverriden" : false
-                },
-                "variables" : [ ]
-              } ],
-              "excludes" : [ ],
-              "closed" : false
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -2625,20 +2403,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
             "description" : ""
-          },
-          "at0020" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0020",
-            "text" : "*Medication item(en)",
-            "description" : "*Name of the medication, vaccine or other therapeutic/prescribable item which was the focus of the activity.(en)",
-            "comment" : "*For example: 'Atenolol 100mg' or 'Tenormin tablets 100mg'. \nIt is strongly recommended that the 'Medication item' is coded with a terminology capable of triggering decision support, where possible. The extent of coding may vary from the simple name of the medication item through to structured details about the actual medication pack used. Free text entry should only be used if there is no appropriate terminology available.(en)"
-          },
-          "at0141" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0141",
-            "text" : "*Body site(en)",
-            "description" : "*Structured description of the site of administration of the ordered item.(en)",
-            "comment" : "*For example: 'left upper arm', 'intravenous catheter right hand'. \nCoding of the body site with a terminology is preferred, where possible.(en)"
           }
         },
         "sl" : {
@@ -2647,20 +2411,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
             "description" : ""
-          },
-          "at0020" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0020",
-            "text" : "*Medication item(en)",
-            "description" : "*Name of the medication, vaccine or other therapeutic/prescribable item which was the focus of the activity.(en)",
-            "comment" : "*For example: 'Atenolol 100mg' or 'Tenormin tablets 100mg'. \nIt is strongly recommended that the 'Medication item' is coded with a terminology capable of triggering decision support, where possible. The extent of coding may vary from the simple name of the medication item through to structured details about the actual medication pack used. Free text entry should only be used if there is no appropriate terminology available.(en)"
-          },
-          "at0141" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0141",
-            "text" : "*Body site(en)",
-            "description" : "*Structured description of the site of administration of the ordered item.(en)",
-            "comment" : "*For example: 'left upper arm', 'intravenous catheter right hand'. \nCoding of the body site with a terminology is preferred, where possible.(en)"
           }
         },
         "es-ar" : {
@@ -2669,20 +2419,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
             "description" : ""
-          },
-          "at0020" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0020",
-            "text" : "*Medication item(en)",
-            "description" : "*Name of the medication, vaccine or other therapeutic/prescribable item which was the focus of the activity.(en)",
-            "comment" : "*For example: 'Atenolol 100mg' or 'Tenormin tablets 100mg'. \nIt is strongly recommended that the 'Medication item' is coded with a terminology capable of triggering decision support, where possible. The extent of coding may vary from the simple name of the medication item through to structured details about the actual medication pack used. Free text entry should only be used if there is no appropriate terminology available.(en)"
-          },
-          "at0141" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0141",
-            "text" : "*Body site(en)",
-            "description" : "*Structured description of the site of administration of the ordered item.(en)",
-            "comment" : "*For example: 'left upper arm', 'intravenous catheter right hand'. \nCoding of the body site with a terminology is preferred, where possible.(en)"
           }
         },
         "ru" : {
@@ -2691,20 +2427,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
             "description" : ""
-          },
-          "at0020" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0020",
-            "text" : "*Medication item(en)",
-            "description" : "*Name of the medication, vaccine or other therapeutic/prescribable item which was the focus of the activity.(en)",
-            "comment" : "*For example: 'Atenolol 100mg' or 'Tenormin tablets 100mg'. \nIt is strongly recommended that the 'Medication item' is coded with a terminology capable of triggering decision support, where possible. The extent of coding may vary from the simple name of the medication item through to structured details about the actual medication pack used. Free text entry should only be used if there is no appropriate terminology available.(en)"
-          },
-          "at0141" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0141",
-            "text" : "*Body site(en)",
-            "description" : "*Structured description of the site of administration of the ordered item.(en)",
-            "comment" : "*For example: 'left upper arm', 'intravenous catheter right hand'. \nCoding of the body site with a terminology is preferred, where possible.(en)"
           }
         },
         "en" : {
@@ -2727,20 +2449,6 @@
             "text" : "Immunization management",
             "description" : "Any activity related to the planning, scheduling, prescription management, dispensing, administration, cessation and other use of a medication, vaccine, nutritional product or other therapeutic item.",
             "comment" : "This is not limited to activities performed based on medication orders from clinicians, but could also include for example taking over the counter medication."
-          },
-          "at0020" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0020",
-            "text" : "Medication item",
-            "description" : "Name of the medication, vaccine or other therapeutic/prescribable item which was the focus of the activity.",
-            "comment" : "For example: 'Atenolol 100mg' or 'Tenormin tablets 100mg'. \nIt is strongly recommended that the 'Medication item' is coded with a terminology capable of triggering decision support, where possible. The extent of coding may vary from the simple name of the medication item through to structured details about the actual medication pack used. Free text entry should only be used if there is no appropriate terminology available."
-          },
-          "at0141" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0141",
-            "text" : "Body site",
-            "description" : "Structured description of the site of administration of the ordered item.",
-            "comment" : "For example: 'left upper arm', 'intravenous catheter right hand'. \nCoding of the body site with a terminology is preferred, where possible."
           }
         },
         "nb" : {
@@ -2749,13 +2457,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
             "description" : ""
-          },
-          "at0156" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0156",
-            "text" : "Klinisk indikasjon",
-            "description" : "Den kliniske årsaken til legemiddeladministrasjonen.",
-            "comment" : "For eksempel: \"Angina\" eller \"Smerte\". Koding av indikasjonen med en terminologi er foretrukket, om mulig. Dette dataelementet er repeterbart. \n\nDersom bare denne arketypen blir brukt for å dokumentere legemiddeladministeringen, kan dette dataelementet brukes uten å tenke noe mer på det. Men dersom \"Klinisk indikasjon\" er registrert i både Legemiddelordinering (INSTRUCTION.medication_order) og denne Legemiddelhåndtering (ACTION.medication), må man være oppmerksom på at det kan være forskjell i registrert indikasjonen.\n"
           }
         },
         "pt-br" : {
@@ -2764,12 +2465,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
             "description" : ""
-          },
-          "at0004" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004",
-            "text" : "Curso da medicação iniciado",
-            "description" : "A medicação foi adquirida, ou administrada, ao paciente pela primeira vez. Embora em algumas situações esta data significativa pode ser computada como a primeira de muitas administrações, em outras, como na atenção primária, datas de administração específicas não estão prontamente disponíveis. \n"
           }
         },
         "de" : {
@@ -2778,13 +2473,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
             "description" : ""
-          },
-          "at0020" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0020",
-            "text" : "Arzneimittel",
-            "description" : "Name des Arzneimittels, eines Impfstoffs oder eines anderen therapeutischen Mittels, welches im Mittelpunkt der Aktivität steht.",
-            "comment" : "Zum Beispiel: \"Atenolol 100 mg\" oder \"Tenormin Tabletten 100 mg\".\nEs wird dringend empfohlen, dass das Element \"Arzneimittel\" mit einer Terminologie kodiert wird, die nach Möglichkeit eine Entscheidungsunterstützung auslösen kann. Der Umfang der Kodierung kann vom einfachen Namen des Arzneimittels bis hin zu strukturierten Details über die tatsächlich verwendete Medikamentenpackung variieren. Die Freitext-Eingabe sollte nur dann verwendet werden, wenn keine entsprechende Terminologie vorhanden ist."
           }
         },
         "sv" : {
@@ -3070,339 +2758,6 @@
             "description" : "Den tidpunkt då medicineringsåtgärden var planerad att inträffa.",
             "comment" : "Används för att jämföra avvikelse från faktisk åtgärdstid där detta inte är lätt att beräkna från original instruktionen."
           },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Medication management",
-            "description" : "Any activity related to the planning, scheduling, prescription management, dispensing, administration, cessation and other use of a medication, vaccine, nutritional product or other therapeutic item.",
-            "comment" : "This is not limited to activities performed based on medication orders from clinicians, but could also include for example taking over the counter medication."
-          },
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Prescription issued",
-            "description" : "A prescription has been issued for the medication."
-          },
-          "at0003" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003",
-            "text" : "Prescription dispensed",
-            "description" : "The ordered medication has been dispensed, for example from a pharmacy to the patient."
-          },
-          "at0004" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004",
-            "text" : "Medication course commenced",
-            "description" : "The medication has been taken by, or administered to, the patient for the first time. Although in some settings this significant date may be computable as the first of several administrations, in other settings, such as primary care, specific administration dates are not readily available."
-          },
-          "at0005" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005",
-            "text" : "Medication reassessed",
-            "description" : "The individual medication has been reassessed, for example whether the medication should still be taken. This is not intended to capture review of the medication list."
-          },
-          "at0006" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0006",
-            "text" : "Dose administered",
-            "description" : "A single administration of the medication has taken place."
-          },
-          "at0007" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0007",
-            "text" : "Medication course completed",
-            "description" : "The medication course has been completed as planned."
-          },
-          "at0008" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0008",
-            "text" : "Prescription supply delayed",
-            "description" : "The prescription has not been dispensed due to a technical or pharamaceutical supply issue."
-          },
-          "at0009" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0009",
-            "text" : "Administrations suspended",
-            "description" : "The administration of the medication has been suspended until further notice. No further doses should be given until the restart date or conditions have been met. When setting the date/conditions for restart after suspending, a step from ‘Administrations suspended’ and back to 'Medication start date/condition set' should be performed."
-          },
-          "at0010" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0010",
-            "text" : "Prescription re-issued",
-            "description" : "A prescription has been re-issued for an existing medication order."
-          },
-          "at0011" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0011",
-            "text" : "Prescription re-authorisation pending",
-            "description" : "Issue of the prescription is awaiting re-authorisation by a clinician."
-          },
-          "at0012" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0012",
-            "text" : "Medication course cancelled",
-            "description" : "The planned course of medication has been cancelled prior to any administration."
-          },
-          "at0013" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0013",
-            "text" : "Medication course postponed",
-            "description" : "The scheduled medication course has been postponed prior to any administration."
-          },
-          "at0015" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0015",
-            "text" : "Medication course stopped",
-            "description" : "Administration of the medication has been ceased during the period of the intended course."
-          },
-          "at0016" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0016",
-            "text" : "Medication start date/condition set",
-            "description" : "The time to start the medication, or other starting condition, has been set."
-          },
-          "at0018" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0018",
-            "text" : "Dose administration omitted",
-            "description" : "An administration of the medication has been withheld and not given. There is no expectation that it will be given later, though the next dose (if any) should be administered according to the original order."
-          },
-          "at0020" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0020",
-            "text" : "Medication item",
-            "description" : "Name of the medication, vaccine or other therapeutic/prescribable item which was the focus of the activity.",
-            "comment" : "For example: 'Atenolol 100mg' or 'Tenormin tablets 100mg'. \nIt is strongly recommended that the 'Medication item' is coded with a terminology capable of triggering decision support, where possible. The extent of coding may vary from the simple name of the medication item through to structured details about the actual medication pack used. Free text entry should only be used if there is no appropriate terminology available."
-          },
-          "at0021" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0021",
-            "text" : "Reason",
-            "description" : "Reason that the pathway step for the identified medication was carried out.",
-            "comment" : "For example: 'Postponed - Patient not avalable at administration time', 'Cancelled - Adverse reaction'. Note: This is not the reason for the medication instruction, but rather the specific reason that a care step was carried out, and will often be used to document some variance from the original order."
-          },
-          "at0024" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0024",
-            "text" : "Comment",
-            "description" : "Additional narrative about the activity or pathway step not captured in other fields, including details of any variance between the intended action and the action actually performed.",
-            "comment" : "For example: 'Patient was in radiology department', 'Accidental injection into blood vessel during IM administration'."
-          },
-          "at0025" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0025",
-            "text" : "Sequence number",
-            "description" : "The sequence number specific to the pathway step being recorded.",
-            "comment" : "For example: Vaccine sequence number."
-          },
-          "at0033" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0033",
-            "text" : "Patient guidance",
-            "description" : "Any guidance, instructions or advice given to the subject of care or personal carer at the time of the pathway step.",
-            "comment" : "For example: 'Avoid grapefruit' , 'Take at least 2 hours before bedtime', 'Take with food'. May be coded with a terminology when clinically appropriate."
-          },
-          "at0039" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0039",
-            "text" : "Major change to order",
-            "description" : "A major change to the order was required, resulting in this order being stopped and a replacement order being started."
-          },
-          "at0041" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0041",
-            "text" : "Minor change to order",
-            "description" : "The medication order has been changed in a manner which does not require a new instruction/order to be issued, according to local clinical rules."
-          },
-          "at0043" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0043",
-            "text" : "Original scheduled date/time",
-            "description" : "The datetime at which the medication action was scheduled to occur.",
-            "comment" : "Used to compare variance from actual action time where this is not readily calculable from the original instruction."
-          },
-          "at0044" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0044",
-            "text" : "Dose administration deferred",
-            "description" : "An administration of a dose of the medication has been delayed but is expected to be given as soon as possible."
-          },
-          "at0053" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0053",
-            "text" : "Additional details",
-            "description" : "Further structured details of the action, possibly specific to a pathway step."
-          },
-          "at0085" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0085",
-            "text" : "Extension",
-            "description" : "Additional information required to capture local content or to align with other reference models/formalisms.",
-            "comment" : "For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents."
-          },
-          "at0103" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0103",
-            "text" : "Order ID",
-            "description" : "Unique identifier for the medication order.",
-            "comment" : "Comment: This data element allows for multiple occurrences to be defined more explicitly at run-time, if required."
-          },
-          "at0104" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0104",
-            "text" : "Medication details",
-            "description" : "Structured details about the medication including strength, form and constituent substances.",
-            "comment" : "Use this SLOT where the detailed description of the dispensed, authorised or administered item needs to be explicitly stated. For example: the form, strength, any diluents or mixture of ingredients."
-          },
-          "at0106" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0106",
-            "text" : "Prescription re-authorised",
-            "description" : "The original medication order has been re-authorised to allow repeat prescription or dispensing. In some jurisdictions an entirely new order must be issued in these circumstances."
-          },
-          "at0109" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0109",
-            "text" : "Medication recommended",
-            "description" : "The medication has been recommended but no steps have been taken to initiate prescribing."
-          },
-          "at0131" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0131",
-            "text" : "Amount",
-            "description" : "Specific details about the amount of the medication item.",
-            "comment" : "CLUSTER.dosage is intended to carry details of medication order changes or dose administrations, whilst CLUSTER.medication_supply_amount is intended for details of dispensing-related activity."
-          },
-          "at0132" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0132",
-            "text" : "Substitution",
-            "description" : "Subsitution action taken by the person administering or dispensing the drug.",
-            "comment" : "In many jurisdictions, substitution of an ordered item as a generic form or with a different brand name, which has been determined as bioequivalent, is allowed at the point of dispense or supply. In other cases substitution is assumed and the clinician has to explicitly request non-substitution."
-          },
-          "at0133" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0133",
-            "text" : "Substitution reason",
-            "description" : "The reason or justification for the substitution action taken.",
-            "comment" : "For example: \"Generic alternative contains a substance that is not tolerated by the patient.\" May be coded with a terminology when clinically appropriate"
-          },
-          "at0138" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0138",
-            "text" : "Substitution performed",
-            "description" : "A medication was substituted which is bioequivalent to that ordered."
-          },
-          "at0139" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0139",
-            "text" : "Substitution not performed",
-            "description" : "Although allowed by the medication order a bioequvalent medication was not substituted."
-          },
-          "at0140" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0140",
-            "text" : "Administration details",
-            "description" : "Details of body site and administration of the medication."
-          },
-          "at0141" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0141",
-            "text" : "Body site",
-            "description" : "Structured description of the site of administration of the ordered item.",
-            "comment" : "For example: 'left upper arm', 'intravenous catheter right hand'. \nCoding of the body site with a terminology is preferred, where possible."
-          },
-          "at0142" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0142",
-            "text" : "Structured body site",
-            "description" : "Structured description of the site of administration of the medication, vaccine or therapeutic good.",
-            "comment" : "For example: \"On the medial skin surface of the left forearm, from 10 cm to 20 cm distally from the point of the elbow\"."
-          },
-          "at0143" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0143",
-            "text" : "Administration method",
-            "description" : "The technique or device by which the ordered item was, or is to be, administered.",
-            "comment" : "Comment: For example: ' via Z-track injection'; 'via nebuliser'. Coding of the method with a terminology is preferred, where possible."
-          },
-          "at0144" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0144",
-            "text" : "Administration device",
-            "description" : "Details of the medical device used to assist administration of the medication."
-          },
-          "at0145" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0145",
-            "text" : "Prescription awaiting authorisation",
-            "description" : "Draft prescription has been prepared and is awaiting confirmation from an authorised clinician. May be used where reauthorisations are performed as a batch. This careflow_step may have a status of 'planned' or 'active', reflecting the need to to handle new orders as well as re-authorised orders."
-          },
-          "at0147" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0147",
-            "text" : "Route",
-            "description" : "The route by which the ordered item was, or is to be, administered into the subject's body.",
-            "comment" : "Comment: For example: 'oral', 'intravenous', or 'topical'. Coding of the route with a terminology is preferred, where possible. Multiple potential routes may be specified."
-          },
-          "at0148" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0148",
-            "text" : "Medication prepared",
-            "description" : "The medication has been physically prepared. For example: preparation of an intravenous mixture."
-          },
-          "at0149" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0149",
-            "text" : "Double-checked?",
-            "description" : "The pathway step has been checked by a separate individual.",
-            "comment" : "Details of the individual performing the double-check can be carried in the Reference Model element \"Participation\"."
-          },
-          "at0150" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0150",
-            "text" : "Prescription cancelled",
-            "description" : "The prescription was cancelled prior to being issued."
-          },
-          "at0151" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0151",
-            "text" : "Prescription invalid or expired",
-            "description" : "Prescription has been invalidated or has expired without being fulfilled."
-          },
-          "at0152" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0152",
-            "text" : "Prescription fulfilled",
-            "description" : "The prescription has been fulfilled successfully."
-          },
-          "at0153" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0153",
-            "text" : "Medication authorised",
-            "description" : "The medication has been formally authorised for use."
-          },
-          "at0154" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0154",
-            "text" : "Restart date/time",
-            "description" : "The date/time on which the medication course is set to restart, as per the \"Administrations suspended\" pathway step.",
-            "comment" : "For example: 2017-10-29"
-          },
-          "at0155" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0155",
-            "text" : "Restart criterion",
-            "description" : "The criterion which triggers the medication course to restart, as per the \"Administrations suspended\" pathway step.",
-            "comment" : "For example: \"On day 2 after surgery\"."
-          },
-          "at0156" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0156",
-            "text" : "Clinical indication",
-            "description" : "The clinical reason for the medication activity.",
-            "comment" : "For example: 'Angina' or 'Pain'. Coding of the indication with a terminology is preferred, where possible. This data element allows multiple occurrences. If only an ACTION is used to record a medication indication, this data element can be used without additional consideration. However, if a clinical indication is recorded for both the Medication order INSTRUCTION and this Medication management ACTION, be aware that these indications might not be consistent.\""
-          },
           "at0007.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0007",
@@ -3417,339 +2772,6 @@
             "code" : "ac0.1",
             "description" : ""
           },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Medication management",
-            "description" : "Any activity related to the planning, scheduling, prescription management, dispensing, administration, cessation and other use of a medication, vaccine, nutritional product or other therapeutic item.",
-            "comment" : "This is not limited to activities performed based on medication orders from clinicians, but could also include for example taking over the counter medication."
-          },
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Prescription issued",
-            "description" : "A prescription has been issued for the medication."
-          },
-          "at0003" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003",
-            "text" : "Prescription dispensed",
-            "description" : "The ordered medication has been dispensed, for example from a pharmacy to the patient."
-          },
-          "at0004" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004",
-            "text" : "Medication course commenced",
-            "description" : "The medication has been taken by, or administered to, the patient for the first time. Although in some settings this significant date may be computable as the first of several administrations, in other settings, such as primary care, specific administration dates are not readily available."
-          },
-          "at0005" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005",
-            "text" : "Medication reassessed",
-            "description" : "The individual medication has been reassessed, for example whether the medication should still be taken. This is not intended to capture review of the medication list."
-          },
-          "at0006" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0006",
-            "text" : "Dose administered",
-            "description" : "A single administration of the medication has taken place."
-          },
-          "at0007" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0007",
-            "text" : "Medication course completed",
-            "description" : "The medication course has been completed as planned."
-          },
-          "at0008" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0008",
-            "text" : "Prescription supply delayed",
-            "description" : "The prescription has not been dispensed due to a technical or pharamaceutical supply issue."
-          },
-          "at0009" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0009",
-            "text" : "Administrations suspended",
-            "description" : "The administration of the medication has been suspended until further notice. No further doses should be given until the restart date or conditions have been met. When setting the date/conditions for restart after suspending, a step from ‘Administrations suspended’ and back to 'Medication start date/condition set' should be performed."
-          },
-          "at0010" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0010",
-            "text" : "Prescription re-issued",
-            "description" : "A prescription has been re-issued for an existing medication order."
-          },
-          "at0011" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0011",
-            "text" : "Prescription re-authorisation pending",
-            "description" : "Issue of the prescription is awaiting re-authorisation by a clinician."
-          },
-          "at0012" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0012",
-            "text" : "Medication course cancelled",
-            "description" : "The planned course of medication has been cancelled prior to any administration."
-          },
-          "at0013" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0013",
-            "text" : "Medication course postponed",
-            "description" : "The scheduled medication course has been postponed prior to any administration."
-          },
-          "at0015" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0015",
-            "text" : "Medication course stopped",
-            "description" : "Administration of the medication has been ceased during the period of the intended course."
-          },
-          "at0016" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0016",
-            "text" : "Medication start date/condition set",
-            "description" : "The time to start the medication, or other starting condition, has been set."
-          },
-          "at0018" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0018",
-            "text" : "Dose administration omitted",
-            "description" : "An administration of the medication has been withheld and not given. There is no expectation that it will be given later, though the next dose (if any) should be administered according to the original order."
-          },
-          "at0020" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0020",
-            "text" : "Medication item",
-            "description" : "Name of the medication, vaccine or other therapeutic/prescribable item which was the focus of the activity.",
-            "comment" : "For example: 'Atenolol 100mg' or 'Tenormin tablets 100mg'. \nIt is strongly recommended that the 'Medication item' is coded with a terminology capable of triggering decision support, where possible. The extent of coding may vary from the simple name of the medication item through to structured details about the actual medication pack used. Free text entry should only be used if there is no appropriate terminology available."
-          },
-          "at0021" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0021",
-            "text" : "Reason",
-            "description" : "Reason that the pathway step for the identified medication was carried out.",
-            "comment" : "For example: 'Postponed - Patient not avalable at administration time', 'Cancelled - Adverse reaction'. Note: This is not the reason for the medication instruction, but rather the specific reason that a care step was carried out, and will often be used to document some variance from the original order."
-          },
-          "at0024" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0024",
-            "text" : "Comment",
-            "description" : "Additional narrative about the activity or pathway step not captured in other fields, including details of any variance between the intended action and the action actually performed.",
-            "comment" : "For example: 'Patient was in radiology department', 'Accidental injection into blood vessel during IM administration'."
-          },
-          "at0025" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0025",
-            "text" : "Sequence number",
-            "description" : "The sequence number specific to the pathway step being recorded.",
-            "comment" : "For example: Vaccine sequence number."
-          },
-          "at0033" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0033",
-            "text" : "Patient guidance",
-            "description" : "Any guidance, instructions or advice given to the subject of care or personal carer at the time of the pathway step.",
-            "comment" : "For example: 'Avoid grapefruit' , 'Take at least 2 hours before bedtime', 'Take with food'. May be coded with a terminology when clinically appropriate."
-          },
-          "at0039" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0039",
-            "text" : "Major change to order",
-            "description" : "A major change to the order was required, resulting in this order being stopped and a replacement order being started."
-          },
-          "at0041" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0041",
-            "text" : "Minor change to order",
-            "description" : "The medication order has been changed in a manner which does not require a new instruction/order to be issued, according to local clinical rules."
-          },
-          "at0043" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0043",
-            "text" : "Original scheduled date/time",
-            "description" : "The datetime at which the medication action was scheduled to occur.",
-            "comment" : "Used to compare variance from actual action time where this is not readily calculable from the original instruction."
-          },
-          "at0044" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0044",
-            "text" : "Dose administration deferred",
-            "description" : "An administration of a dose of the medication has been delayed but is expected to be given as soon as possible."
-          },
-          "at0053" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0053",
-            "text" : "Additional details",
-            "description" : "Further structured details of the action, possibly specific to a pathway step."
-          },
-          "at0085" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0085",
-            "text" : "Extension",
-            "description" : "Additional information required to capture local content or to align with other reference models/formalisms.",
-            "comment" : "For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents."
-          },
-          "at0103" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0103",
-            "text" : "Order ID",
-            "description" : "Unique identifier for the medication order.",
-            "comment" : "Comment: This data element allows for multiple occurrences to be defined more explicitly at run-time, if required."
-          },
-          "at0104" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0104",
-            "text" : "Medication details",
-            "description" : "Structured details about the medication including strength, form and constituent substances.",
-            "comment" : "Use this SLOT where the detailed description of the dispensed, authorised or administered item needs to be explicitly stated. For example: the form, strength, any diluents or mixture of ingredients."
-          },
-          "at0106" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0106",
-            "text" : "Prescription re-authorised",
-            "description" : "The original medication order has been re-authorised to allow repeat prescription or dispensing. In some jurisdictions an entirely new order must be issued in these circumstances."
-          },
-          "at0109" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0109",
-            "text" : "Medication recommended",
-            "description" : "The medication has been recommended but no steps have been taken to initiate prescribing."
-          },
-          "at0131" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0131",
-            "text" : "Amount",
-            "description" : "Specific details about the amount of the medication item.",
-            "comment" : "CLUSTER.dosage is intended to carry details of medication order changes or dose administrations, whilst CLUSTER.medication_supply_amount is intended for details of dispensing-related activity."
-          },
-          "at0132" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0132",
-            "text" : "Substitution",
-            "description" : "Subsitution action taken by the person administering or dispensing the drug.",
-            "comment" : "In many jurisdictions, substitution of an ordered item as a generic form or with a different brand name, which has been determined as bioequivalent, is allowed at the point of dispense or supply. In other cases substitution is assumed and the clinician has to explicitly request non-substitution."
-          },
-          "at0133" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0133",
-            "text" : "Substitution reason",
-            "description" : "The reason or justification for the substitution action taken.",
-            "comment" : "For example: \"Generic alternative contains a substance that is not tolerated by the patient.\" May be coded with a terminology when clinically appropriate"
-          },
-          "at0138" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0138",
-            "text" : "Substitution performed",
-            "description" : "A medication was substituted which is bioequivalent to that ordered."
-          },
-          "at0139" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0139",
-            "text" : "Substitution not performed",
-            "description" : "Although allowed by the medication order a bioequvalent medication was not substituted."
-          },
-          "at0140" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0140",
-            "text" : "Administration details",
-            "description" : "Details of body site and administration of the medication."
-          },
-          "at0141" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0141",
-            "text" : "Body site",
-            "description" : "Structured description of the site of administration of the ordered item.",
-            "comment" : "For example: 'left upper arm', 'intravenous catheter right hand'. \nCoding of the body site with a terminology is preferred, where possible."
-          },
-          "at0142" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0142",
-            "text" : "Structured body site",
-            "description" : "Structured description of the site of administration of the medication, vaccine or therapeutic good.",
-            "comment" : "For example: \"On the medial skin surface of the left forearm, from 10 cm to 20 cm distally from the point of the elbow\"."
-          },
-          "at0143" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0143",
-            "text" : "Administration method",
-            "description" : "The technique or device by which the ordered item was, or is to be, administered.",
-            "comment" : "Comment: For example: ' via Z-track injection'; 'via nebuliser'. Coding of the method with a terminology is preferred, where possible."
-          },
-          "at0144" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0144",
-            "text" : "Administration device",
-            "description" : "Details of the medical device used to assist administration of the medication."
-          },
-          "at0145" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0145",
-            "text" : "Prescription awaiting authorisation",
-            "description" : "Draft prescription has been prepared and is awaiting confirmation from an authorised clinician. May be used where reauthorisations are performed as a batch. This careflow_step may have a status of 'planned' or 'active', reflecting the need to to handle new orders as well as re-authorised orders."
-          },
-          "at0147" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0147",
-            "text" : "Route",
-            "description" : "The route by which the ordered item was, or is to be, administered into the subject's body.",
-            "comment" : "Comment: For example: 'oral', 'intravenous', or 'topical'. Coding of the route with a terminology is preferred, where possible. Multiple potential routes may be specified."
-          },
-          "at0148" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0148",
-            "text" : "Medication prepared",
-            "description" : "The medication has been physically prepared. For example: preparation of an intravenous mixture."
-          },
-          "at0149" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0149",
-            "text" : "Double-checked?",
-            "description" : "The pathway step has been checked by a separate individual.",
-            "comment" : "Details of the individual performing the double-check can be carried in the Reference Model element \"Participation\"."
-          },
-          "at0150" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0150",
-            "text" : "Prescription cancelled",
-            "description" : "The prescription was cancelled prior to being issued."
-          },
-          "at0151" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0151",
-            "text" : "Prescription invalid or expired",
-            "description" : "Prescription has been invalidated or has expired without being fulfilled."
-          },
-          "at0152" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0152",
-            "text" : "Prescription fulfilled",
-            "description" : "The prescription has been fulfilled successfully."
-          },
-          "at0153" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0153",
-            "text" : "Medication authorised",
-            "description" : "The medication has been formally authorised for use."
-          },
-          "at0154" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0154",
-            "text" : "Restart date/time",
-            "description" : "The date/time on which the medication course is set to restart, as per the \"Administrations suspended\" pathway step.",
-            "comment" : "For example: 2017-10-29"
-          },
-          "at0155" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0155",
-            "text" : "Restart criterion",
-            "description" : "The criterion which triggers the medication course to restart, as per the \"Administrations suspended\" pathway step.",
-            "comment" : "For example: \"On day 2 after surgery\"."
-          },
-          "at0156" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0156",
-            "text" : "Clinical indication",
-            "description" : "The clinical reason for the medication activity.",
-            "comment" : "For example: 'Angina' or 'Pain'. Coding of the indication with a terminology is preferred, where possible. This data element allows multiple occurrences. If only an ACTION is used to record a medication indication, this data element can be used without additional consideration. However, if a clinical indication is recorded for both the Medication order INSTRUCTION and this Medication management ACTION, be aware that these indications might not be consistent.\""
-          },
           "at0007.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0007",
@@ -3763,339 +2785,6 @@
             "text" : "(Synthesized)",
             "code" : "ac0.1",
             "description" : ""
-          },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Gestio de medicacio",
-            "description" : "*Any activity related to the planning, scheduling, prescription management, dispensing, administration, cessation and other use of a medication, vaccine, nutritional product or other therapeutic item. (en)",
-            "comment" : "*This is not limited to activities performed based on medication orders from clinicians, but could also include for example taking over the counter medication. (en)"
-          },
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "*Prescription issued (en)",
-            "description" : "*A prescription has been issued for the medication. (en)"
-          },
-          "at0003" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003",
-            "text" : "*Prescription dispensed (en)",
-            "description" : "*The ordered medication has been dispensed, for example from a pharmacy to the patient. (en)"
-          },
-          "at0004" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004",
-            "text" : "*Medication course commenced (en)",
-            "description" : "*The medication has been taken by, or administered to, the patient for the first time. Although in some settings this significant date may be computable as the first of several administrations, in other settings, such as primary care, specific administration dates are not readily available. (en)"
-          },
-          "at0005" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005",
-            "text" : "*Medication reassessed (en)",
-            "description" : "*The individual medication has been reassessed, for example whether the medication should still be taken. This is not intended to capture review of the medication list. (en)"
-          },
-          "at0006" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0006",
-            "text" : "*Dose administered (en)",
-            "description" : "*A single administration of the medication has taken place. (en)"
-          },
-          "at0007" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0007",
-            "text" : "*Medication course completed (en)",
-            "description" : "*The medication course has been completed as planned. (en)"
-          },
-          "at0008" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0008",
-            "text" : "*Prescription supply delayed (en)",
-            "description" : "*The prescription has not been dispensed due to a technical or pharamaceutical supply issue. (en)"
-          },
-          "at0009" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0009",
-            "text" : "*Administrations suspended (en)",
-            "description" : "*The administration of the medication has been suspended until further notice. No further doses should be given until the restart date or conditions have been met. When setting the date/conditions for restart after suspending, a step from ‘Administrations suspended’ and back to 'Medication start date/condition set' should be performed. (en)"
-          },
-          "at0010" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0010",
-            "text" : "*Prescription re-issued (en)",
-            "description" : "*A prescription has been re-issued for an existing medication order. (en)"
-          },
-          "at0011" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0011",
-            "text" : "*Prescription re-authorisation pending (en)",
-            "description" : "*Issue of the prescription is awaiting re-authorisation by a clinician. (en)"
-          },
-          "at0012" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0012",
-            "text" : "*Medication course cancelled (en)",
-            "description" : "*The planned course of medication has been cancelled prior to any administration. (en)"
-          },
-          "at0013" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0013",
-            "text" : "*Medication course postponed (en)",
-            "description" : "*The scheduled medication course has been postponed prior to any administration. (en)"
-          },
-          "at0015" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0015",
-            "text" : "*Medication course stopped (en)",
-            "description" : "*Administration of the medication has been ceased during the period of the intended course. (en)"
-          },
-          "at0016" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0016",
-            "text" : "*Medication start date/condition set (en)",
-            "description" : "*The time to start the medication, or other starting condition, has been set. (en)"
-          },
-          "at0018" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0018",
-            "text" : "*Dose administration omitted (en)",
-            "description" : "*An administration of the medication has been withheld and not given. There is no expectation that it will be given later, though the next dose (if any) should be administered according to the original order. (en)"
-          },
-          "at0020" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0020",
-            "text" : "Tipus de medicacio",
-            "description" : "*Name of the medication, vaccine or other therapeutic/prescribable item which was the focus of the activity. (en)",
-            "comment" : "*For example: 'Atenolol 100mg' or 'Tenormin tablets 100mg'. \nIt is strongly recommended that the 'Medication item' is coded with a terminology capable of triggering decision support, where possible. The extent of coding may vary from the simple name of the medication item through to structured details about the actual medication pack used. Free text entry should only be used if there is no appropriate terminology available. (en)"
-          },
-          "at0021" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0021",
-            "text" : "Rao",
-            "description" : "*Reason that the pathway step for the identified medication was carried out. (en)",
-            "comment" : "*For example: 'Postponed - Patient not avalable at administration time', 'Cancelled - Adverse reaction'. Note: This is not the reason for the medication instruction, but rather the specific reason that a care step was carried out, and will often be used to document some variance from the original order. (en)"
-          },
-          "at0024" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0024",
-            "text" : "Comentari",
-            "description" : "*Additional narrative about the activity or pathway step not captured in other fields, including details of any variance between the intended action and the action actually performed. (en)",
-            "comment" : "*For example: 'Patient was in radiology department', 'Accidental injection into blood vessel during IM administration'. (en)"
-          },
-          "at0025" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0025",
-            "text" : "Número de seqüència",
-            "description" : "*The sequence number specific to the pathway step being recorded. (en)",
-            "comment" : "*For example: Vaccine sequence number. (en)"
-          },
-          "at0033" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0033",
-            "text" : "*Patient guidance (en)",
-            "description" : "*Any guidance, instructions or advice given to the subject of care or personal carer at the time of the pathway step. (en)",
-            "comment" : "*For example: 'Avoid grapefruit' , 'Take at least 2 hours before bedtime', 'Take with food'. May be coded with a terminology when clinically appropriate. (en)"
-          },
-          "at0039" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0039",
-            "text" : "*Major change to order (en)",
-            "description" : "*A major change to the order was required, resulting in this order being stopped and a replacement order being started. (en)"
-          },
-          "at0041" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0041",
-            "text" : "*Minor change to order (en)",
-            "description" : "*The medication order has been changed in a manner which does not require a new instruction/order to be issued, according to local clinical rules. (en)"
-          },
-          "at0043" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0043",
-            "text" : "Data/hora programada",
-            "description" : "*The datetime at which the medication action was scheduled to occur. (en)",
-            "comment" : "*Used to compare variance from actual action time where this is not readily calculable from the original instruction. (en)"
-          },
-          "at0044" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0044",
-            "text" : "*Dose administration deferred (en)",
-            "description" : "*An administration of a dose of the medication has been delayed but is expected to be given as soon as possible. (en)"
-          },
-          "at0053" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0053",
-            "text" : "Detalls addicionals",
-            "description" : "*Further structured details of the action, possibly specific to a pathway step. (en)"
-          },
-          "at0085" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0085",
-            "text" : "Extensio",
-            "description" : "*Additional information required to capture local content or to align with other reference models/formalisms. (en)",
-            "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)"
-          },
-          "at0103" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0103",
-            "text" : "ID peticio",
-            "description" : "*Unique identifier for the medication order. (en)",
-            "comment" : "*Comment: This data element allows for multiple occurrences to be defined more explicitly at run-time, if required. (en)"
-          },
-          "at0104" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0104",
-            "text" : "Detalls medicacio",
-            "description" : "*Structured details about the medication including strength, form and constituent substances. (en)",
-            "comment" : "*Use this SLOT where the detailed description of the dispensed, authorised or administered item needs to be explicitly stated. For example: the form, strength, any diluents or mixture of ingredients. (en)"
-          },
-          "at0106" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0106",
-            "text" : "*Prescription re-authorised (en)",
-            "description" : "*The original medication order has been re-authorised to allow repeat prescription or dispensing. In some jurisdictions an entirely new order must be issued in these circumstances. (en)"
-          },
-          "at0109" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0109",
-            "text" : "*Medication recommended (en)",
-            "description" : "*The medication has been recommended but no steps have been taken to initiate prescribing. (en)"
-          },
-          "at0131" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0131",
-            "text" : "Quantitat",
-            "description" : "*Specific details about the amount of the medication item. (en)",
-            "comment" : "*CLUSTER.dosage is intended to carry details of medication order changes or dose administrations, whilst CLUSTER.medication_supply_amount is intended for details of dispensing-related activity. (en)"
-          },
-          "at0132" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0132",
-            "text" : "Substitucio",
-            "description" : "*Subsitution action taken by the person administering or dispensing the drug. (en)",
-            "comment" : "*In many jurisdictions, substitution of an ordered item as a generic form or with a different brand name, which has been determined as bioequivalent, is allowed at the point of dispense or supply. In other cases substitution is assumed and the clinician has to explicitly request non-substitution. (en)"
-          },
-          "at0133" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0133",
-            "text" : "Rao de substitucio",
-            "description" : "*The reason or justification for the substitution action taken. (en)",
-            "comment" : "*For example: \"Generic alternative contains a substance that is not tolerated by the patient.\" May be coded with a terminology when clinically appropriate (en)"
-          },
-          "at0138" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0138",
-            "text" : "*Substitution performed (en)",
-            "description" : "*A medication was substituted which is bioequivalent to that ordered. (en)"
-          },
-          "at0139" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0139",
-            "text" : "*Substitution not performed (en)",
-            "description" : "*Although allowed by the medication order a bioequvalent medication was not substituted. (en)"
-          },
-          "at0140" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0140",
-            "text" : "Detalls d'administracio",
-            "description" : "*Details of body site and administration of the medication. (en)"
-          },
-          "at0141" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0141",
-            "text" : "Localitzacio anatomica",
-            "description" : "*Structured description of the site of administration of the ordered item. (en)",
-            "comment" : "*For example: 'left upper arm', 'intravenous catheter right hand'. \nCoding of the body site with a terminology is preferred, where possible. (en)"
-          },
-          "at0142" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0142",
-            "text" : "Localitzacio anatomica estructurada",
-            "description" : "*Structured description of the site of administration of the medication, vaccine or therapeutic good. (en)",
-            "comment" : "*For example: \"On the medial skin surface of the left forearm, from 10 cm to 20 cm distally from the point of the elbow\". (en)"
-          },
-          "at0143" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0143",
-            "text" : "Metode d'administracio",
-            "description" : "*The technique or device by which the ordered item was, or is to be, administered. (en)",
-            "comment" : "*Comment: For example: ' via Z-track injection'; 'via nebuliser'. Coding of the method with a terminology is preferred, where possible. (en)"
-          },
-          "at0144" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0144",
-            "text" : "Dispositiu d'administracio",
-            "description" : "*Details of the medical device used to assist administration of the medication. (en)"
-          },
-          "at0145" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0145",
-            "text" : "*Prescription awaiting authorisation (en)",
-            "description" : "*Draft prescription has been prepared and is awaiting confirmation from an authorised clinician. May be used where reauthorisations are performed as a batch. This careflow_step may have a status of 'planned' or 'active', reflecting the need to to handle new orders as well as re-authorised orders. (en)"
-          },
-          "at0147" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0147",
-            "text" : "Ruta",
-            "description" : "*The route by which the ordered item was, or is to be, administered into the subject's body. (en)",
-            "comment" : "*Comment: For example: 'oral', 'intravenous', or 'topical'. Coding of the route with a terminology is preferred, where possible. Multiple potential routes may be specified. (en)"
-          },
-          "at0148" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0148",
-            "text" : "*Medication prepared (en)",
-            "description" : "*The medication has been physically prepared. For example: preparation of an intravenous mixture. (en)"
-          },
-          "at0149" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0149",
-            "text" : "*Double-checked? (en)",
-            "description" : "*The pathway step has been checked by a separate individual. (en)",
-            "comment" : "*Details of the individual performing the double-check can be carried in the Reference Model element \"Participation\". (en)"
-          },
-          "at0150" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0150",
-            "text" : "*Prescription cancelled (en)",
-            "description" : "*The prescription was cancelled prior to being issued. (en)"
-          },
-          "at0151" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0151",
-            "text" : "*Prescription invalid or expired (en)",
-            "description" : "*Prescription has been invalidated or has expired without being fulfilled. (en)"
-          },
-          "at0152" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0152",
-            "text" : "*Prescription fulfilled (en)",
-            "description" : "*The prescription has been fulfilled successfully. (en)"
-          },
-          "at0153" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0153",
-            "text" : "*Medication authorised (en)",
-            "description" : "*The medication has been formally authorised for use. (en)"
-          },
-          "at0154" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0154",
-            "text" : "Data/hora de reinici",
-            "description" : "*The date/time on which the medication course is set to restart, as per the \"Administrations suspended\" pathway step. (en)",
-            "comment" : "*For example: 2017-10-29 (en)"
-          },
-          "at0155" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0155",
-            "text" : "Criteri de reinici",
-            "description" : "*The criterion which triggers the medication course to restart, as per the \"Administrations suspended\" pathway step. (en)",
-            "comment" : "*For example: \"On day 2 after surgery\". (en)"
-          },
-          "at0156" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0156",
-            "text" : "Indicacio clinica",
-            "description" : "*The clinical reason for the medication activity. (en)",
-            "comment" : "*For example: 'Angina' or 'Pain'. Coding of the indication with a terminology is preferred, where possible. This data element allows multiple occurrences. If only an ACTION is used to record a medication indication, this data element can be used without additional consideration. However, if a clinical indication is recorded for both the Medication order INSTRUCTION and this Medication management ACTION, be aware that these indications might not be consistent.\" (en)"
           },
           "at0156.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -4761,15 +3450,6 @@
           } ],
           "attributeTuples" : [ ]
         }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..*",
-          "nodeId" : "at0138.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-medication-002.v2",
-          "referenceType" : "archetypeOverlay"
-        }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
@@ -4824,6 +3504,15 @@
           "nodeId" : "at0133.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..*",
+          "nodeId" : "at0138.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-medication-002.v2",
+          "referenceType" : "archetypeOverlay"
         } ]
       } ],
       "attributeTuples" : [ ]
