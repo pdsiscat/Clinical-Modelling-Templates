@@ -168,7 +168,7 @@ Queensland Government, Department of Health. Pregnancy Health Record. SW071 - v1
 		["original_namespace"] = <"openEHR Foundation">
 		["original_publisher"] = <"org.openehr">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"d78620b839e9769a1da3cbb52a579535">
+		["MD5-CAM-1.0.1"] = <"2da9c622e12ea317e4ae5f7232002f22">
 		["build_uid"] = <"54f2b30e-e6d8-445a-98e4-4c828f6afc27">
 		["revision"] = <"0.0.1-alpha">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
@@ -246,7 +246,15 @@ definition
 					}
 					ELEMENT[at0096.1] occurrences matches {0..*} matches {    -- Induction method
 						value matches {
-							DV_TEXT matches {*}
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0.5,    -- *espontani (ca)
+									at0.6,    -- *induït (ca)
+									at0.7,    -- *cessàre electiva (ca)
+									at0.8]    -- *cessàrea urgent (ca)
+								}
+							}
 						}
 						name matches {
 							DV_CODED_TEXT matches {
@@ -840,6 +848,22 @@ ontology
 					text = <"*cessàrea urgent (ca)">
 					description = <"">
 				>
+				["at0.5"] = <
+					text = <"*espontani (ca)">
+					description = <"">
+				>
+				["at0.6"] = <
+					text = <"*induït (ca)">
+					description = <"">
+				>
+				["at0.7"] = <
+					text = <"*cessàre electiva (ca)">
+					description = <"">
+				>
+				["at0.8"] = <
+					text = <"*cessàrea urgent (ca)">
+					description = <"">
+				>
 			>
 		>
 		["pt-br"] = <
@@ -1179,6 +1203,22 @@ ontology
 					text = <"*cessàrea urgent (ca)">
 					description = <"">
 				>
+				["at0.5"] = <
+					text = <"*espontani (ca)">
+					description = <"">
+				>
+				["at0.6"] = <
+					text = <"*induït (ca)">
+					description = <"">
+				>
+				["at0.7"] = <
+					text = <"*cessàre electiva (ca)">
+					description = <"">
+				>
+				["at0.8"] = <
+					text = <"*cessàrea urgent (ca)">
+					description = <"">
+				>
 			>
 		>
 		["es-co"] = <
@@ -1515,6 +1555,22 @@ ontology
 					description = <"">
 				>
 				["at0.4"] = <
+					text = <"*cessàrea urgent (ca)">
+					description = <"">
+				>
+				["at0.5"] = <
+					text = <"*espontani (ca)">
+					description = <"">
+				>
+				["at0.6"] = <
+					text = <"*induït (ca)">
+					description = <"">
+				>
+				["at0.7"] = <
+					text = <"*cessàre electiva (ca)">
+					description = <"">
+				>
+				["at0.8"] = <
 					text = <"*cessàrea urgent (ca)">
 					description = <"">
 				>
@@ -1860,6 +1916,22 @@ ontology
 					text = <"*cessàrea urgent (ca)">
 					description = <"">
 				>
+				["at0.5"] = <
+					text = <"*espontani (ca)">
+					description = <"">
+				>
+				["at0.6"] = <
+					text = <"*induït (ca)">
+					description = <"">
+				>
+				["at0.7"] = <
+					text = <"*cessàre electiva (ca)">
+					description = <"">
+				>
+				["at0.8"] = <
+					text = <"*cessàrea urgent (ca)">
+					description = <"">
+				>
 			>
 		>
 		["ca"] = <
@@ -2179,7 +2251,7 @@ ontology
 					description = <"*Overview or summary record of a pregnancy and outcome, including the antenatal period, labour, birth and the immediate postnatal period. (en)">
 				>
 				["at0096.1"] = <
-					text = <"*Induction method (en)">
+					text = <"Induction method">
 					description = <"*Method of labour induction. (en)">
 					comment = <"*Coding of the 'Induction Method' with a terminology is desirable, where possible. (en)">
 				>
@@ -2196,6 +2268,22 @@ ontology
 					description = <"">
 				>
 				["at0.4"] = <
+					text = <"cessàrea urgent">
+					description = <"">
+				>
+				["at0.5"] = <
+					text = <"espontani">
+					description = <"">
+				>
+				["at0.6"] = <
+					text = <"induït">
+					description = <"">
+				>
+				["at0.7"] = <
+					text = <"cessàre electiva">
+					description = <"">
+				>
+				["at0.8"] = <
 					text = <"cessàrea urgent">
 					description = <"">
 				>
