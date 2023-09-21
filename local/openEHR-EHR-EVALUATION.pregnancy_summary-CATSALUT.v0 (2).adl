@@ -168,7 +168,7 @@ Queensland Government, Department of Health. Pregnancy Health Record. SW071 - v1
 		["original_namespace"] = <"openEHR Foundation">
 		["original_publisher"] = <"org.openehr">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"2da9c622e12ea317e4ae5f7232002f22">
+		["MD5-CAM-1.0.1"] = <"311a03456d886891fa6ba513cafca0b9">
 		["build_uid"] = <"54f2b30e-e6d8-445a-98e4-4c828f6afc27">
 		["revision"] = <"0.0.1-alpha">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
@@ -249,21 +249,10 @@ definition
 							DV_CODED_TEXT matches {
 								defining_code matches {
 									[local::
-									at0.5,    -- *espontani (ca)
-									at0.6,    -- *induït (ca)
-									at0.7,    -- *cessàre electiva (ca)
-									at0.8]    -- *cessàrea urgent (ca)
-								}
-							}
-						}
-						name matches {
-							DV_CODED_TEXT matches {
-								defining_code matches {
-									[local::
-									at0.1,    -- *espontani (ca)
-									at0.2,    -- *induït (ca)
-									at0.3,    -- *cessàrea electiva (ca)
-									at0.4]    -- *cessàrea urgent (ca)
+									at0.9,    -- *espontani (ca)
+									at0.10,    -- *induït (ca)
+									at0.11,    -- *cessàrea electiva (ca)
+									at0.12]    -- *cessàrea urgent (ca)
 								}
 							}
 						}
@@ -832,35 +821,19 @@ ontology
 					description = <"Method of labour induction.">
 					comment = <"Coding of the 'Induction Method' with a terminology is desirable, where possible.">
 				>
-				["at0.1"] = <
+				["at0.9"] = <
 					text = <"*espontani (ca)">
 					description = <"">
 				>
-				["at0.2"] = <
+				["at0.10"] = <
 					text = <"*induït (ca)">
 					description = <"">
 				>
-				["at0.3"] = <
+				["at0.11"] = <
 					text = <"*cessàrea electiva (ca)">
 					description = <"">
 				>
-				["at0.4"] = <
-					text = <"*cessàrea urgent (ca)">
-					description = <"">
-				>
-				["at0.5"] = <
-					text = <"*espontani (ca)">
-					description = <"">
-				>
-				["at0.6"] = <
-					text = <"*induït (ca)">
-					description = <"">
-				>
-				["at0.7"] = <
-					text = <"*cessàre electiva (ca)">
-					description = <"">
-				>
-				["at0.8"] = <
+				["at0.12"] = <
 					text = <"*cessàrea urgent (ca)">
 					description = <"">
 				>
@@ -1187,35 +1160,19 @@ ontology
 					description = <"*Método de indução do trabalho de parto.">
 					comment = <"A codificação do \"método de indução\" com uma terminologia é desejável , sempre que possível .">
 				>
-				["at0.1"] = <
+				["at0.9"] = <
 					text = <"*espontani (ca)">
 					description = <"">
 				>
-				["at0.2"] = <
+				["at0.10"] = <
 					text = <"*induït (ca)">
 					description = <"">
 				>
-				["at0.3"] = <
+				["at0.11"] = <
 					text = <"*cessàrea electiva (ca)">
 					description = <"">
 				>
-				["at0.4"] = <
-					text = <"*cessàrea urgent (ca)">
-					description = <"">
-				>
-				["at0.5"] = <
-					text = <"*espontani (ca)">
-					description = <"">
-				>
-				["at0.6"] = <
-					text = <"*induït (ca)">
-					description = <"">
-				>
-				["at0.7"] = <
-					text = <"*cessàre electiva (ca)">
-					description = <"">
-				>
-				["at0.8"] = <
+				["at0.12"] = <
 					text = <"*cessàrea urgent (ca)">
 					description = <"">
 				>
@@ -1542,35 +1499,19 @@ ontology
 					description = <"*Metodo empleado para la inducción del trabajo de parto, por ejemplo empleando Medicamentos (administración de oxitocina) o La amniotomía">
 					comment = <"Siempre que sea posible, Se recomienda el uso de una terminología para codificar el metodo de Induccion del parto.">
 				>
-				["at0.1"] = <
+				["at0.9"] = <
 					text = <"*espontani (ca)">
 					description = <"">
 				>
-				["at0.2"] = <
+				["at0.10"] = <
 					text = <"*induït (ca)">
 					description = <"">
 				>
-				["at0.3"] = <
+				["at0.11"] = <
 					text = <"*cessàrea electiva (ca)">
 					description = <"">
 				>
-				["at0.4"] = <
-					text = <"*cessàrea urgent (ca)">
-					description = <"">
-				>
-				["at0.5"] = <
-					text = <"*espontani (ca)">
-					description = <"">
-				>
-				["at0.6"] = <
-					text = <"*induït (ca)">
-					description = <"">
-				>
-				["at0.7"] = <
-					text = <"*cessàre electiva (ca)">
-					description = <"">
-				>
-				["at0.8"] = <
+				["at0.12"] = <
 					text = <"*cessàrea urgent (ca)">
 					description = <"">
 				>
@@ -1900,35 +1841,19 @@ ontology
 					description = <"Induksjonsmetoden som er brukt.">
 					comment = <"Koding av \"Induksjonsmetode\" med en ønsket teminologi, hvor dette er mulig.">
 				>
-				["at0.1"] = <
+				["at0.9"] = <
 					text = <"*espontani (ca)">
 					description = <"">
 				>
-				["at0.2"] = <
+				["at0.10"] = <
 					text = <"*induït (ca)">
 					description = <"">
 				>
-				["at0.3"] = <
+				["at0.11"] = <
 					text = <"*cessàrea electiva (ca)">
 					description = <"">
 				>
-				["at0.4"] = <
-					text = <"*cessàrea urgent (ca)">
-					description = <"">
-				>
-				["at0.5"] = <
-					text = <"*espontani (ca)">
-					description = <"">
-				>
-				["at0.6"] = <
-					text = <"*induït (ca)">
-					description = <"">
-				>
-				["at0.7"] = <
-					text = <"*cessàre electiva (ca)">
-					description = <"">
-				>
-				["at0.8"] = <
+				["at0.12"] = <
 					text = <"*cessàrea urgent (ca)">
 					description = <"">
 				>
@@ -2251,39 +2176,23 @@ ontology
 					description = <"*Overview or summary record of a pregnancy and outcome, including the antenatal period, labour, birth and the immediate postnatal period. (en)">
 				>
 				["at0096.1"] = <
-					text = <"Induction method">
+					text = <"*Induction method (en)">
 					description = <"*Method of labour induction. (en)">
 					comment = <"*Coding of the 'Induction Method' with a terminology is desirable, where possible. (en)">
 				>
-				["at0.1"] = <
+				["at0.9"] = <
 					text = <"espontani">
 					description = <"">
 				>
-				["at0.2"] = <
+				["at0.10"] = <
 					text = <"induït">
 					description = <"">
 				>
-				["at0.3"] = <
+				["at0.11"] = <
 					text = <"cessàrea electiva">
 					description = <"">
 				>
-				["at0.4"] = <
-					text = <"cessàrea urgent">
-					description = <"">
-				>
-				["at0.5"] = <
-					text = <"espontani">
-					description = <"">
-				>
-				["at0.6"] = <
-					text = <"induït">
-					description = <"">
-				>
-				["at0.7"] = <
-					text = <"cessàre electiva">
-					description = <"">
-				>
-				["at0.8"] = <
+				["at0.12"] = <
 					text = <"cessàrea urgent">
 					description = <"">
 				>
