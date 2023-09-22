@@ -9,10 +9,10 @@ language
 
 description
 	original_author = <
+		["date"] = <"2023-09-22">
 		["name"] = <"Clara Calleja Vega">
 		["organisation"] = <"CatSalut">
 		["email"] = <"ccalleja@catsalut.cat">
-		["date"] = <"2023-09-22">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"884a383b6fa458cf9dc9393d5e9f052d">
+		["MD5-CAM-1.0.1"] = <"50f080e689a1d217106a0df3cac6cf45">
 		["build_uid"] = <"4b1f9dd3-5b8d-3a19-9080-91368ececafb">
 	>
 
@@ -56,8 +56,7 @@ definition
 													at0009,    -- T0
 													at0010,    -- BEV
 													at0011,    -- VTCL
-													at0012,    -- FVCL
-													at0013]    -- Sampling frequency
+													at0012]    -- FVCL
 												}
 											}
 										}
@@ -79,6 +78,18 @@ definition
 											ELEMENT[at0025] occurrences matches {0..1} matches {    -- Quality of maneuver
 												value matches {
 													DV_CODED_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0026] occurrences matches {0..1} matches {    -- Sampling frequency
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::382]>
+														list = <
+															["1"] = <
+																units = <"Hz">
+															>
+														>
+													>
 												}
 											}
 										}
@@ -144,10 +155,6 @@ ontology
 					text = <"FVCL">
 					description = <"Flow-volume curve length.">
 				>
-				["at0013"] = <
-					text = <"Sampling frequency">
-					description = <"">
-				>
 				["at0014"] = <
 					text = <"Maneuver information">
 					description = <"">
@@ -190,6 +197,10 @@ ontology
 				>
 				["at0025"] = <
 					text = <"Quality of maneuver">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"Sampling frequency">
 					description = <"">
 				>
 			>
