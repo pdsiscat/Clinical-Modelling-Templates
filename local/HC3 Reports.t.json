@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.0.0",
+      "sem_ver" : "3.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "adc7e168c80e7abf128af4deb1cdb36f",
+      "MD5-CAM-1.0.1" : "0ea5035b14b9eca21979eaa6a8d5d562",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -284,6 +284,15 @@
         "attributes" : [ ],
         "attributeTuples" : [ ],
         "archetypeRef" : "openEHR-EHR-ACTION.ovl-procedure-001.v1",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "ADMIN_ENTRY",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.8",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-ADMIN_ENTRY.ovl-episode_institution-001.v0",
         "referenceType" : "archetypeOverlay"
       } ]
     } ],
@@ -3247,6 +3256,470 @@
         "email" : "pablo.pazos@cabolabs.com"
       },
       "accreditation" : "Computer Engineer",
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "bd5457b3-c4d8-4c89-8761-ac9c3ff63a46",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "D434D667D6A5B27FB021DE12DCD0B901"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-ADMIN_ENTRY.episode_institution.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-ADMIN_ENTRY.ovl-episode_institution-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "ADMIN_ENTRY",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0014.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_IDENTIFIER",
+                  "defaultValue" : {
+                    "@type" : "DV_IDENTIFIER"
+                  },
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0004.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0008.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0009.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0007.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "ARCHETYPE_SLOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..*",
+              "nodeId" : "at0013.1",
+              "includes" : [ {
+                "@type" : "ASSERTION",
+                "stringExpression" : "archetype_id/value matches {/openEHR-EHR-CLUSTER\\.organisation(-[a-zA-Z0-9_]+)*\\.v0|openEHR-EHR-CLUSTER\\.organisation(-[a-zA-Z0-9_]+)*\\.v1|openEHR-EHR-CLUSTER\\.address(-[a-zA-Z0-9_]+)*\\.v0|openEHR-EHR-CLUSTER\\.address(-[a-zA-Z0-9_]+)*\\.v1/}",
+                "expression" : {
+                  "@type" : "BINARY_OPERATOR",
+                  "type" : "BOOLEAN",
+                  "operator" : "matches",
+                  "leftOperand" : {
+                    "@type" : "MODEL_REFERENCE",
+                    "type" : "STRING",
+                    "precedenceOverriden" : false,
+                    "referenceType" : "Attribute",
+                    "path" : "archetype_id/value"
+                  },
+                  "rightOperand" : {
+                    "@type" : "CONSTRAINT",
+                    "type" : "STRING",
+                    "precedenceOverriden" : false,
+                    "referenceType" : "Constraint",
+                    "item" : {
+                      "@type" : "C_STRING",
+                      "constraint" : [ "/openEHR-EHR-CLUSTER\\.organisation(-[a-zA-Z0-9_]+)*\\.v0|openEHR-EHR-CLUSTER\\.organisation(-[a-zA-Z0-9_]+)*\\.v1|openEHR-EHR-CLUSTER\\.address(-[a-zA-Z0-9_]+)*\\.v0|openEHR-EHR-CLUSTER\\.address(-[a-zA-Z0-9_]+)*\\.v1/" ]
+                    }
+                  },
+                  "precedenceOverriden" : false
+                },
+                "variables" : [ ]
+              } ],
+              "excludes" : [ ],
+              "closed" : false
+            }, {
+              "@type" : "ARCHETYPE_SLOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..*",
+              "nodeId" : "at0027.1",
+              "includes" : [ {
+                "@type" : "ASSERTION",
+                "stringExpression" : "archetype_id/value matches {/openEHR-EHR-CLUSTER\\.person(-[a-zA-Z0-9_]+)*\\.v0|openEHR-EHR-CLUSTER\\.person(-[a-zA-Z0-9_]+)*\\.v1/}",
+                "expression" : {
+                  "@type" : "BINARY_OPERATOR",
+                  "type" : "BOOLEAN",
+                  "operator" : "matches",
+                  "leftOperand" : {
+                    "@type" : "MODEL_REFERENCE",
+                    "type" : "STRING",
+                    "precedenceOverriden" : false,
+                    "referenceType" : "Attribute",
+                    "path" : "archetype_id/value"
+                  },
+                  "rightOperand" : {
+                    "@type" : "CONSTRAINT",
+                    "type" : "STRING",
+                    "precedenceOverriden" : false,
+                    "referenceType" : "Constraint",
+                    "item" : {
+                      "@type" : "C_STRING",
+                      "constraint" : [ "/openEHR-EHR-CLUSTER\\.person(-[a-zA-Z0-9_]+)*\\.v0|openEHR-EHR-CLUSTER\\.person(-[a-zA-Z0-9_]+)*\\.v1/" ]
+                    }
+                  },
+                  "precedenceOverriden" : false
+                },
+                "variables" : [ ]
+              } ],
+              "excludes" : [ ],
+              "closed" : false
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0016.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_IDENTIFIER",
+                  "defaultValue" : {
+                    "@type" : "DV_IDENTIFIER"
+                  },
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0026.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0021.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "ARCHETYPE_SLOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..*",
+              "nodeId" : "at0015.1",
+              "includes" : [ {
+                "@type" : "ASSERTION",
+                "stringExpression" : "archetype_id/value matches {/openEHR-EHR-CLUSTER\\.person(-[a-zA-Z0-9_]+)*\\.v0|openEHR-EHR-CLUSTER\\.person(-[a-zA-Z0-9_]+)*\\.v1/}",
+                "expression" : {
+                  "@type" : "BINARY_OPERATOR",
+                  "type" : "BOOLEAN",
+                  "operator" : "matches",
+                  "leftOperand" : {
+                    "@type" : "MODEL_REFERENCE",
+                    "type" : "STRING",
+                    "precedenceOverriden" : false,
+                    "referenceType" : "Attribute",
+                    "path" : "archetype_id/value"
+                  },
+                  "rightOperand" : {
+                    "@type" : "CONSTRAINT",
+                    "type" : "STRING",
+                    "precedenceOverriden" : false,
+                    "referenceType" : "Constraint",
+                    "item" : {
+                      "@type" : "C_STRING",
+                      "constraint" : [ "/openEHR-EHR-CLUSTER\\.person(-[a-zA-Z0-9_]+)*\\.v0|openEHR-EHR-CLUSTER\\.person(-[a-zA-Z0-9_]+)*\\.v1/" ]
+                    }
+                  },
+                  "precedenceOverriden" : false
+                },
+                "variables" : [ ]
+              } ],
+              "excludes" : [ ],
+              "closed" : false
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "nodeId" : "at0018",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "items",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0019.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_DATE_TIME",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0025.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "ARCHETYPE_SLOT",
+                  "rmTypeName" : "CLUSTER",
+                  "occurrences" : "0..*",
+                  "nodeId" : "at0017.1",
+                  "includes" : [ {
+                    "@type" : "ASSERTION",
+                    "stringExpression" : "archetype_id/value matches {/openEHR-EHR-CLUSTER\\.organisation(-[a-zA-Z0-9_]+)*\\.v0|openEHR-EHR-CLUSTER\\.address(-[a-zA-Z0-9_]+)*\\.v0|openEHR-EHR-CLUSTER\\.address(-[a-zA-Z0-9_]+)*\\.v1|openEHR-EHR-CLUSTER\\.organisation(-[a-zA-Z0-9_]+)*\\.v1|openEHR-EHR-CLUSTER\\.structured_address(-[a-zA-Z0-9_]+)*\\.v0|openEHR-EHR-CLUSTER\\.structured_address(-[a-zA-Z0-9_]+)*\\.v1/}",
+                    "expression" : {
+                      "@type" : "BINARY_OPERATOR",
+                      "type" : "BOOLEAN",
+                      "operator" : "matches",
+                      "leftOperand" : {
+                        "@type" : "MODEL_REFERENCE",
+                        "type" : "STRING",
+                        "precedenceOverriden" : false,
+                        "referenceType" : "Attribute",
+                        "path" : "archetype_id/value"
+                      },
+                      "rightOperand" : {
+                        "@type" : "CONSTRAINT",
+                        "type" : "STRING",
+                        "precedenceOverriden" : false,
+                        "referenceType" : "Constraint",
+                        "item" : {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "/openEHR-EHR-CLUSTER\\.organisation(-[a-zA-Z0-9_]+)*\\.v0|openEHR-EHR-CLUSTER\\.address(-[a-zA-Z0-9_]+)*\\.v0|openEHR-EHR-CLUSTER\\.address(-[a-zA-Z0-9_]+)*\\.v1|openEHR-EHR-CLUSTER\\.organisation(-[a-zA-Z0-9_]+)*\\.v1|openEHR-EHR-CLUSTER\\.structured_address(-[a-zA-Z0-9_]+)*\\.v0|openEHR-EHR-CLUSTER\\.structured_address(-[a-zA-Z0-9_]+)*\\.v1/" ]
+                        }
+                      },
+                      "precedenceOverriden" : false
+                    },
+                    "variables" : [ ]
+                  } ],
+                  "excludes" : [ ],
+                  "closed" : false
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0022.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0023.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0024.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0020.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_DATE_TIME",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0002.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0006.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0003.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0010.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Discharge information",
+            "description" : "Administrative details about a period of admitted patient care between a formal or statistical admission and a formal or statistical separation, characterised by only one care type of care from a healthcare institution."
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "Discharge reason",
+            "description" : "Outcome for the individual at the end of the episode of care.",
+            "comment" : "For example: recovered/not recovered/death."
+          }
+        },
+        "nb" : { },
+        "it" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "1f5ba765-f829-4382-b5e7-26722cc6c36d",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Silje Ljosland Bakke",
+        "organisation" : "Helse Vest IKT AS",
+        "email" : "silje.ljosland.bakke@helse-vest-ikt.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "it"
+      },
+      "author" : { },
       "otherDetails" : { }
     } ]
   } ],
