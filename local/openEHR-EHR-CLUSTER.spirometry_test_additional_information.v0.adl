@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"2faea1ae1697a9d9cf7d3f5cc80a7adb">
+		["MD5-CAM-1.0.1"] = <"192e2a7ecbfdca7bd02d619c886416c5">
 		["build_uid"] = <"7dd6235a-6ff4-33f8-853b-6b136e4f9559">
 	>
 
@@ -38,6 +38,16 @@ definition
 					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Result
 						value matches {
 							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0022] occurrences matches {0..1} matches {    -- Predicted result
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0024] occurrences matches {0..1} matches {    -- Measured/predicted ratio
+						value matches {
+							DV_PROPORTION matches {*}
 						}
 					}
 				}
@@ -177,6 +187,14 @@ ontology
 				>
 				["at0021"] = <
 					text = <"Sampling frequency">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Predicted result">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"Measured/predicted ratio">
 					description = <"">
 				>
 			>
