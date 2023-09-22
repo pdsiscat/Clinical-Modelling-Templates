@@ -26,14 +26,14 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"192e2a7ecbfdca7bd02d619c886416c5">
+		["MD5-CAM-1.0.1"] = <"7c7363a149e130bbf67b42e3e02c4255">
 		["build_uid"] = <"7dd6235a-6ff4-33f8-853b-6b136e4f9559">
 	>
 
 definition
 	CLUSTER[at0000] matches {    -- Spirometry test additional information
 		items cardinality matches {1..*; unordered} matches {
-			CLUSTER[at0002] occurrences matches {0..1} matches {    -- Measure name
+			CLUSTER[at0002] occurrences matches {0..*} matches {    -- Measure name
 				items cardinality matches {1..*; unordered} matches {
 					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Result
 						value matches {
