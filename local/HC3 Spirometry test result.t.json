@@ -22,10 +22,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "5.0.0",
+      "sem_ver" : "6.0.0",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959",
-      "MD5-CAM-1.0.1" : "127505425623db4b959fbfe869265324"
+      "MD5-CAM-1.0.1" : "1efa119793aa70fce3d27a4bb4671d76"
     },
     "details" : {
       "de" : {
@@ -13759,6 +13759,12 @@
             "code" : "ac0.0.235",
             "description" : ""
           },
+          "at0000.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1.1",
+            "text" : "Spirometry result - CatSalut",
+            "description" : "Pulmonary function test results using a spirometer or peak flow meter."
+          },
           "at0002.0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002.0.2",
@@ -18574,6 +18580,12 @@
             "code" : "ac0.14",
             "description" : ""
           },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Spirometry test additional measurements",
+            "description" : "Spirometry test additional information"
+          },
           "at0002.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002.1",
@@ -19011,6 +19023,12 @@
             "text" : "(Synthesized)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Spirometry test additional maneuver information",
+            "description" : "Spirometry test additional information"
           }
         }
       },
