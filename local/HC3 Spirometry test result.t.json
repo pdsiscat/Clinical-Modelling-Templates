@@ -22,10 +22,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.0.0",
+      "sem_ver" : "3.0.0",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959",
-      "MD5-CAM-1.0.1" : "5c524ffb7d78ca4a00c43e90133bdab6"
+      "MD5-CAM-1.0.1" : "1395ecc26aa41ecbbcb10954a8eb7486"
     },
     "details" : {
       "de" : {
@@ -8785,6 +8785,15 @@
                       "attributeTuples" : [ ],
                       "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-media_file-001.v1",
                       "referenceType" : "archetypeOverlay"
+                    }, {
+                      "@type" : "C_ARCHETYPE_ROOT",
+                      "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0.2.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ],
+                      "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-spirometry_test_additional_information-001.v0",
+                      "referenceType" : "archetypeOverlay"
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -8881,6 +8890,15 @@
               "attributes" : [ ],
               "attributeTuples" : [ ],
               "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-knowledge_base_reference-001.v1",
+              "referenceType" : "archetypeOverlay"
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0132.0.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-spirometry_test_additional_information-002.v0",
               "referenceType" : "archetypeOverlay"
             } ]
           } ],
@@ -9097,6 +9115,24 @@
             "text" : "(Synthesized)",
             "code" : "ac0.0.185",
             "description" : ""
+          },
+          "at0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.3",
+            "text" : "FEV0.5/FVC",
+            "description" : "-"
+          },
+          "at0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.4",
+            "text" : "FEV3/FVC",
+            "description" : "-"
+          },
+          "at0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.5",
+            "text" : "FEF50%/FIF50%",
+            "description" : "-"
           }
         },
         "sl" : {
@@ -9297,6 +9333,24 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.0.185",
             "description" : ""
+          },
+          "at0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.3",
+            "text" : "*FEV0.5/FVC (en)",
+            "description" : "*- (en)"
+          },
+          "at0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.4",
+            "text" : "*FEV3/FVC (en)",
+            "description" : "*- (en)"
+          },
+          "at0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.5",
+            "text" : "*FEF50%/FIF50% (en)",
+            "description" : "*- (en)"
           }
         },
         "nb" : {
@@ -9497,6 +9551,24 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.0.185",
             "description" : ""
+          },
+          "at0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.3",
+            "text" : "*FEV0.5/FVC (en)",
+            "description" : "*- (en)"
+          },
+          "at0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.4",
+            "text" : "*FEV3/FVC (en)",
+            "description" : "*- (en)"
+          },
+          "at0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.5",
+            "text" : "*FEF50%/FIF50% (en)",
+            "description" : "*- (en)"
           }
         },
         "fi" : {
@@ -9697,6 +9769,24 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.0.185",
             "description" : ""
+          },
+          "at0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.3",
+            "text" : "*FEV0.5/FVC (en)",
+            "description" : "*- (en)"
+          },
+          "at0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.4",
+            "text" : "*FEV3/FVC (en)",
+            "description" : "*- (en)"
+          },
+          "at0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.5",
+            "text" : "*FEF50%/FIF50% (en)",
+            "description" : "*- (en)"
           }
         }
       },
@@ -12663,6 +12753,170 @@
       },
       "otherDetails" : { }
     } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "b49878d3-394f-4640-8d9e-10f97fb5697c",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "2faea1ae1697a9d9cf7d3f5cc80a7adb"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.spirometry_test_additional_information.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-spirometry_test_additional_information-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..0",
+          "nodeId" : "at0010.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "7dd6235a-6ff4-33f8-853b-6b136e4f9559",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "7a8e21c6-ff54-47e8-bd5d-031416db162a",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "2faea1ae1697a9d9cf7d3f5cc80a7adb"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.spirometry_test_additional_information.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-spirometry_test_additional_information-002.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..0",
+          "nodeId" : "at0002.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "name",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.2" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.2",
+            "description" : ""
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0004", "at0005", "at0006", "at0007", "at0008", "at0009" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0004", "at0005", "at0006", "at0007", "at0008", "at0009" ]
+        }
+      }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "7dd6235a-6ff4-33f8-853b-6b136e4f9559",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ ]
   } ],
   "originalLanguage" : {
     "terminologyId" : {
