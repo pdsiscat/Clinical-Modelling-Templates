@@ -164,7 +164,7 @@ Sheshadri A, Keus L, Blanco D, Lei X, Kellner C, Shannon VR, Balachandran DD, Ji
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"ceeb4ef6136420aa499970f72b5610ea">
+		["MD5-CAM-1.0.1"] = <"a4c0be2d6a863bdcb96eb72d752cea70">
 		["build_uid"] = <"74bae2f5-2f72-4b3d-8096-dfb0a34ce1af">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"2.0.0">
@@ -418,7 +418,10 @@ definition
 													at0080,    -- FEV1/SVC ratio
 													at0189,    -- FEV1/FEV6 ratio
 													at0190,    -- FEV1/IVC ratio
-													at0.1]    -- FEV1/VC
+													at0.1,    -- FEV1/VC
+													at0.3,    -- FEV0.5/FVC
+													at0.4,    -- FEV3/FVC
+													at0.5]    -- FEF50%/FIF50%
 												}
 											}
 										}
@@ -880,6 +883,18 @@ ontology
 					text = <"Additional test information">
 					description = <"">
 				>
+				["at0.3"] = <
+					text = <"FEV0.5/FVC">
+					description = <"">
+				>
+				["at0.4"] = <
+					text = <"FEV3/FVC">
+					description = <"">
+				>
+				["at0.5"] = <
+					text = <"FEF50%/FIF50%">
+					description = <"">
+				>
 			>
 		>
 		["sl"] = <
@@ -1221,6 +1236,18 @@ ontology
 				>
 				["at0.2"] = <
 					text = <"*Additional test information (en)">
+					description = <"">
+				>
+				["at0.3"] = <
+					text = <"*FEV0.5/FVC (en)">
+					description = <"">
+				>
+				["at0.4"] = <
+					text = <"*FEV3/FVC (en)">
+					description = <"">
+				>
+				["at0.5"] = <
+					text = <"*FEF50%/FIF50% (en)">
 					description = <"">
 				>
 			>
@@ -1567,6 +1594,18 @@ ontology
 					text = <"*Additional test information (en)">
 					description = <"">
 				>
+				["at0.3"] = <
+					text = <"*FEV0.5/FVC (en)">
+					description = <"">
+				>
+				["at0.4"] = <
+					text = <"*FEV3/FVC (en)">
+					description = <"">
+				>
+				["at0.5"] = <
+					text = <"*FEF50%/FIF50% (en)">
+					description = <"">
+				>
 			>
 		>
 		["fi"] = <
@@ -1909,6 +1948,18 @@ ontology
 				>
 				["at0.2"] = <
 					text = <"*Additional test information (en)">
+					description = <"">
+				>
+				["at0.3"] = <
+					text = <"*FEV0.5/FVC (en)">
+					description = <"">
+				>
+				["at0.4"] = <
+					text = <"*FEV3/FVC (en)">
+					description = <"">
+				>
+				["at0.5"] = <
+					text = <"*FEF50%/FIF50% (en)">
 					description = <"">
 				>
 			>
