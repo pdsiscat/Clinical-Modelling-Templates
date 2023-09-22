@@ -164,7 +164,7 @@ Sheshadri A, Keus L, Blanco D, Lei X, Kellner C, Shannon VR, Balachandran DD, Ji
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a4c0be2d6a863bdcb96eb72d752cea70">
+		["MD5-CAM-1.0.1"] = <"2369058c550d82571c2c93e0a5a1062d">
 		["build_uid"] = <"74bae2f5-2f72-4b3d-8096-dfb0a34ce1af">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"2.0.0">
@@ -885,15 +885,15 @@ ontology
 				>
 				["at0.3"] = <
 					text = <"FEV0.5/FVC">
-					description = <"">
+					description = <"-">
 				>
 				["at0.4"] = <
 					text = <"FEV3/FVC">
-					description = <"">
+					description = <"-">
 				>
 				["at0.5"] = <
 					text = <"FEF50%/FIF50%">
-					description = <"">
+					description = <"-">
 				>
 			>
 		>
@@ -1240,15 +1240,15 @@ ontology
 				>
 				["at0.3"] = <
 					text = <"*FEV0.5/FVC (en)">
-					description = <"">
+					description = <"*- (en)">
 				>
 				["at0.4"] = <
 					text = <"*FEV3/FVC (en)">
-					description = <"">
+					description = <"*- (en)">
 				>
 				["at0.5"] = <
 					text = <"*FEF50%/FIF50% (en)">
-					description = <"">
+					description = <"*- (en)">
 				>
 			>
 		>
@@ -1596,15 +1596,15 @@ ontology
 				>
 				["at0.3"] = <
 					text = <"*FEV0.5/FVC (en)">
-					description = <"">
+					description = <"*- (en)">
 				>
 				["at0.4"] = <
 					text = <"*FEV3/FVC (en)">
-					description = <"">
+					description = <"*- (en)">
 				>
 				["at0.5"] = <
 					text = <"*FEF50%/FIF50% (en)">
-					description = <"">
+					description = <"*- (en)">
 				>
 			>
 		>
@@ -1952,15 +1952,15 @@ ontology
 				>
 				["at0.3"] = <
 					text = <"*FEV0.5/FVC (en)">
-					description = <"">
+					description = <"*- (en)">
 				>
 				["at0.4"] = <
 					text = <"*FEV3/FVC (en)">
-					description = <"">
+					description = <"*- (en)">
 				>
 				["at0.5"] = <
 					text = <"*FEF50%/FIF50% (en)">
-					description = <"">
+					description = <"*- (en)">
 				>
 			>
 		>
