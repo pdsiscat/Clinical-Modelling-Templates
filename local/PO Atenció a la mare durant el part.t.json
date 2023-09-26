@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "10.0.0",
+      "sem_ver" : "11.0.0",
       "build_uid" : "e3b96713-a25b-460d-a320-b3efc3b64d08",
-      "MD5-CAM-1.0.1" : "e4ecda0589d46b1d3f29ff872b0715c1",
+      "MD5-CAM-1.0.1" : "706e007d74850daab6e91f2a4426b9f6",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -1515,6 +1515,15 @@
               "attributes" : [ ],
               "attributeTuples" : [ ],
               "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-deslliurament-001.v0",
+              "referenceType" : "archetypeOverlay"
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0161.3",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-la_posicio_de_la_dona_durant_lexpulsiu-001.v0",
               "referenceType" : "archetypeOverlay"
             } ]
           } ],
@@ -4212,6 +4221,57 @@
     },
     "adlVersion" : "1.4",
     "buildUid" : "2ebb9b84-bbf3-4eb3-add2-b927f029496d",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "576c105e-6183-4bf2-a7dc-1a1aa28e80a0",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "1d3cfa318d2657c4985d8141c5be58d1"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.la_posicio_de_la_dona_durant_lexpulsiu.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-la_posicio_de_la_dona_durant_lexpulsiu-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "6bc563b5-0390-364d-83c1-74c8c15eef10",
     "rmName" : "openehr",
     "rmRelease" : "1.1.0",
     "generated" : true,
