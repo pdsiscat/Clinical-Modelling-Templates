@@ -1,0 +1,70 @@
+archetype (adl_version=1.4; uid=51176c08-6a91-4320-80ef-822a73278377)
+	openEHR-EHR-OBSERVATION.actions_taken_at_birth.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["name"] = <"Clara Calleja Vega">
+		["organisation"] = <"CatSalut">
+		["email"] = <"ccalleja@catsalut.cat">
+		["date"] = <"2023-09-27">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"a2d298306321d6da866851b6ea4bc7c0">
+		["build_uid"] = <"4e4a21bf-8028-377b-9e76-de63e2a9efad">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- Actions taken at birth
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {*}    -- Tree
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Actions taken at birth">
+					description = <"Actions taken at birth">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+			>
+		>
+	>
