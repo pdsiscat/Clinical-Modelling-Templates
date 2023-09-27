@@ -26,12 +26,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"7258f61ce1d359aaf4f958eec37d1372">
+		["MD5-CAM-1.0.1"] = <"8b19a32f3f6546b102f3020ad79a11c5">
 		["build_uid"] = <"2ec4dc1a-2a7e-3ba4-ba2d-2ac3ebba4c22">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- variables_registered_at_birth
+	CLUSTER[at0000] matches {    -- Variables registered at birth
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Born alive
 				value matches {
@@ -107,7 +107,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"variables_registered_at_birth">
+					text = <"Variables registered at birth">
 					description = <"Variables registered at birth">
 				>
 				["at0001"] = <
