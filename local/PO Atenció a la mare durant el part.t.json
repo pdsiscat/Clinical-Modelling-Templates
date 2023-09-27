@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "21.0.0",
+      "sem_ver" : "22.0.0",
       "build_uid" : "e3b96713-a25b-460d-a320-b3efc3b64d08",
-      "MD5-CAM-1.0.1" : "dba8e70c15832e6f4635df588f1b42cb",
+      "MD5-CAM-1.0.1" : "c7e92e0f322232641fa5876d0c23de2c",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -935,6 +935,35 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0008.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.31" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "nodeId" : "at0096.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -958,19 +987,19 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "local_terms",
                         "code" : "84457005",
-                        "value" : "Espontani"
+                        "value" : "espontani"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "112070001",
-                        "value" : "Induït"
+                        "value" : "induït"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "200148001",
-                        "value" : "Cessàrea electiva"
+                        "value" : "cessàrea electiva"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "200149009",
-                        "value" : "Cessàrea urgent"
+                        "value" : "cessàrea urgent"
                       } ]
                     } ]
                   } ],
@@ -989,7 +1018,97 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_CODED_TEXT",
                   "occurrences" : "1..1",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "local_terms"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "local_terms" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "local_terms",
+                        "code" : "90968009",
+                        "value" : "GCP - Gestació cronológicament prolongada"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "22033007",
+                        "value" : "CIR - retard creixement intrauterí"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "44223004",
+                        "value" : "RPM - ruptura prematura de membranes"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "48194001",
+                        "value" : "MHE - Malalties hipertensives en l'embaràs"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "11687002",
+                        "value" : "diabetes"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "267258002",
+                        "value" : "PEG - Petit per edat gestacional"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "13506008",
+                        "value" : "edat"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "60621009",
+                        "value" : "IMC - índex de massa corporal"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "11612004",
+                        "value" : "coriamnionitis"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "1",
+                        "value" : "presentació de natges"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "2",
+                        "value" : "infeccions maternes"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "3",
+                        "value" : "cirurgia uterina prèvia"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "4",
+                        "value" : "prematuritat"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "236958009",
+                        "value" : "gestació múltiple"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "5",
+                        "value" : "Neoplàsia,"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "6",
+                        "value" : "fetus gran per l'edat gestacional"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "7",
+                        "value" : "registra poc tranquil·litzador"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "8",
+                        "value" : "Patologia materna"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "74964007",
+                        "value" : "altres"
+                      } ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -1658,6 +1777,12 @@
             "text" : "(Synthesized)",
             "code" : "ac0.21",
             "description" : ""
+          },
+          "ac0.31" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.31",
+            "description" : ""
           }
         },
         "pt-br" : {
@@ -1677,6 +1802,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.21",
+            "description" : ""
+          },
+          "ac0.31" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.31",
             "description" : ""
           }
         },
@@ -1698,6 +1829,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.21",
             "description" : ""
+          },
+          "ac0.31" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.31",
+            "description" : ""
           }
         },
         "nb" : {
@@ -1717,6 +1854,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.21",
+            "description" : ""
+          },
+          "ac0.31" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.31",
             "description" : ""
           }
         }
@@ -1843,6 +1986,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.30",
           "members" : [ ]
+        },
+        "ac0.31" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.31",
+          "members" : [ "at0112", "at0009", "at0010" ]
         }
       }
     },
