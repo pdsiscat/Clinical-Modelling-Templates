@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "19.0.0",
+      "sem_ver" : "20.0.0",
       "build_uid" : "e3b96713-a25b-460d-a320-b3efc3b64d08",
-      "MD5-CAM-1.0.1" : "b6f8696251c011cc77fa90d6ea104f0e",
+      "MD5-CAM-1.0.1" : "156366256bcede47ee57d84f173aba69",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -4337,7 +4337,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0005.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -4353,10 +4352,47 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "1..1",
                   "terminologyId" : {
-                    "value" : "local"
+                    "value" : "local_terms"
                   },
-                  "constraint" : [ "ac0.1" ],
-                  "selectedTerminologies" : [ ]
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "local_terms" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "local_terms",
+                    "code" : "289259007",
+                    "value" : "Eutòcic"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "200130005",
+                    "value" : "forceps"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "1",
+                    "value" : "espàtules"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "200138003",
+                    "value" : "ventosa"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "2",
+                    "value" : "AMPN- Ajut manual al part de natges"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "3",
+                    "value" : "VI+VE*- Versión interna +  gran extracció"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "4",
+                    "value" : "VI"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "5",
+                    "value" : "GE"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "200146002",
+                    "value" : "Cesarea"
+                  } ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -4411,12 +4447,6 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
           "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
@@ -4437,6 +4467,21 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.2",
           "members" : [ "at0020", "at0021", "at0022" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ "at0006", "at0007", "at0008", "at0009", "at0010", "at0011", "at0012", "at0013", "at0014", "at0015", "at0016" ]
+        },
+        "ac0.5" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.5",
+          "members" : [ ]
+        },
+        "ac0.6" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.6",
+          "members" : [ ]
         }
       }
     },
