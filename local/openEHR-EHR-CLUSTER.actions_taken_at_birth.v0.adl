@@ -9,10 +9,10 @@ language
 
 description
 	original_author = <
+		["date"] = <"2023-09-27">
 		["name"] = <"Clara Calleja Vega">
 		["organisation"] = <"CatSalut">
 		["email"] = <"ccalleja@catsalut.cat">
-		["date"] = <"2023-09-27">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
@@ -26,12 +26,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"eaa61f5be326db10e4ef02055d3a61a0">
 		["build_uid"] = <"2ec4dc1a-2a7e-3ba4-ba2d-2ac3ebba4c22">
+		["MD5-CAM-1.0.1"] = <"3f397699fdb255ef21b357631602f033">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- Actions taken at birth
+	CLUSTER[at0000] matches {    -- Variables registered at birth
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Born alive
 				value matches {
@@ -107,8 +107,8 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Actions taken at birth">
-					description = <"Actions taken at birth">
+					text = <"Variables registered at birth">
+					description = <"Variables registered at birth">
 				>
 				["at0001"] = <
 					text = <"Born alive">
