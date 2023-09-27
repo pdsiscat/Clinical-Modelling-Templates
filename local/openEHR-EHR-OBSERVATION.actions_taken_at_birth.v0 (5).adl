@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a2d298306321d6da866851b6ea4bc7c0">
+		["MD5-CAM-1.0.1"] = <"96897338094b9f1fee99f2233002e622">
 		["build_uid"] = <"4e4a21bf-8028-377b-9e76-de63e2a9efad">
 	>
 
@@ -35,9 +35,61 @@ definition
 		data matches {
 			HISTORY[at0001] matches {    -- History
 				events cardinality matches {1..*; unordered} matches {
-					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+					POINT_EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
 						data matches {
-							ITEM_TREE[at0003] matches {*}    -- Tree
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- Born alive
+										value matches {
+											DV_BOOLEAN matches {*}
+										}
+									}
+									ELEMENT[at0005] occurrences matches {0..1} matches {    -- Neonatal admission
+										value matches {
+											DV_BOOLEAN matches {*}
+										}
+									}
+									ELEMENT[at0006] occurrences matches {0..1} matches {    -- Reason for admission
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0007] occurrences matches {0..1} matches {    -- Early initiation of breastfeeding
+										value matches {
+											DV_BOOLEAN matches {*}
+										}
+									}
+									ELEMENT[at0008] occurrences matches {0..1} matches {    -- Maternal skin-to-skin
+										value matches {
+											DV_BOOLEAN matches {*}
+										}
+									}
+									ELEMENT[at0009] occurrences matches {0..1} matches {    -- Neonatal resuscitation
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0010,    -- No
+													at0011,    -- Superficial
+													at0012]    -- Profunda
+												}
+											}
+										}
+									}
+									ELEMENT[at0013] occurrences matches {0..1} matches {    -- Time of death
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0014,    -- Antepartum
+													at0015,    -- Intrapartum
+													at0016]    -- Postpartum
+												}
+											}
+										}
+									}
+								}
+							}
 						}
 					}
 				}
@@ -64,6 +116,58 @@ ontology
 				["at0003"] = <
 					text = <"Tree">
 					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Born alive">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Neonatal admission">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Reason for admission">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Early initiation of breastfeeding">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Maternal skin-to-skin">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Neonatal resuscitation">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"No">
+					description = <"No resuscitation performed">
+				>
+				["at0011"] = <
+					text = <"Superficial">
+					description = <"Superficial neonatal resuscitation performed">
+				>
+				["at0012"] = <
+					text = <"Profunda">
+					description = <"Deep neonatal resuscitation performed">
+				>
+				["at0013"] = <
+					text = <"Time of death">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Antepartum">
+					description = <"Death occured before birth">
+				>
+				["at0015"] = <
+					text = <"Intrapartum">
+					description = <"Death occured during birth">
+				>
+				["at0016"] = <
+					text = <"Postpartum">
+					description = <"Death occured after birth">
 				>
 			>
 		>
