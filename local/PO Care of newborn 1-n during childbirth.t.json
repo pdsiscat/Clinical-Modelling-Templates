@@ -22,10 +22,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "5.0.0",
+      "sem_ver" : "6.0.0",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD",
-      "MD5-CAM-1.0.1" : "9525a3d78f873296455df1b2557101a1"
+      "MD5-CAM-1.0.1" : "f6f02ab41cd943fe30647fb03d66bc70"
     },
     "details" : {
       "de" : {
@@ -1105,12 +1105,6 @@
             "text" : "(Synthesized)",
             "code" : "ac0.1",
             "description" : ""
-          },
-          "at0004.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004.1",
-            "text" : "Birth weight",
-            "description" : "The weight of the individual."
           }
         },
         "de" : {
