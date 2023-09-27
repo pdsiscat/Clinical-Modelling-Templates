@@ -26,8 +26,9 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"8b19a32f3f6546b102f3020ad79a11c5">
+		["MD5-CAM-1.0.1"] = <"1916e844562e8a52beea123e9acb7c84">
 		["build_uid"] = <"2ec4dc1a-2a7e-3ba4-ba2d-2ac3ebba4c22">
+		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
 
 definition
@@ -103,6 +104,7 @@ definition
 	}
 
 ontology
+	terminologies_available = <"SNOMED-CT", ...>
 	term_definitions = <
 		["en"] = <
 			items = <
@@ -182,6 +184,20 @@ ontology
 					text = <"stops beating">
 					description = <"Umbilical cord clamped when it stops beating">
 				>
+			>
+		>
+	>
+	term_binding = <
+		["SNOMED-CT"] = <
+			items = <
+				["at0001"] = <[SNOMED-CT::169826009]>
+				["at0014"] = <[SNOMED-CT::440091008]>
+				["at0002"] = <[SNOMED-CT::306132008]>
+				["at0004"] = <[SNOMED-CT::431868002]>
+				["at0005"] = <[SNOMED-CT::76933008]>
+				["at0006"] = <[SNOMED-CT::386412000]>
+				["at0010"] = <[SNOMED-CT::419620001]>
+				["at0015"] = <[SNOMED-CT::440091008]>
 			>
 		>
 	>
