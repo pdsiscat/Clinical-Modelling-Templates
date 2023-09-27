@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"91f7a71f5b57dcb465c382f54d3f4549">
+		["MD5-CAM-1.0.1"] = <"eaa61f5be326db10e4ef02055d3a61a0">
 		["build_uid"] = <"2ec4dc1a-2a7e-3ba4-ba2d-2ac3ebba4c22">
 	>
 
@@ -34,6 +34,11 @@ definition
 	CLUSTER[at0000] matches {    -- Actions taken at birth
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Born alive
+				value matches {
+					DV_BOOLEAN matches {*}
+				}
+			}
+			ELEMENT[at0014] matches {    -- Umbilical cord blood donation
 				value matches {
 					DV_BOOLEAN matches {*}
 				}
@@ -78,6 +83,18 @@ definition
 							at0011,    -- Antepartum
 							at0012,    -- Intrapartum
 							at0013]    -- Postpartum
+						}
+					}
+				}
+			}
+			ELEMENT[at0015] occurrences matches {0..1} matches {    -- Umbilical cord clamping
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0016,    -- < 1 minute
+							at0017,    -- > 1-5 minutes
+							at0018]    -- stops beating
 						}
 					}
 				}
@@ -144,6 +161,26 @@ ontology
 				["at0013"] = <
 					text = <"Postpartum">
 					description = <"Death occured after birth">
+				>
+				["at0014"] = <
+					text = <"Umbilical cord blood donation">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Umbilical cord clamping">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"< 1 minute">
+					description = <"Umbilical cord clamped in less than 1 minute">
+				>
+				["at0017"] = <
+					text = <"> 1-5 minutes">
+					description = <"Umbilical cord clamped in 1-5 minutes">
+				>
+				["at0018"] = <
+					text = <"stops beating">
+					description = <"Umbilical cord clamped when it stops beating">
 				>
 			>
 		>
