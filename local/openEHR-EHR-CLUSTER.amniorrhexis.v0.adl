@@ -1,0 +1,95 @@
+archetype (adl_version=1.4; uid=d2e3d595-0edc-445c-92a4-257d2bd579f7)
+	openEHR-EHR-CLUSTER.amniorrhexis.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2023-08-22">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"787bda35cad33302810c52fa88986d22">
+		["build_uid"] = <"72fdfa9b-21d3-30f0-9e02-f225bd26320d">
+		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- amniorrhexis
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Type
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0002,    -- Espontánea
+							at0003]    -- Artificial
+						}
+					}
+				}
+			}
+			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Amniorrhexis hours - Hours that the labour takes place
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::128]>
+						list = <
+							["1"] = <
+								units = <"h">
+							>
+						>
+					>
+				}
+			}
+		}
+	}
+
+ontology
+	terminologies_available = <"SNOMED-CT", ...>
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"amniorrhexis">
+					description = <"Amniorrexis">
+				>
+				["at0001"] = <
+					text = <"Type">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Espontánea">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Artificial">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Amniorrhexis hours - Hours that the labour takes place">
+					description = <"">
+				>
+			>
+		>
+	>
+	term_binding = <
+		["SNOMED-CT"] = <
+			items = <
+				["at0000"] = <[SNOMED-CT::openEHR-EHR-ACTION.medication.v1]>
+				["at0004"] = <[SNOMED-CT::289251005]>
+			>
+		>
+	>
