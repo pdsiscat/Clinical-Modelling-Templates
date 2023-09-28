@@ -34,23 +34,23 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"1762ec9838e4e90066b96913fcad94f6">
+		["MD5-CAM-1.0.1"] = <"d269c5d4f3d776849572d7ad5ce19c70">
 		["build_uid"] = <"d82e4b51-06e7-33d4-a9bf-76ce9bcbfb7c">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- Deslliurament
+	CLUSTER[at0000] matches {    -- Birth delivery
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- DV_CODED_TEXT
 				value matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
 							[local::
-							at0002,    -- *dirigit (ca)
-							at0003,    -- *espontani (ca)
-							at0004,    -- *manual (ca)
-							at0005]    -- *quirúrgic (ca)
+							at0002,    -- lead
+							at0003,    -- espontaneous
+							at0004,    -- manual
+							at0005]    -- surgical
 						}
 					}
 				}
@@ -64,7 +64,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Deslliurament">
+					text = <"Birth delivery">
 					description = <"Deslliurament">
 				>
 				["at0001"] = <
@@ -72,39 +72,11 @@ ontology
 					description = <"">
 				>
 				["at0002"] = <
-					text = <"*dirigit (ca)">
+					text = <"lead">
 					description = <"">
 				>
 				["at0003"] = <
-					text = <"*espontani (ca)">
-					description = <"">
-				>
-				["at0004"] = <
-					text = <"*manual (ca)">
-					description = <"">
-				>
-				["at0005"] = <
-					text = <"*quirúrgic (ca)">
-					description = <"">
-				>
-			>
-		>
-		["ca"] = <
-			items = <
-				["at0000"] = <
-					text = <"*Deslliurament (en)">
-					description = <"*Deslliurament (en)">
-				>
-				["at0001"] = <
-					text = <"Tipus">
-					description = <"">
-				>
-				["at0002"] = <
-					text = <"dirigit">
-					description = <"">
-				>
-				["at0003"] = <
-					text = <"espontani">
+					text = <"espontaneous">
 					description = <"">
 				>
 				["at0004"] = <
@@ -112,7 +84,35 @@ ontology
 					description = <"">
 				>
 				["at0005"] = <
-					text = <"quirúrgic">
+					text = <"surgical">
+					description = <"">
+				>
+			>
+		>
+		["ca"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Birth delivery (en)">
+					description = <"*Deslliurament (en)">
+				>
+				["at0001"] = <
+					text = <"Tipus">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"*lead (en)">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"*espontaneous (en)">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"*manual (en)">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"*surgical (en)">
 					description = <"">
 				>
 			>
