@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"da276b7537da7e0ebd3ec4c5c76fb77e">
+		["MD5-CAM-1.0.1"] = <"0e0b06e7e7961411988441534c61f373">
 		["build_uid"] = <"72fdfa9b-21d3-30f0-9e02-f225bd26320d">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
@@ -42,7 +42,7 @@ definition
 					}
 				}
 			}
-			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Amniorrhexis hours - Hours that the labour take place
+			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Amniorrhexis hours - Hours that the labour takes place
 				value matches {
 					DV_QUANTITY matches {*}
 				}
@@ -72,7 +72,7 @@ ontology
 					description = <"">
 				>
 				["at0004"] = <
-					text = <"Amniorrhexis hours - Hours that the labour take place">
+					text = <"Amniorrhexis hours - Hours that the labour takes place">
 					description = <"">
 				>
 			>
