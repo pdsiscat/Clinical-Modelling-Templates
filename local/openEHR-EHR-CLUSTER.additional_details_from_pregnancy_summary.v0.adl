@@ -1,0 +1,358 @@
+archetype (adl_version=1.4; uid=d61850ef-3e04-473e-9d79-8dc797ebc3dd)
+	openEHR-EHR-CLUSTER.additional_details_from_pregnancy_summary.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2023-09-29">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"df461b88357b7261a6932b881817a7af">
+		["build_uid"] = <"69de9a82-c0ba-3c8e-9a8c-8eb6b8fb56e2">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Additional details from pregnancy summary
+		items cardinality matches {1..*; unordered} matches {
+			CLUSTER[at0001] occurrences matches {0..1} matches {    -- amniorrhexis
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Type
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0004,    -- Spontaneous
+									at0005]    -- Artificial
+								}
+							}
+						}
+					}
+					ELEMENT[at0006] occurrences matches {0..1} matches {    -- Amniorrhexis hours - Hours that the labour takes place
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::128]>
+								list = <
+									["1"] = <
+										units = <"h">
+									>
+								>
+							>
+						}
+					}
+				}
+			}
+			ELEMENT[at0007] occurrences matches {0..1} matches {    -- Birth delivery
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0008,    -- Lead
+							at0009,    -- Spontaneous
+							at0010,    -- Manual
+							at0011]    -- Surgical
+						}
+					}
+				}
+			}
+			ELEMENT[at0012] occurrences matches {0..1} matches {    -- Position of the woman during labour
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0013,    -- On hands and knees
+							at0014,    -- Squatting
+							at0015,    -- Lying on your side
+							at0016,    -- Sitting
+							at0017,    -- Decubitus
+							at0018,    -- Vertical
+							at0019]    -- Others
+						}
+					}
+				}
+			}
+			ELEMENT[at0020] occurrences matches {0..1} matches {    -- Reason for the elective caesarean
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0021,    -- iterative caesarean
+							at0022,    -- no cephalic presentation
+							at0023,    -- Intrauterinous development delay
+							at0024,    -- suspicion of macrosoma
+							at0025,    -- maternal pathology
+							at0026,    -- Previous placenta
+							at0027,    -- Multiple gestation
+							at0028,    -- Vaginal birth negative
+							at0029]    -- others
+						}
+					}
+				}
+			}
+			ELEMENT[at0030] occurrences matches {0..1} matches {    -- Intrapartum caesarean reason
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0031,    -- Fetus desproportion
+							at0032,    -- Suspicion of loss of fetal wellness
+							at0033,    -- Indcution failure
+							at0034,    -- Instrumentation failure
+							at0035,    -- Distocy of 2 during the labour
+							at0036]    -- others
+						}
+					}
+				}
+			}
+			ELEMENT[at0037] occurrences matches {0..1} matches {    -- Birth canal
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0038,    -- Full
+							at0039,    -- Episiotomy
+							at0040,    -- Perineum strip I
+							at0041,    -- Perineum strip II
+							at0042,    -- Perineum strip IIIA
+							at0043,    -- Perineum strip  IIIB
+							at0044,    -- Perineum strip IV
+							at0045,    -- Vaginal strip
+							at0046,    -- Cervical strip
+							at0047,    -- Urethral strip
+							at0048,    -- Bladder strip
+							at0049,    -- Uterine rupture
+							at0050,    -- Scar dehiscence
+							at0051]    -- Vaginal hematomas
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Additional details from pregnancy summary">
+					description = <"Additional details from pregnancy summary">
+				>
+				["at0001"] = <
+					text = <"amniorrhexis">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Type">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Spontaneous">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Artificial">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Amniorrhexis hours - Hours that the labour takes place">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Birth delivery">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Lead">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Spontaneous">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Manual">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Surgical">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Position of the woman during labour">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"On hands and knees">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Squatting">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Lying on your side">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Sitting">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Decubitus">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Vertical">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"Others">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"Reason for the elective caesarean">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"iterative caesarean">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"no cephalic presentation">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Intrauterinous development delay">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"suspicion of macrosoma">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"maternal pathology">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"Previous placenta">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"Multiple gestation">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"Vaginal birth negative">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"others">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"Intrapartum caesarean reason">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"Fetus desproportion">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"Suspicion of loss of fetal wellness">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"Indcution failure">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"Instrumentation failure">
+					description = <"">
+				>
+				["at0035"] = <
+					text = <"Distocy of 2 during the labour">
+					description = <"">
+				>
+				["at0036"] = <
+					text = <"others">
+					description = <"">
+				>
+				["at0037"] = <
+					text = <"Birth canal">
+					description = <"">
+				>
+				["at0038"] = <
+					text = <"Full">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"Episiotomy">
+					description = <"">
+				>
+				["at0040"] = <
+					text = <"Perineum strip I">
+					description = <"">
+				>
+				["at0041"] = <
+					text = <"Perineum strip II">
+					description = <"">
+				>
+				["at0042"] = <
+					text = <"Perineum strip IIIA">
+					description = <"">
+				>
+				["at0043"] = <
+					text = <"Perineum strip  IIIB">
+					description = <"">
+				>
+				["at0044"] = <
+					text = <"Perineum strip IV">
+					description = <"">
+				>
+				["at0045"] = <
+					text = <"Vaginal strip">
+					description = <"">
+				>
+				["at0046"] = <
+					text = <"Cervical strip">
+					description = <"">
+				>
+				["at0047"] = <
+					text = <"Urethral strip">
+					description = <"">
+				>
+				["at0048"] = <
+					text = <"Bladder strip">
+					description = <"">
+				>
+				["at0049"] = <
+					text = <"Uterine rupture">
+					description = <"">
+				>
+				["at0050"] = <
+					text = <"Scar dehiscence">
+					description = <"">
+				>
+				["at0051"] = <
+					text = <"Vaginal hematomas">
+					description = <"">
+				>
+			>
+		>
+	>
