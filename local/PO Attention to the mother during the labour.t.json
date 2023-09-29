@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "49.0.0",
+      "sem_ver" : "50.0.0",
       "build_uid" : "e3b96713-a25b-460d-a320-b3efc3b64d08",
-      "MD5-CAM-1.0.1" : "22c6ba651ddafb11b1c87d5d164d890c",
+      "MD5-CAM-1.0.1" : "14b40f7932126aec6579d0d4a9fae7a7",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -5789,7 +5789,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Discharge information",
+            "text" : "Discharge admin information",
             "description" : "A generic section header which should be renamed in a template to suit a specific clinical context."
           }
         },
