@@ -1,0 +1,81 @@
+archetype (adl_version=1.4; uid=3e36bcc6-bbd0-4966-b53a-d24b5f9bfe53)
+	openEHR-EHR-ACTION.screening_activity.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2023-09-29">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"1ca3c358c9a17c7ea41b13ad9a684b72">
+		["build_uid"] = <"d166792a-c8dd-3d10-995d-3d632d4a7a28">
+	>
+
+definition
+	ACTION[at0000] matches {    -- Screening Activity
+		description matches {
+			ITEM_TREE[at0001] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Reason for participation
+						value matches {
+							DV_CODED_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Reason for refusal
+						value matches {
+							DV_CODED_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0004] occurrences matches {0..1} matches {    -- Invitation date
+						value matches {
+							DV_DATE_TIME matches {*}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Screening Activity">
+					description = <"Screening Activity">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Reason for participation">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Reason for refusal">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Invitation date">
+					description = <"">
+				>
+			>
+		>
+	>
