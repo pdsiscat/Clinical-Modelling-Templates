@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "47.0.0",
+      "sem_ver" : "48.0.0",
       "build_uid" : "e3b96713-a25b-460d-a320-b3efc3b64d08",
-      "MD5-CAM-1.0.1" : "aa8edc2fefa97f8fdb0dbcfdd91b4a1e",
+      "MD5-CAM-1.0.1" : "2b1af887b4b9d737af696f8b5a251872",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -1238,10 +1238,6 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_QUANTITY",
-                  "defaultValue" : {
-                    "units" : "ml",
-                    "@type" : "DV_QUANTITY"
-                  },
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "property",
@@ -6657,7 +6653,20 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "bffa5c7119e126a9610403c63964134a"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.reason_for_the_elective_caesarean.v0",
     "differential" : true,
@@ -6708,7 +6717,20 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "e885a3161aa2f7ef2ed636f058f57070"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.water_birth.v0",
     "differential" : true,
