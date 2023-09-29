@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"df461b88357b7261a6932b881817a7af">
+		["MD5-CAM-1.0.1"] = <"5b1b42df0c516f5de408c7d338dbeb5e">
 		["build_uid"] = <"69de9a82-c0ba-3c8e-9a8c-8eb6b8fb56e2">
 	>
 
@@ -140,6 +140,24 @@ definition
 							at0051]    -- Vaginal hematomas
 						}
 					}
+				}
+			}
+			ELEMENT[at0052] occurrences matches {0..1} matches {    -- Type of labour start
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0053,    -- Spontaneous
+							at0054,    -- Induction
+							at0055,    -- Elective caesarean
+							at0056]    -- Urgent caesarean
+						}
+					}
+				}
+			}
+			ELEMENT[at0057] occurrences matches {0..1} matches {    -- Water birth
+				value matches {
+					DV_BOOLEAN matches {*}
 				}
 			}
 		}
@@ -351,6 +369,30 @@ ontology
 				>
 				["at0051"] = <
 					text = <"Vaginal hematomas">
+					description = <"">
+				>
+				["at0052"] = <
+					text = <"Type of labour start">
+					description = <"">
+				>
+				["at0053"] = <
+					text = <"Spontaneous">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"Induction">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"Elective caesarean">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"Urgent caesarean">
+					description = <"">
+				>
+				["at0057"] = <
+					text = <"Water birth">
 					description = <"">
 				>
 			>
