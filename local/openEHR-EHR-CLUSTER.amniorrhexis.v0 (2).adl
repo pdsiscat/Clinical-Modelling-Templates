@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"95c5177f969d3200f985cbf7ad4e2a91">
+		["MD5-CAM-1.0.1"] = <"8de608737d8563ec2b74a89dd6332487">
 		["build_uid"] = <"72fdfa9b-21d3-30f0-9e02-f225bd26320d">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
@@ -37,7 +37,7 @@ definition
 						defining_code matches {
 							[local::
 							at0002,    -- Spontaneous
-							at0003]    -- Artifitial
+							at0003]    -- Artificial
 						}
 					}
 				}
@@ -75,7 +75,7 @@ ontology
 					description = <"">
 				>
 				["at0003"] = <
-					text = <"Artifitial">
+					text = <"Artificial">
 					description = <"">
 				>
 				["at0004"] = <
