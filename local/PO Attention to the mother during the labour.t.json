@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "59.0.0",
+      "sem_ver" : "60.0.0",
       "build_uid" : "e3b96713-a25b-460d-a320-b3efc3b64d08",
-      "MD5-CAM-1.0.1" : "a0128d7e6691ec0e8620e5a9e3f966c7",
+      "MD5-CAM-1.0.1" : "d5d9dd1f59a968c5435b935c01004179",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -1406,6 +1406,30 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "nodeId" : "at0029.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_DATE_TIME",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_DATE_TIME",
+                          "rmTypeName" : "DATE_TIME",
+                          "patternedConstraint" : "yyyy-mm-ddTXX:XX:XX",
+                          "constraint" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
                   "occurrences" : "0..0",
                   "nodeId" : "at0037.1",
                   "attributes" : [ {
@@ -1704,7 +1728,7 @@
                 }, {
                   "@type" : "C_ARCHETYPE_ROOT",
                   "rmTypeName" : "CLUSTER",
-                  "occurrences" : "0..1",
+                  "occurrences" : "0..*",
                   "nodeId" : "at0160.1",
                   "attributes" : [ ],
                   "attributeTuples" : [ ],
@@ -1773,7 +1797,7 @@
           "at0066.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0066.1",
-            "text" : "Febre durant el procés del part",
+            "text" : "Feber during the labour",
             "description" : "Identification of the complication.",
             "comment" : "Coding of the 'Complication' with a terminology is desirable, where possible. For example, post partum haemorrhage or pre-eclampsia."
           },
@@ -1801,6 +1825,13 @@
             "text" : "Number of weeks of gestation when the birth occurs",
             "description" : "The gestation when the pregnancy has ended.",
             "comment" : "Also known as 'Gestation at birth' for pregnancies resulting in viable outcomes."
+          },
+          "at0029.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0029.1",
+            "text" : "Date of delivery",
+            "description" : "Date and time of delivery for the infant.",
+            "comment" : "This data element may be used to populate the newborn's health record using the 'Date of birth' data element within the EVALUATION.birth_details archetype."
           }
         },
         "pt-br" : {
@@ -4808,7 +4839,7 @@
                   "terminologyId" : {
                     "value" : "local"
                   },
-                  "constraint" : [ "ac0.15" ],
+                  "constraint" : [ "ac0.16" ],
                   "selectedTerminologies" : [ ]
                 } ]
               } ],
@@ -4870,10 +4901,10 @@
             "code" : "ac0.1",
             "description" : ""
           },
-          "ac0.15" : {
+          "ac0.16" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.15",
+            "code" : "ac0.16",
             "description" : ""
           }
         }
@@ -4944,6 +4975,11 @@
         "ac0.15" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.15",
+          "members" : [ "at0006", "at0007", "at0008", "at0009", "at0010", "at0011", "at0012", "at0013", "at0014", "at0015", "at0016" ]
+        },
+        "ac0.16" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.16",
           "members" : [ "at0006", "at0007", "at0008", "at0009", "at0010", "at0011", "at0012", "at0013", "at0014", "at0015", "at0016" ]
         }
       }
