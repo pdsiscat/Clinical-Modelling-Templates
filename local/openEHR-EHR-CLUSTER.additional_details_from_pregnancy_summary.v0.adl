@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"db1cf92c292a7d40c1de15b79de30217">
+		["MD5-CAM-1.0.1"] = <"8817afecd522bf1a7df1171c722b0e91">
 		["build_uid"] = <"69de9a82-c0ba-3c8e-9a8c-8eb6b8fb56e2">
 	>
 
@@ -142,7 +142,7 @@ definition
 					}
 				}
 			}
-			ELEMENT[at0052] matches {    -- Type of labour start
+			ELEMENT[at0052] occurrences matches {0..1} matches {    -- Type of labour start
 				value matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
