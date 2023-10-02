@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"4b7d07a6273a1c2f21755f72ee03a112">
+		["MD5-CAM-1.0.1"] = <"da08e5089406f3c3b175d693611936c8">
 		["build_uid"] = <"3e8fc6d1-72a8-3781-881b-99ea8cd2732c">
 	>
 
@@ -35,15 +35,15 @@ definition
 					DV_CODED_TEXT matches {
 						defining_code matches {
 							[local::
-							at0002,    -- Eutòcic
+							at0002,    -- Eutocic
 							at0003,    -- forceps
-							at0004,    -- espàtules
-							at0005,    -- ventosa
-							at0006,    -- AMPN- Ajut manual al part de natges
-							at0007,    -- VI+VE*- Versión interna +  gran extracció
+							at0004,    -- Spatulas
+							at0005,    -- suction
+							at0006,    -- Manual help in the buttocks delivery
+							at0007,    -- Internal version +  big extraction
 							at0008,    -- VI
 							at0009,    -- GE
-							at0010]    -- Cesarea
+							at0010]    -- Caesarean
 						}
 					}
 				}
@@ -64,7 +64,7 @@ ontology
 					description = <"">
 				>
 				["at0002"] = <
-					text = <"Eutòcic">
+					text = <"Eutocic">
 					description = <"">
 				>
 				["at0003"] = <
@@ -72,19 +72,19 @@ ontology
 					description = <"">
 				>
 				["at0004"] = <
-					text = <"espàtules">
+					text = <"Spatulas">
 					description = <"">
 				>
 				["at0005"] = <
-					text = <"ventosa">
+					text = <"suction">
 					description = <"">
 				>
 				["at0006"] = <
-					text = <"AMPN- Ajut manual al part de natges">
+					text = <"Manual help in the buttocks delivery">
 					description = <"">
 				>
 				["at0007"] = <
-					text = <"VI+VE*- Versión interna +  gran extracció">
+					text = <"Internal version +  big extraction">
 					description = <"">
 				>
 				["at0008"] = <
@@ -96,7 +96,7 @@ ontology
 					description = <"">
 				>
 				["at0010"] = <
-					text = <"Cesarea">
+					text = <"Caesarean">
 					description = <"">
 				>
 			>
