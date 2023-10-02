@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "58.0.0",
+      "sem_ver" : "59.0.0",
       "build_uid" : "e3b96713-a25b-460d-a320-b3efc3b64d08",
-      "MD5-CAM-1.0.1" : "f10fb422aaebde1abf9b7b2fb30983fa",
+      "MD5-CAM-1.0.1" : "a0128d7e6691ec0e8620e5a9e3f966c7",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -1014,15 +1014,15 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "local_terms",
                         "code" : "408818004",
-                        "value" : "amniotomia"
+                        "value" : "amniothomy"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "177129005",
-                        "value" : "mecànica"
+                        "value" : "mechanic"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "31208007",
-                        "value" : "farmacològica"
+                        "value" : "pharmacologic"
                       } ]
                     } ]
                   } ],
@@ -1056,19 +1056,19 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "local_terms",
                         "code" : "90968009",
-                        "value" : "GCP - Gestació cronológicament prolongada"
+                        "value" : "Chronological prolonged pregnancy"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "22033007",
-                        "value" : "CIR - retard creixement intrauterí"
+                        "value" : "Intrauterine growth delay"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "44223004",
-                        "value" : "RPM - ruptura prematura de membranes"
+                        "value" : "premature rupture of membranes"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "48194001",
-                        "value" : "MHE - Malalties hipertensives en l'embaràs"
+                        "value" : "Hypertensive diseases in pregnancy"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "11687002",
@@ -1076,59 +1076,59 @@
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "267258002",
-                        "value" : "PEG - Petit per edat gestacional"
+                        "value" : "Small according to gestation age"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "13506008",
-                        "value" : "edat"
+                        "value" : "age"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "60621009",
-                        "value" : "IMC - índex de massa corporal"
+                        "value" : "body mass index"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "11612004",
-                        "value" : "coriamnionitis"
+                        "value" : "chorioamnionitis"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "1",
-                        "value" : "presentació de natges"
+                        "value" : "breech presentation"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "2",
-                        "value" : "infeccions maternes"
+                        "value" : "maternal infections"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "3",
-                        "value" : "cirurgia uterina prèvia"
+                        "value" : "previous utherine surgery"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "4",
-                        "value" : "prematuritat"
+                        "value" : "premature"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "236958009",
-                        "value" : "gestació múltiple"
+                        "value" : "multiple gestation"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "5",
-                        "value" : "Neoplàsia,"
+                        "value" : "neoplasi"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "6",
-                        "value" : "fetus gran per l'edat gestacional"
+                        "value" : "big fetus according to gestation age"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "7",
-                        "value" : "registra poc tranquil·litzador"
+                        "value" : "records not reassuring"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "8",
-                        "value" : "Patologia materna"
+                        "value" : "Maternal pathology"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "74964007",
-                        "value" : "altres"
+                        "value" : "others"
                       } ]
                     } ]
                   } ],
@@ -1319,15 +1319,15 @@
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "91154008",
-                        "value" : "Casa de naixement"
+                        "value" : "Birth house"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "169621002",
-                        "value" : "Domicili"
+                        "value" : "home"
                       }, {
                         "terminologyId" : "local_terms",
                         "code" : "74964007",
-                        "value" : "Altres"
+                        "value" : "others"
                       } ]
                     } ]
                   } ],
