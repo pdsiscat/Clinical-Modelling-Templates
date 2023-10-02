@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"69e4a2f4dd155d0c33f4759125c7dfc7">
+		["MD5-CAM-1.0.1"] = <"f30c38bc8e20506ff32143584d580e34">
 		["build_uid"] = <"f07f9f95-2adc-3547-9261-694bdd80c0ec">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
@@ -36,20 +36,20 @@ definition
 					DV_CODED_TEXT matches {
 						defining_code matches {
 							[local::
-							at0002,    -- Relaxació
-							at0003,    -- Respiració
-							at0004,    -- Massatge
-							at0005,    -- Calor local
-							at0006,    -- immersio aigua
-							at0007,    -- Oxid nitros
-							at0008,    -- pudendos
-							at0009,    -- endovenosa
+							at0002,    -- Relaxation
+							at0003,    -- Respiration
+							at0004,    -- Massage
+							at0005,    -- Local heat
+							at0006,    -- Water immersion
+							at0007,    -- nitrous oxide
+							at0008,    -- pudendal
+							at0009,    -- endovenous
 							at0010,    -- peridural
 							at0011,    -- intradural
 							at0012,    -- locoregional
-							at0013,    -- sedació
+							at0013,    -- sedation
 							at0014,    -- General
-							at0015]    -- Cap
+							at0015]    -- Nothing
 						}
 					}
 				}
@@ -71,35 +71,35 @@ ontology
 					description = <"">
 				>
 				["at0002"] = <
-					text = <"Relaxació">
+					text = <"Relaxation">
 					description = <"">
 				>
 				["at0003"] = <
-					text = <"Respiració">
+					text = <"Respiration">
 					description = <"">
 				>
 				["at0004"] = <
-					text = <"Massatge">
+					text = <"Massage">
 					description = <"">
 				>
 				["at0005"] = <
-					text = <"Calor local">
+					text = <"Local heat">
 					description = <"">
 				>
 				["at0006"] = <
-					text = <"immersio aigua">
+					text = <"Water immersion">
 					description = <"">
 				>
 				["at0007"] = <
-					text = <"Oxid nitros">
+					text = <"nitrous oxide">
 					description = <"">
 				>
 				["at0008"] = <
-					text = <"pudendos">
+					text = <"pudendal">
 					description = <"">
 				>
 				["at0009"] = <
-					text = <"endovenosa">
+					text = <"endovenous">
 					description = <"">
 				>
 				["at0010"] = <
@@ -115,7 +115,7 @@ ontology
 					description = <"">
 				>
 				["at0013"] = <
-					text = <"sedació">
+					text = <"sedation">
 					description = <"">
 				>
 				["at0014"] = <
@@ -123,7 +123,7 @@ ontology
 					description = <"">
 				>
 				["at0015"] = <
-					text = <"Cap">
+					text = <"Nothing">
 					description = <"">
 				>
 			>
