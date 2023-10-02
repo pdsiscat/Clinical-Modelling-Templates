@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"5b1b42df0c516f5de408c7d338dbeb5e">
+		["MD5-CAM-1.0.1"] = <"ec6bf7310231675a5a82a309b1afe0d0">
 		["build_uid"] = <"69de9a82-c0ba-3c8e-9a8c-8eb6b8fb56e2">
 	>
 
@@ -119,7 +119,7 @@ definition
 					}
 				}
 			}
-			ELEMENT[at0037] occurrences matches {0..1} matches {    -- Birth canal
+			ELEMENT[at0037] occurrences matches {0..*} matches {    -- Birth canal
 				value matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
