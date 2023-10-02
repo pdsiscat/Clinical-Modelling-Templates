@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "62.1.0",
+      "sem_ver" : "63.0.0",
       "build_uid" : "e3b96713-a25b-460d-a320-b3efc3b64d08",
-      "MD5-CAM-1.0.1" : "3f29063dff8f3de7551718e6fcebd544",
+      "MD5-CAM-1.0.1" : "2b55e776f305c10d5017444551490394",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -1483,19 +1483,19 @@
                           "includedExternalTerminologyCodes" : [ {
                             "terminologyId" : "local_terms",
                             "code" : "364606009",
-                            "value" : "Cefàlica"
+                            "value" : "Cephalic"
                           }, {
                             "terminologyId" : "local_terms",
                             "code" : "6096002",
-                            "value" : "natges"
+                            "value" : "buttocks"
                           }, {
                             "terminologyId" : "local_terms",
                             "code" : "49097002",
-                            "value" : "peus"
+                            "value" : "legs"
                           }, {
                             "terminologyId" : "local_terms",
                             "code" : "1",
-                            "value" : "Cara"
+                            "value" : "face"
                           }, {
                             "terminologyId" : "local_terms",
                             "code" : "2",
@@ -1503,7 +1503,7 @@
                           }, {
                             "terminologyId" : "local_terms",
                             "code" : "74964007",
-                            "value" : "altres"
+                            "value" : "others"
                           } ]
                         } ]
                       } ],
@@ -1545,11 +1545,11 @@
                           }, {
                             "terminologyId" : "local_terms",
                             "code" : "199362007",
-                            "value" : "transversa"
+                            "value" : "transverse"
                           }, {
                             "terminologyId" : "local_terms",
                             "code" : "63750008",
-                            "value" : "obliqua"
+                            "value" : "oblique"
                           } ]
                         } ]
                       } ],
@@ -2071,6 +2071,21 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.45",
           "members" : [ "at0168", "at0169" ]
+        },
+        "ac0.47" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.47",
+          "members" : [ "at0150", "at0151", "at0152" ]
+        },
+        "ac0.48" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.48",
+          "members" : [ ]
+        },
+        "ac0.49" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.49",
+          "members" : [ ]
         }
       }
     },
@@ -6158,7 +6173,20 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "da08e5089406f3c3b175d693611936c8"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.type_of_birth.v0",
     "differential" : true,
@@ -6209,7 +6237,20 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "da08e5089406f3c3b175d693611936c8"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.type_of_birth.v0",
     "differential" : true,
@@ -6260,7 +6301,20 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "da08e5089406f3c3b175d693611936c8"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.type_of_birth.v0",
     "differential" : true,
@@ -6311,7 +6365,20 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "da08e5089406f3c3b175d693611936c8"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.type_of_birth.v0",
     "differential" : true,
