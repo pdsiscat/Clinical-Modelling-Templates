@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"70601302f602e3954315830f84f38d52">
+		["MD5-CAM-1.0.1"] = <"ef2670de698e6f18ac294e7a7a620870">
 		["build_uid"] = <"0b302dd9-b817-384e-8162-620d6119f641">
 	>
 
@@ -61,7 +61,7 @@ definition
 											DV_QUANTITY matches {*}
 										}
 									}
-									ELEMENT[at0009] occurrences matches {0..1} matches {    -- Acenocoumarol
+									ELEMENT[at0009] occurrences matches {0..1} matches {    -- Acenocoumarol dosage
 										value matches {
 											DV_QUANTITY matches {*}
 										}
@@ -116,7 +116,7 @@ ontology
 					description = <"">
 				>
 				["at0009"] = <
-					text = <"Acenocoumarol">
+					text = <"Acenocoumarol dosage">
 					description = <"">
 				>
 			>
