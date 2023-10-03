@@ -23,12 +23,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a9bf3f65a065bf7851fe7d796954a480">
+		["MD5-CAM-1.0.1"] = <"d58465f377e489274f86983f049e8e7d">
 		["build_uid"] = <"30b0a83a-3e32-3040-99db-12a4872ebb67">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- Clinical attribute
+	OBSERVATION[at0000] occurrences matches {0..*} matches {    -- Clinical attribute
 		data matches {
 			HISTORY[at0001] matches {    -- History
 				events cardinality matches {1..*; unordered} matches {
