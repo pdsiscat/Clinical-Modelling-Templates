@@ -21,7 +21,7 @@
       "custodian_namespace" : "",
       "sem_ver" : "66.0.0",
       "build_uid" : "e3b96713-a25b-460d-a320-b3efc3b64d08",
-      "MD5-CAM-1.0.1" : "5c8147b41768a06817899226160a94c3",
+      "MD5-CAM-1.0.1" : "fbc68ce005c49f480017bc518688f40a",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -1469,6 +1469,18 @@
                     "children" : [ {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "DV_CODED_TEXT",
+                      "defaultValue" : {
+                        "defining_code" : {
+                          "terminology_id" : {
+                            "value" : "local_terms",
+                            "@type" : "TERMINOLOGY_ID"
+                          },
+                          "code_string" : "364606009",
+                          "@type" : "CODE_PHRASE"
+                        },
+                        "value" : "Cephalic",
+                        "@type" : "DV_CODED_TEXT"
+                      },
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "defining_code",
