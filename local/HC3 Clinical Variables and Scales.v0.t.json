@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "6.0.0",
+      "sem_ver" : "7.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "bfab6f87d64750c96abfc390377533ab",
+      "MD5-CAM-1.0.1" : "84c0fa65f4692913d57b6d8d7f3282f8",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -247,7 +247,7 @@
       "children" : [ {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "OBSERVATION",
-        "occurrences" : "0..1",
+        "occurrences" : "0..*",
         "nodeId" : "at0.2",
         "attributes" : [ ],
         "attributeTuples" : [ ],
@@ -406,7 +406,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "3fa3f9db97627fbfcc3646232694e777"
+        "PARENT:MD5-CAM-1.0.1" : "d58465f377e489274f86983f049e8e7d"
       },
       "details" : {
         "en" : {
@@ -1280,6 +1280,77 @@
                     "children" : [ {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0004.2",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_QUANTITY",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "property",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "occurrences" : "0..1",
+                              "terminologyId" : {
+                                "value" : "openehr"
+                              },
+                              "constraint" : [ "125" ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ {
+                            "@type" : "C_ATTRIBUTE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "units",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "magnitude",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "precision",
+                              "children" : [ ]
+                            } ],
+                            "tuples" : [ {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_STRING",
+                                "rmTypeName" : "STRING",
+                                "constraint" : [ "mm[Hg]" ]
+                              }, {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "constraint" : [ {
+                                  "lower" : 0.0,
+                                  "upper" : 1000.0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : false,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 0,
+                                  "upper" : 0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            } ]
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
                       "occurrences" : "0..0",
                       "nodeId" : "at1006.1",
                       "attributes" : [ {
@@ -1485,41 +1556,6 @@
                       "nodeId" : "at1052.1",
                       "attributes" : [ ],
                       "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "ARCHETYPE_SLOT",
-                      "rmTypeName" : "CLUSTER",
-                      "occurrences" : "0..1",
-                      "nodeId" : "at1030.1",
-                      "includes" : [ {
-                        "@type" : "ASSERTION",
-                        "stringExpression" : "archetype_id/value matches {/openEHR-EHR-CLUSTER\\.level_of_exertion(-[a-zA-Z0-9_]+)*\\.v1/}",
-                        "expression" : {
-                          "@type" : "BINARY_OPERATOR",
-                          "type" : "BOOLEAN",
-                          "operator" : "matches",
-                          "leftOperand" : {
-                            "@type" : "MODEL_REFERENCE",
-                            "type" : "STRING",
-                            "precedenceOverriden" : false,
-                            "referenceType" : "Attribute",
-                            "path" : "archetype_id/value"
-                          },
-                          "rightOperand" : {
-                            "@type" : "CONSTRAINT",
-                            "type" : "STRING",
-                            "precedenceOverriden" : false,
-                            "referenceType" : "Constraint",
-                            "item" : {
-                              "@type" : "C_STRING",
-                              "constraint" : [ "/openEHR-EHR-CLUSTER\\.level_of_exertion(-[a-zA-Z0-9_]+)*\\.v1/" ]
-                            }
-                          },
-                          "precedenceOverriden" : false
-                        },
-                        "variables" : [ ]
-                      } ],
-                      "excludes" : [ ],
-                      "closed" : false
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
@@ -2042,41 +2078,6 @@
                       "attributes" : [ ],
                       "attributeTuples" : [ ]
                     }, {
-                      "@type" : "ARCHETYPE_SLOT",
-                      "rmTypeName" : "CLUSTER",
-                      "occurrences" : "0..1",
-                      "nodeId" : "at1030.2",
-                      "includes" : [ {
-                        "@type" : "ASSERTION",
-                        "stringExpression" : "archetype_id/value matches {/openEHR-EHR-CLUSTER\\.level_of_exertion(-[a-zA-Z0-9_]+)*\\.v1/}",
-                        "expression" : {
-                          "@type" : "BINARY_OPERATOR",
-                          "type" : "BOOLEAN",
-                          "operator" : "matches",
-                          "leftOperand" : {
-                            "@type" : "MODEL_REFERENCE",
-                            "type" : "STRING",
-                            "precedenceOverriden" : false,
-                            "referenceType" : "Attribute",
-                            "path" : "archetype_id/value"
-                          },
-                          "rightOperand" : {
-                            "@type" : "CONSTRAINT",
-                            "type" : "STRING",
-                            "precedenceOverriden" : false,
-                            "referenceType" : "Constraint",
-                            "item" : {
-                              "@type" : "C_STRING",
-                              "constraint" : [ "/openEHR-EHR-CLUSTER\\.level_of_exertion(-[a-zA-Z0-9_]+)*\\.v1/" ]
-                            }
-                          },
-                          "precedenceOverriden" : false
-                        },
-                        "variables" : [ ]
-                      } ],
-                      "excludes" : [ ],
-                      "closed" : false
-                    }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
                       "occurrences" : "0..0",
@@ -2260,41 +2261,6 @@
                 } ]
               } ],
               "attributeTuples" : [ ]
-            }, {
-              "@type" : "ARCHETYPE_SLOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..*",
-              "nodeId" : "at1057.1",
-              "includes" : [ {
-                "@type" : "ASSERTION",
-                "stringExpression" : "archetype_id/value matches {/openEHR-EHR-CLUSTER\\.anatomical_location(-[a-zA-Z0-9_]+)*\\.v1/}",
-                "expression" : {
-                  "@type" : "BINARY_OPERATOR",
-                  "type" : "BOOLEAN",
-                  "operator" : "matches",
-                  "leftOperand" : {
-                    "@type" : "MODEL_REFERENCE",
-                    "type" : "STRING",
-                    "precedenceOverriden" : false,
-                    "referenceType" : "Attribute",
-                    "path" : "archetype_id/value"
-                  },
-                  "rightOperand" : {
-                    "@type" : "CONSTRAINT",
-                    "type" : "STRING",
-                    "precedenceOverriden" : false,
-                    "referenceType" : "Constraint",
-                    "item" : {
-                      "@type" : "C_STRING",
-                      "constraint" : [ "/openEHR-EHR-CLUSTER\\.anatomical_location(-[a-zA-Z0-9_]+)*\\.v1/" ]
-                    }
-                  },
-                  "precedenceOverriden" : false
-                },
-                "variables" : [ ]
-              } ],
-              "excludes" : [ ],
-              "closed" : false
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
@@ -3141,7 +3107,8 @@
           "at0000.1" : "term:SNOMED-CT(2003)::364090009",
           "at0004.1" : "term:SNOMED-CT(2003)::271649006",
           "at0005.1" : "term:SNOMED-CT(2003)::271650006",
-          "at0013.1" : "term:SNOMED-CT(2003)::246153002"
+          "at0013.1" : "term:SNOMED-CT(2003)::246153002",
+          "at0004.2" : "term:SNOMED-CT(2003)::271649006"
         }
       },
       "terminologyExtracts" : { },
