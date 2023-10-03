@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "5.0.0",
+      "sem_ver" : "6.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "957ae2eb03488202fa7985d3745d08a5",
+      "MD5-CAM-1.0.1" : "f0b0c6027af9a7250ef329c884b5c80e",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -2776,55 +2776,6 @@
                     } ]
                   } ],
                   "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_PROPORTION",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_QUANTITY",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "property",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "occurrences" : "0..1",
-                      "terminologyId" : {
-                        "value" : "openehr"
-                      },
-                      "constraint" : [ "380" ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ {
-                    "@type" : "C_ATTRIBUTE_TUPLE",
-                    "members" : [ {
-                      "@type" : "C_ATTRIBUTE",
-                      "rmAttributeName" : "units",
-                      "children" : [ ]
-                    }, {
-                      "@type" : "C_ATTRIBUTE",
-                      "rmAttributeName" : "magnitude",
-                      "children" : [ ]
-                    } ],
-                    "tuples" : [ {
-                      "@type" : "C_PRIMITIVE_TUPLE",
-                      "members" : [ {
-                        "@type" : "C_STRING",
-                        "rmTypeName" : "STRING",
-                        "constraint" : [ "1" ]
-                      }, {
-                        "@type" : "C_REAL",
-                        "rmTypeName" : "REAL",
-                        "constraint" : [ {
-                          "lowerIncluded" : false,
-                          "upperIncluded" : false,
-                          "lowerUnbounded" : true,
-                          "upperUnbounded" : true
-                        } ]
-                      } ]
-                    } ]
-                  } ]
                 } ]
               } ],
               "attributeTuples" : [ ]
