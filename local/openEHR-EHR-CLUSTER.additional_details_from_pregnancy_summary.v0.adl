@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"0ab8e718b98e38aa50b72096e31482a9">
+		["MD5-CAM-1.0.1"] = <"ca12ae7a2ec2c8bbdd36e46799e4d158">
 		["build_uid"] = <"69de9a82-c0ba-3c8e-9a8c-8eb6b8fb56e2">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
@@ -419,6 +419,32 @@ ontology
 				["at0026"] = <[SNOMED-CT::36813001]>
 				["at0027"] = <[SNOMED-CT::16356006]>
 				["at0028"] = <[SNOMED-CT::183944003]>
+				["at0031"] = <[SNOMED-CT::25749005]>
+				["at0032"] = <[SNOMED-CT::288274003]>
+				["at0033"] = <[SNOMED-CT::42571002]>
+				["at0034"] = <[SNOMED-CT::90188009]>
+				["at0035"] = <[SNOMED-CT::45757002]>
+				["at0036"] = <[SNOMED-CT::74964007]>
+				["at0037"] = <[SNOMED-CT::274514009]>
+				["at0038"] = <[SNOMED-CT::11163003]>
+				["at0039"] = <[SNOMED-CT::85548006]>
+				["at0040"] = <[SNOMED-CT::57759005]>
+				["at0041"] = <[SNOMED-CT::6234006]>
+				["at0042"] = <[SNOMED-CT::449807005]>
+				["at0043"] = <[SNOMED-CT::449808000]>
+				["at0044"] = <[SNOMED-CT::399031001]>
+				["at0045"] = <[SNOMED-CT::410062001]>
+				["at0046"] = <[SNOMED-CT::237090005]>
+				["at0047"] = <[SNOMED-CT::283922007]>
+				["at0048"] = <[SNOMED-CT::283916003]>
+				["at0049"] = <[SNOMED-CT::926336003]>
+				["at0050"] = <[SNOMED-CT::361095003]>
+				["at0052"] = <[SNOMED-CT::20236002]>
+				["at0053"] = <[SNOMED-CT::84457005]>
+				["at0054"] = <[SNOMED-CT::112070001]>
+				["at0055"] = <[SNOMED-CT::200148001]>
+				["at0056"] = <[SNOMED-CT::200149009]>
+				["at0057"] = <[SNOMED-CT::177185001]>
 			>
 		>
 	>
