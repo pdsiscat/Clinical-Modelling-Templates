@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "66.2.0",
+      "sem_ver" : "66.3.0",
       "build_uid" : "e3b96713-a25b-460d-a320-b3efc3b64d08",
-      "MD5-CAM-1.0.1" : "6489c47cd91c5ceba7bacf1becf8cdca",
+      "MD5-CAM-1.0.1" : "f8cc00261a3f273c8a712397cc221d01",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -2861,7 +2861,7 @@
           "at0066.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0066.1",
-            "text" : "Feber during the labour",
+            "text" : "Fever during the labour",
             "description" : "Identification of the complication.",
             "comment" : "Coding of the 'Complication' with a terminology is desirable, where possible. For example, post partum haemorrhage or pre-eclampsia."
           },
