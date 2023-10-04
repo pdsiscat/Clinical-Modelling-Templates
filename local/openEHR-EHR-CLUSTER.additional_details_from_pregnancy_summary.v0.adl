@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"ca12ae7a2ec2c8bbdd36e46799e4d158">
+		["MD5-CAM-1.0.1"] = <"23df27bb8a83ad637cd19d70d876015d">
 		["build_uid"] = <"69de9a82-c0ba-3c8e-9a8c-8eb6b8fb56e2">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
@@ -159,6 +159,17 @@ definition
 			ELEMENT[at0057] occurrences matches {0..1} matches {    -- Water birth
 				value matches {
 					DV_BOOLEAN matches {*}
+				}
+			}
+			ELEMENT[at0058] occurrences matches {0..1} matches {    -- Estimated blood loss
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0059,    -- 500-1000ml
+							at0060]    -- >1000ml
+						}
+					}
 				}
 			}
 		}
@@ -395,6 +406,18 @@ ontology
 				>
 				["at0057"] = <
 					text = <"Water birth">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"Estimated blood loss">
+					description = <"">
+				>
+				["at0059"] = <
+					text = <"500-1000ml">
+					description = <"">
+				>
+				["at0060"] = <
+					text = <">1000ml">
 					description = <"">
 				>
 			>
