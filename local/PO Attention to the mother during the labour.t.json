@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "66.3.0",
+      "sem_ver" : "67.0.0",
       "build_uid" : "e3b96713-a25b-460d-a320-b3efc3b64d08",
-      "MD5-CAM-1.0.1" : "f8cc00261a3f273c8a712397cc221d01",
+      "MD5-CAM-1.0.1" : "54a821826113b0d10ec2db5f2373d3f8",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -1237,6 +1237,10 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_QUANTITY",
+                  "defaultValue" : {
+                    "units" : "ml",
+                    "@type" : "DV_QUANTITY"
+                  },
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "property",
@@ -1259,6 +1263,10 @@
                       "@type" : "C_ATTRIBUTE",
                       "rmAttributeName" : "magnitude",
                       "children" : [ ]
+                    }, {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "precision",
+                      "children" : [ ]
                     } ],
                     "tuples" : [ {
                       "@type" : "C_PRIMITIVE_TUPLE",
@@ -1270,10 +1278,22 @@
                         "@type" : "C_REAL",
                         "rmTypeName" : "REAL",
                         "constraint" : [ {
-                          "lowerIncluded" : false,
+                          "lower" : 0.0,
+                          "lowerIncluded" : true,
                           "upperIncluded" : false,
-                          "lowerUnbounded" : true,
+                          "lowerUnbounded" : false,
                           "upperUnbounded" : true
+                        } ]
+                      }, {
+                        "@type" : "C_INTEGER",
+                        "rmTypeName" : "INTEGER",
+                        "constraint" : [ {
+                          "lower" : 0,
+                          "upper" : 0,
+                          "lowerIncluded" : true,
+                          "upperIncluded" : true,
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : false
                         } ]
                       } ]
                     } ]
@@ -6780,7 +6800,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "8817afecd522bf1a7df1171c722b0e91"
+        "PARENT:MD5-CAM-1.0.1" : "ca12ae7a2ec2c8bbdd36e46799e4d158"
       },
       "details" : {
         "en" : {
