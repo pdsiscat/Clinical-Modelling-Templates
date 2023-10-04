@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "69.0.0",
+      "sem_ver" : "70.0.0",
       "build_uid" : "e3b96713-a25b-460d-a320-b3efc3b64d08",
-      "MD5-CAM-1.0.1" : "54a821826113b0d10ec2db5f2373d3f8",
+      "MD5-CAM-1.0.1" : "5f40e6e40189d6b36e90f9a84210313e",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -905,7 +905,7 @@
                       "@type" : "C_DURATION",
                       "rmTypeName" : "DURATION",
                       "occurrences" : "1..1",
-                      "patternedConstraint" : "PWD",
+                      "patternedConstraint" : "PW",
                       "constraint" : [ {
                         "lower" : "P0D",
                         "upper" : "P52W",
