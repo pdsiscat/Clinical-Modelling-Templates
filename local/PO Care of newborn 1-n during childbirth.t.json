@@ -25,7 +25,7 @@
       "sem_ver" : "8.0.0",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD",
-      "MD5-CAM-1.0.1" : "1a8bb8760a3e340008b34621a2255794"
+      "MD5-CAM-1.0.1" : "6b58ae053661b217541adff82b2b5909"
     },
     "details" : {
       "de" : {
@@ -1694,6 +1694,12 @@
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
+      }
+    },
+    "annotations" : {
+      "@type" : "RESOURCE_ANNOTATIONS",
+      "documentation" : {
+        "en" : { }
       }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.apgar.v2",
