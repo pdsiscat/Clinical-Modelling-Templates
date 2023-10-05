@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "f8199248287f15dd8c9c2b85825c73fe",
+      "MD5-CAM-1.0.1" : "3187ab70dd75ed235f990a56729e9e33",
       "PARENT:MD5-CAM-1.0.1" : "B9E347DFCF5282C90ED30D8615F803E5",
-      "sem_ver" : "0.1.0",
+      "sem_ver" : "1.0.0",
       "build_uid" : ""
     },
     "details" : {
@@ -1034,7 +1034,7 @@
                               "@type" : "C_DURATION",
                               "rmTypeName" : "DURATION",
                               "occurrences" : "1..1",
-                              "patternedConstraint" : "PW",
+                              "patternedConstraint" : "PWD",
                               "constraint" : [ {
                                 "lower" : "P0W",
                                 "upper" : "P60W",
@@ -1349,7 +1349,7 @@
                               "@type" : "C_DURATION",
                               "rmTypeName" : "DURATION",
                               "occurrences" : "1..1",
-                              "patternedConstraint" : "PW",
+                              "patternedConstraint" : "PWD",
                               "constraint" : [ {
                                 "lower" : "P0W",
                                 "upper" : "P60W",
