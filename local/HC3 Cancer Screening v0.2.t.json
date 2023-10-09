@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "4.0.0",
+      "sem_ver" : "4.1.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "5012c054a57c3bbf1e3bacab3756f047",
+      "MD5-CAM-1.0.1" : "8e4c2fe8f4446a1d4a53cd690a6db0c0",
       "original_language" : "ISO_639-1::en",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F"
     },
@@ -333,7 +333,7 @@
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
-          "text" : "HC3 Cancer Screening v0.2",
+          "text" : "HC3 Cancer Screening",
           "description" : "Document to communicate information to others about any stand-alone procedure or operation performed."
         },
         "at0000" : {
