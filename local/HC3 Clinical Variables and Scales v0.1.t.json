@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "7.0.0",
+      "sem_ver" : "7.1.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "77b353f2da9f96109a30b2ed0f4c7490",
+      "MD5-CAM-1.0.1" : "510bdf49643bfa822824df948fbccf32",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -291,7 +291,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "HC3 Clinical Variables and Scales v0.1",
+          "text" : "HC3 Clinical Variables and Scales",
           "description" : "Interaction, contact or care event between a subject of care and healthcare provider(s)."
         }
       },
