@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "10.0.0",
+      "sem_ver" : "10.1.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "eb2c7e18a39a04b2e5c5409484a3d05c",
+      "MD5-CAM-1.0.1" : "9bea78f695d27b62c6d34d288960f5b8",
       "original_language" : "ISO_639-1::en",
       "PARENT:MD5-CAM-1.0.1" : "A198E225F67F0E4A49653AC9C6EBCC0A"
     },
@@ -230,7 +230,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "HC3 Diagnosis list v0.1",
+          "text" : "HC3 Diagnosis list",
           "description" : "A persistent and managed list of any combination of diagnoses, problems and/or procedures that may influence clinical decision-making and care provision for the subject of care."
         }
       },
