@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "19.1.0",
+      "sem_ver" : "20.0.0",
       "build_uid" : "3cb7438c-0c74-4ef9-85f2-875ea8e99d4d",
-      "MD5-CAM-1.0.1" : "68c4b5e9a4208881bebc8ae0b69a8d9e",
+      "MD5-CAM-1.0.1" : "6267cf37a2564472005a1a04f519d0c6",
       "PARENT:MD5-CAM-1.0.1" : "F2C3BD9252691BB3975C53648208D672"
     },
     "details" : {
@@ -3909,6 +3909,24 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
+          "nodeId" : "at0158.0.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "existence" : "0..1",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0071.0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
@@ -4108,6 +4126,12 @@
             "code" : "at0158",
             "text" : "National product code",
             "description" : ""
+          },
+          "at0158.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0158.0.1",
+            "text" : "National product code",
+            "description" : ""
           }
         },
         "nb" : {
@@ -4132,6 +4156,12 @@
           "at0158" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0158",
+            "text" : "*National product code (en)",
+            "description" : ""
+          },
+          "at0158.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0158.0.1",
             "text" : "*National product code (en)",
             "description" : ""
           }
@@ -4160,6 +4190,12 @@
             "code" : "at0158",
             "text" : "*National product code (en)",
             "description" : ""
+          },
+          "at0158.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0158.0.1",
+            "text" : "*National product code (en)",
+            "description" : ""
           }
         },
         "de" : {
@@ -4184,6 +4220,12 @@
           "at0158" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0158",
+            "text" : "*National product code (en)",
+            "description" : ""
+          },
+          "at0158.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0158.0.1",
             "text" : "*National product code (en)",
             "description" : ""
           }
@@ -4212,6 +4254,12 @@
             "code" : "at0158",
             "text" : "*National product code (en)",
             "description" : ""
+          },
+          "at0158.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0158.0.1",
+            "text" : "*National product code (en)",
+            "description" : ""
           }
         },
         "sv" : {
@@ -4236,6 +4284,12 @@
           "at0158" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0158",
+            "text" : "*National product code (en)",
+            "description" : ""
+          },
+          "at0158.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0158.0.1",
             "text" : "*National product code (en)",
             "description" : ""
           }
