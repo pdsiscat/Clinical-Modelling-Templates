@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "20.0.0",
+      "sem_ver" : "20.1.0",
       "build_uid" : "3cb7438c-0c74-4ef9-85f2-875ea8e99d4d",
-      "MD5-CAM-1.0.1" : "6267cf37a2564472005a1a04f519d0c6",
+      "MD5-CAM-1.0.1" : "3bc6329ccd769c1bd2a6b5072846b35f",
       "PARENT:MD5-CAM-1.0.1" : "F2C3BD9252691BB3975C53648208D672"
     },
     "details" : {
@@ -3211,7 +3211,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "89BA41E6CD217F7E2639D05A6B02465C"
+        "PARENT:MD5-CAM-1.0.1" : "3ddfb957bfbd20549636c10286e4e62b"
       },
       "details" : {
         "de" : {
@@ -3330,7 +3330,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -3412,7 +3411,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -3428,7 +3426,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -3524,18 +3521,6 @@
             "text" : "(Synthesized)",
             "code" : "ac0.0.2",
             "description" : ""
-          },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Medication details",
-            "description" : "Details about a medication or component of a medication, including strength, form and details of any specific constituents."
-          },
-          "at0158" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0158",
-            "text" : "National product code",
-            "description" : ""
           }
         },
         "nb" : {
@@ -3549,18 +3534,6 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.0.2",
-            "description" : ""
-          },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Legemiddeldetaljer",
-            "description" : "Detaljer om et legemiddel eller en komponent av et legemiddel, inkludert detaljer om spesifikke bestanddeler."
-          },
-          "at0158" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0158",
-            "text" : "*National product code (en)",
             "description" : ""
           }
         },
@@ -3576,18 +3549,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.0.2",
             "description" : ""
-          },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "*Medication details (en)",
-            "description" : "*Details about a medication or component of a medication, including strength, form, and details of any specific constituents.(en)"
-          },
-          "at0158" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0158",
-            "text" : "*National product code (en)",
-            "description" : ""
           }
         },
         "de" : {
@@ -3601,18 +3562,6 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.0.2",
-            "description" : ""
-          },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Arzneimittel",
-            "description" : "Angaben über ein Arzneimittel oder eine Arzneimittelkomponente, einschließlich der Wirkstärke, der Darreichungsform und Informationen über spezifische Bestandteile."
-          },
-          "at0158" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0158",
-            "text" : "*National product code (en)",
             "description" : ""
           }
         },
@@ -3628,18 +3577,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.0.2",
             "description" : ""
-          },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "*Medication details (en)",
-            "description" : "Gegevens over een medicament of onderdeel van een medicament, inclusief dosis, vorm en details over een specifiek bestandsdeel."
-          },
-          "at0158" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0158",
-            "text" : "*National product code (en)",
-            "description" : ""
           }
         },
         "sv" : {
@@ -3653,18 +3590,6 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.0.2",
-            "description" : ""
-          },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "*Medication details (en)",
-            "description" : "Detaljer om ett läkemedel eller en läkemedelskomponent, inkluderat styrka, form och detaljer för alla specifika beståndsdelar."
-          },
-          "at0158" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0158",
-            "text" : "*National product code (en)",
             "description" : ""
           }
         }
@@ -3780,7 +3705,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "89BA41E6CD217F7E2639D05A6B02465C"
+        "PARENT:MD5-CAM-1.0.1" : "3ddfb957bfbd20549636c10286e4e62b"
       },
       "details" : {
         "de" : {
@@ -3899,7 +3824,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -3913,11 +3837,9 @@
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "value",
-            "existence" : "0..1",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -3989,7 +3911,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -4081,13 +4002,6 @@
           "nodeId" : "at0133.0.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0.1.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
         } ]
       } ],
       "attributeTuples" : [ ]
@@ -4114,24 +4028,6 @@
             "text" : "(Synthesized)",
             "code" : "ac0.0.2",
             "description" : ""
-          },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Medication details",
-            "description" : "Details about a medication or component of a medication, including strength, form and details of any specific constituents."
-          },
-          "at0158" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0158",
-            "text" : "National product code",
-            "description" : ""
-          },
-          "at0158.0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0158.0.1",
-            "text" : "National product code",
-            "description" : ""
           }
         },
         "nb" : {
@@ -4145,24 +4041,6 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.0.2",
-            "description" : ""
-          },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Legemiddeldetaljer",
-            "description" : "Detaljer om et legemiddel eller en komponent av et legemiddel, inkludert detaljer om spesifikke bestanddeler."
-          },
-          "at0158" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0158",
-            "text" : "*National product code (en)",
-            "description" : ""
-          },
-          "at0158.0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0158.0.1",
-            "text" : "*National product code (en)",
             "description" : ""
           }
         },
@@ -4178,24 +4056,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.0.2",
             "description" : ""
-          },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "*Medication details (en)",
-            "description" : "*Details about a medication or component of a medication, including strength, form, and details of any specific constituents.(en)"
-          },
-          "at0158" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0158",
-            "text" : "*National product code (en)",
-            "description" : ""
-          },
-          "at0158.0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0158.0.1",
-            "text" : "*National product code (en)",
-            "description" : ""
           }
         },
         "de" : {
@@ -4209,24 +4069,6 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.0.2",
-            "description" : ""
-          },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Arzneimittel",
-            "description" : "Angaben über ein Arzneimittel oder eine Arzneimittelkomponente, einschließlich der Wirkstärke, der Darreichungsform und Informationen über spezifische Bestandteile."
-          },
-          "at0158" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0158",
-            "text" : "*National product code (en)",
-            "description" : ""
-          },
-          "at0158.0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0158.0.1",
-            "text" : "*National product code (en)",
             "description" : ""
           }
         },
@@ -4242,24 +4084,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.0.2",
             "description" : ""
-          },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "*Medication details (en)",
-            "description" : "Gegevens over een medicament of onderdeel van een medicament, inclusief dosis, vorm en details over een specifiek bestandsdeel."
-          },
-          "at0158" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0158",
-            "text" : "*National product code (en)",
-            "description" : ""
-          },
-          "at0158.0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0158.0.1",
-            "text" : "*National product code (en)",
-            "description" : ""
           }
         },
         "sv" : {
@@ -4273,24 +4097,6 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.0.2",
-            "description" : ""
-          },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "*Medication details (en)",
-            "description" : "Detaljer om ett läkemedel eller en läkemedelskomponent, inkluderat styrka, form och detaljer för alla specifika beståndsdelar."
-          },
-          "at0158" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0158",
-            "text" : "*National product code (en)",
-            "description" : ""
-          },
-          "at0158.0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0158.0.1",
-            "text" : "*National product code (en)",
             "description" : ""
           }
         }
