@@ -94,21 +94,6 @@ Not to be used to record the intended or administered dose of a medication. Use 
 
 Not to be used by itself to populate a medication list. Use a relevant medication-related ENTRY archetype such as INSTRUCTION.medication_order or ACTION.medication for this purpose. (en)">
 		>
-		["nb"] = <
-			language = <[ISO_639-1::nb]>
-			purpose = <"For å registrere detaljer om et legemiddel eller en komponent av et legemiddel, inkludert detaljer om spesifikke bestanddeler.">
-			keywords = <"legemiddel","tilbereding","ordinering","forskrive","terapi","substans","medikament","terapeutisk","medikamenter solgt over disk","vare","magistrell","ex tempore","blanding","virkestoff","hjelpestoff","utblanding","foreskrive","forordne">
-			use = <"Brukes for å registrere detaljer om et legemiddel eller en komponent av et legemiddel, inkludert detaljer om spesifikke bestanddeler.
-
-Denne arketypen er laget for å brukes til å registrere detaljer om et legemiddel eller en komponent av et legemiddel, der formen og detaljer om bestanddelene må oppgis i mer detalj. Eksempler kan være infusjoner og magistrellforskrevne blandinger, eller der det ikke finnes en tilgjengelig legemiddelterminologi. I sammenhenger der et legemiddel skal administreres eller ekspederes skal denne arketypen nøstes i SLOTet Legemiddeldetaljer i arketypen INSTRUCTION.medication_order. I sammenhenger der det skal registreres hvilket legemiddel som faktisk ble administrert eller ekspedert skal denne arketypen nøstes i SLOTet Legemiddeldetaljer i arketypen ACTION.medication.
-
-Denne arketypen kan være overflødig i situasjoner der en legemiddelordinering via resept bruker terminologi for å spesifisere legemiddelet. I slike tilfeller vil ofte form og styrke være angitt som en del av terminologibegrepet.">
-			misuse = <"Skal ikke brukes innen varelageroversikt for apotek, eller innen legemiddelkataloger.
-
-Skal ikke brukes for å registrere den tilsiktede eller administrerte dosen av et legemiddel. Bruk enten INSTRUCTION.medication_order eller CLUSTER.dosage til dette formålet.
-
-Skal ikke brukes alene for å populere en legemiddelliste. Bruk en relevant legemiddel-relatert ENTRY-arketype som INSTRUCTION.medication_order eller ACTION.medication for dette formålet.">
-		>
 		["pt"] = <
 			language = <[ISO_639-1::pt]>
 			purpose = <"Para registrar detalhes de uma preparação de medicamentos, incluindo, quando necessário, detalhes de múltiplos ingredientes, no contexto de uma infusão ou preparação ad-hoc (manipulada). A maioria das prescrições baseadas em dose terá sua precisa preparação determinada pelo estoque disponível na unidade, ou pelo fornecimento de farmácia, enquanto que, com a prescrição baseada em produtos, o nome da medicação traz detalhes da forma e concentração da preparação.">
@@ -123,6 +108,21 @@ This archetype may be redundant in situations where ordering a medication via pr
 Not to be used to record the intended or administered dose of a medication. Use either the INSTRUCTION.medication_order or the CLUSTER.dosage archetypes for this purpose.
 
 Not to be used by itself to populate a medication list. Use a relevant medication-related ENTRY archetype such as INSTRUCTION.medication_order or ACTION.medication for this purpose. (en)">
+		>
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"For å registrere detaljer om et legemiddel eller en komponent av et legemiddel, inkludert detaljer om spesifikke bestanddeler.">
+			keywords = <"legemiddel","tilbereding","ordinering","forskrive","terapi","substans","medikament","terapeutisk","medikamenter solgt over disk","vare","magistrell","ex tempore","blanding","virkestoff","hjelpestoff","utblanding","foreskrive","forordne">
+			use = <"Brukes for å registrere detaljer om et legemiddel eller en komponent av et legemiddel, inkludert detaljer om spesifikke bestanddeler.
+
+Denne arketypen er laget for å brukes til å registrere detaljer om et legemiddel eller en komponent av et legemiddel, der formen og detaljer om bestanddelene må oppgis i mer detalj. Eksempler kan være infusjoner og magistrellforskrevne blandinger, eller der det ikke finnes en tilgjengelig legemiddelterminologi. I sammenhenger der et legemiddel skal administreres eller ekspederes skal denne arketypen nøstes i SLOTet Legemiddeldetaljer i arketypen INSTRUCTION.medication_order. I sammenhenger der det skal registreres hvilket legemiddel som faktisk ble administrert eller ekspedert skal denne arketypen nøstes i SLOTet Legemiddeldetaljer i arketypen ACTION.medication.
+
+Denne arketypen kan være overflødig i situasjoner der en legemiddelordinering via resept bruker terminologi for å spesifisere legemiddelet. I slike tilfeller vil ofte form og styrke være angitt som en del av terminologibegrepet.">
+			misuse = <"Skal ikke brukes innen varelageroversikt for apotek, eller innen legemiddelkataloger.
+
+Skal ikke brukes for å registrere den tilsiktede eller administrerte dosen av et legemiddel. Bruk enten INSTRUCTION.medication_order eller CLUSTER.dosage til dette formålet.
+
+Skal ikke brukes alene for å populere en legemiddelliste. Bruk en relevant legemiddel-relatert ENTRY-arketype som INSTRUCTION.medication_order eller ACTION.medication for dette formålet.">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
@@ -173,7 +173,7 @@ FHIR Resource Medication, HL7 [Internet]. Available at: https://www.hl7.org/fhir
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"89BA41E6CD217F7E2639D05A6B02465C">
+		["MD5-CAM-1.0.1"] = <"3ddfb957bfbd20549636c10286e4e62b">
 		["build_uid"] = <"20797e3d-bdcd-4134-b39a-a923abbb968a">
 		["revision"] = <"2.0.1">
 	>
@@ -184,9 +184,10 @@ definition
 			ELEMENT[at0132] occurrences matches {0..1} matches {    -- Name
 				value matches {
 					DV_TEXT matches {*}
+					DV_CODED_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0.1] occurrences matches {0..1} matches {    -- National Product Code
+			ELEMENT[at0158] occurrences matches {0..1} matches {    -- National product code
 				value matches {
 					DV_CODED_TEXT matches {*}
 				}
@@ -233,12 +234,14 @@ definition
 			ELEMENT[at0151] occurrences matches {0..1} matches {    -- Manufacturer
 				value matches {
 					DV_TEXT matches {*}
+					DV_CODED_TEXT matches {*}
 				}
 			}
 			ELEMENT[at0150] occurrences matches {0..*} matches {    -- Batch ID
 				value matches {
 					DV_TEXT matches {*}
 					DV_IDENTIFIER matches {*}
+					DV_CODED_TEXT matches {*}
 				}
 			}
 			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Expiry
@@ -289,6 +292,14 @@ ontology
 	term_definitions = <
 		["en"] = <
 			items = <
+				["at0000.1"] = <
+					text = <"Medication details">
+					description = <"Details about a medication or component of a medication, including strength, form and details of any specific constituents.">
+				>
+				["at0000"] = <
+					text = <"Medication details">
+					description = <"Details about a medication or component of a medication, including strength, form and details of any specific constituents.">
+				>
 				["at0001"] = <
 					text = <"Combination product">
 					description = <"The medication or medication component consists of a number of separate products which are pre-packaged by the manufacturer, for example Canesten Combi.">
@@ -399,18 +410,22 @@ ontology
 					description = <"The denominator of the strength fraction.">
 					comment = <"For example: For a presentation strength of '300 µg/0.3 ml', the strength denominator value is '0.3 ml'. For a presentation strength of '100 mg/tablet', the strength denominator value is '1 tablet'.">
 				>
-				["at0000.1"] = <
-					text = <"Medication details">
-					description = <"Details about a medication or component of a medication, including strength, form and details of any specific constituents.">
-				>
-				["at0.1"] = <
-					text = <"National Product Code">
+				["at0158"] = <
+					text = <"National product code">
 					description = <"">
 				>
 			>
 		>
 		["nb"] = <
 			items = <
+				["at0000.1"] = <
+					text = <"Legemiddeldetaljer">
+					description = <"Detaljer om et legemiddel eller en komponent av et legemiddel, inkludert detaljer om spesifikke bestanddeler.">
+				>
+				["at0000"] = <
+					text = <"Legemiddeldetaljer">
+					description = <"Detaljer om et legemiddel eller en komponent av et legemiddel, inkludert detaljer om spesifikke bestanddeler.">
+				>
 				["at0001"] = <
 					text = <"Kombinasjonspakning">
 					description = <"Legemiddelet eller legemiddelkomponenten består av flere separate produkter som er forhåndspakket av produsenten, for eksempel Canesten vaginalkapsel + krem.">
@@ -520,18 +535,22 @@ ontology
 					description = <"Nevneren i styrkebrøken.">
 					comment = <"For eksempel: For en presentasjonsstyrke på \"300 µg/0,3 ml\", er Styrkenevner \"0,3 ml\". For en presentasjonsstyrke på \"100 mg/tablett\", er Styrkenevner \"1 tablett\".">
 				>
-				["at0000.1"] = <
-					text = <"Legemiddeldetaljer">
-					description = <"Detaljer om et legemiddel eller en komponent av et legemiddel, inkludert detaljer om spesifikke bestanddeler.">
-				>
-				["at0.1"] = <
-					text = <"*National Product Code (en)">
+				["at0158"] = <
+					text = <"*National product code (en)">
 					description = <"">
 				>
 			>
 		>
 		["pt"] = <
 			items = <
+				["at0000.1"] = <
+					text = <"*Medication details (en)">
+					description = <"*Details about a medication or component of a medication, including strength, form, and details of any specific constituents.(en)">
+				>
+				["at0000"] = <
+					text = <"*Medication details (en)">
+					description = <"*Details about a medication or component of a medication, including strength, form, and details of any specific constituents.(en)">
+				>
 				["at0001"] = <
 					text = <"*Combination pack(en)">
 					description = <"*The component consists of a number of separate products which are pre-packaged by the manufacturer.(en)">
@@ -641,18 +660,22 @@ ontology
 					description = <"*The denominator of the strength fraction. (en)">
 					comment = <"*For example: For a presentation strength of '300 µg/0.3 ml', the strength denominator value is '0.3 ml'. For a presentation strength of '100 mg/tablet', the strength denominator value is '1 tablet'. (en)">
 				>
-				["at0000.1"] = <
-					text = <"*Medication details (en)">
-					description = <"*Details about a medication or component of a medication, including strength, form, and details of any specific constituents.(en)">
-				>
-				["at0.1"] = <
-					text = <"*National Product Code (en)">
+				["at0158"] = <
+					text = <"*National product code (en)">
 					description = <"">
 				>
 			>
 		>
 		["de"] = <
 			items = <
+				["at0000.1"] = <
+					text = <"Arzneimittel">
+					description = <"Angaben über ein Arzneimittel oder eine Arzneimittelkomponente, einschließlich der Wirkstärke, der Darreichungsform und Informationen über spezifische Bestandteile.">
+				>
+				["at0000"] = <
+					text = <"Arzneimittel">
+					description = <"Angaben über ein Arzneimittel oder eine Arzneimittelkomponente, einschließlich der Wirkstärke, der Darreichungsform und Informationen über spezifische Bestandteile.">
+				>
 				["at0001"] = <
 					text = <"Kombinationsprodukt">
 					description = <"Das Arzneimittel oder die Arzneimittelkomponente besteht aus einer Reihe von separaten Produkten, die vom Hersteller vorverpackt werden, z.B. Canesten Combi.">
@@ -762,18 +785,22 @@ ontology
 					description = <"Der Wert des Nenners des Wirkstärkeanteils.">
 					comment = <"Zum Beispiel: Der Wert des Nenners der Wirkstärke (Darreichungsform) \"300 µg/0,3 ml\" ist \"0,3 ml\". Der Wert des Nenners der Wirkstärke \"100 mg/Tablette\" ist \"1 Tablette\".">
 				>
-				["at0000.1"] = <
-					text = <"Arzneimittel">
-					description = <"Angaben über ein Arzneimittel oder eine Arzneimittelkomponente, einschließlich der Wirkstärke, der Darreichungsform und Informationen über spezifische Bestandteile.">
-				>
-				["at0.1"] = <
-					text = <"*National Product Code (en)">
+				["at0158"] = <
+					text = <"*National product code (en)">
 					description = <"">
 				>
 			>
 		>
 		["nl"] = <
 			items = <
+				["at0000.1"] = <
+					text = <"*Medication details (en)">
+					description = <"Gegevens over een medicament of onderdeel van een medicament, inclusief dosis, vorm en details over een specifiek bestandsdeel.">
+				>
+				["at0000"] = <
+					text = <"*Medication details (en)">
+					description = <"Gegevens over een medicament of onderdeel van een medicament, inclusief dosis, vorm en details over een specifiek bestandsdeel.">
+				>
 				["at0001"] = <
 					text = <"Combinatie product">
 					description = <"Het medicament of medicatie bestanddeel bestaat uit een aantal onafhankelijke producten die voorverpakt zijn door de fabrikant, bijvoorbeeld 'Canesten Combi'.">
@@ -884,18 +911,22 @@ ontology
 					description = <"*The denominator of the strength fraction. (en)">
 					comment = <"*For example: For a presentation strength of '300 µg/0.3 ml', the strength denominator value is '0.3 ml'. For a presentation strength of '100 mg/tablet', the strength denominator value is '1 tablet'. (en)">
 				>
-				["at0000.1"] = <
-					text = <"*Medication details (en)">
-					description = <"Gegevens over een medicament of onderdeel van een medicament, inclusief dosis, vorm en details over een specifiek bestandsdeel.">
-				>
-				["at0.1"] = <
-					text = <"*National Product Code (en)">
+				["at0158"] = <
+					text = <"*National product code (en)">
 					description = <"">
 				>
 			>
 		>
 		["sv"] = <
 			items = <
+				["at0000.1"] = <
+					text = <"*Medication details (en)">
+					description = <"Detaljer om ett läkemedel eller en läkemedelskomponent, inkluderat styrka, form och detaljer för alla specifika beståndsdelar.">
+				>
+				["at0000"] = <
+					text = <"*Medication details (en)">
+					description = <"Detaljer om ett läkemedel eller en läkemedelskomponent, inkluderat styrka, form och detaljer för alla specifika beståndsdelar.">
+				>
 				["at0001"] = <
 					text = <"Kombinationsprodukt">
 					description = <"Läkemedlet eller läkemedelskomponenten består av ett antal separata produkter som förpackas av tillverkaren, till exempel Canesten Combi.">
@@ -1008,12 +1039,8 @@ Kodning av formen med en terminologi är att föredra, där det är möjligt. L�
 					description = <"*The denominator of the strength fraction. (en)">
 					comment = <"*For example: For a presentation strength of '300 µg/0.3 ml', the strength denominator value is '0.3 ml'. For a presentation strength of '100 mg/tablet', the strength denominator value is '1 tablet'. (en)">
 				>
-				["at0000.1"] = <
-					text = <"*Medication details (en)">
-					description = <"Detaljer om ett läkemedel eller en läkemedelskomponent, inkluderat styrka, form och detaljer för alla specifika beståndsdelar.">
-				>
-				["at0.1"] = <
-					text = <"*National Product Code (en)">
+				["at0158"] = <
+					text = <"*National product code (en)">
 					description = <"">
 				>
 			>
