@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "89.0.0",
+      "sem_ver" : "90.0.0",
       "build_uid" : "e3b96713-a25b-460d-a320-b3efc3b64d08",
-      "MD5-CAM-1.0.1" : "21b7a63d47d2e8070e11944975db4897",
+      "MD5-CAM-1.0.1" : "86de62d68c0e2e3fcfb49df4b0538327",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -5790,7 +5790,7 @@
                               "includedExternalTerminologyCodes" : [ {
                                 "terminologyId" : "local_terms",
                                 "code" : "267340006",
-                                "value" : "febre intrapart"
+                                "value" : "intrapartum fever"
                               }, {
                                 "terminologyId" : "local_terms",
                                 "code" : "12729009",
