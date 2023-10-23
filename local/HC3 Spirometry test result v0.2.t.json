@@ -25,7 +25,7 @@
       "sem_ver" : "6.2.0",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959",
-      "MD5-CAM-1.0.1" : "15127891065d7ee2aefd25a30139d2fb"
+      "MD5-CAM-1.0.1" : "105a2f6fc5806e301018282d55cc1546"
     },
     "details" : {
       "de" : {
@@ -4971,7 +4971,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "2369058c550d82571c2c93e0a5a1062d"
+        "PARENT:MD5-CAM-1.0.1" : "9410aa90c3d758a197edcd621bdf7131"
       },
       "details" : {
         "fi" : {
@@ -13636,12 +13636,6 @@
             "code" : "ac0.0.154",
             "description" : ""
           },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Spirometry result",
-            "description" : "Pulmonary function test results using a spirometer or peak flow meter."
-          },
           "at0055.1.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0055.1",
@@ -14004,12 +13998,6 @@
             "code" : "ac0.0.154",
             "description" : ""
           },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "*Spirometry (en)",
-            "description" : "*Pulmonary function test results using a spirometer or peak flow meter. (en)"
-          },
           "at0055.1.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0055.1",
@@ -14366,12 +14354,6 @@
             "code" : "ac0.0.154",
             "description" : ""
           },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Spirometriresultat",
-            "description" : "Lungefunksjonstest ved bruk av et spirometer eller en PEF-måler."
-          },
           "at0055.1.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0055.1",
@@ -14727,12 +14709,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.0.154",
             "description" : ""
-          },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "*Spirometry (en)",
-            "description" : "*Pulmonary function test results using a spirometer or peak flow meter. (en)"
           },
           "at0055.1.1" : {
             "@type" : "ARCHETYPE_TERM",
