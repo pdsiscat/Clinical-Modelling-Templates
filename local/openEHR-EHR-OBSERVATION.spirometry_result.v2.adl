@@ -92,33 +92,6 @@ Skal ikke brukes for å registrere blodgassverdier. Til dette brukes arketypen O
 
 Skal ikke brukes for å registrere pulsoksymetrimålinger. Til dette brukes arketypen OBSERVATION.pulse_oximetry (Pulsoksymetri).">
 		>
-		["en"] = <
-			language = <[ISO_639-1::en]>
-			purpose = <"To record the results of a pulmonary function test performed using a spirometer or peak flow meter.">
-			keywords = <"respiratory","pulmonary","spirometry","peak flow","lung","bronchial","airway","pef","pefr">
-			copyright = <"© openEHR Foundation">
-			use = <"Use to record the results of a pulmonary function test performed using a spirometer or peak flow meter.
-
-This archetype is intended to be used to record the results from:
-- electronic or mechanical measurement devices. Use the 'Type of measurement' element in Protocol to record how the result was measured; 
-- oral, nasal or tracheostomy tests. Use the 'Method' element in Protocol to record the type of breathing equipment used to perform the test. For example: mouth piece or face mask. Measurements with different 'Method' will have to be recorded using separate instances of the archetype.
-- inspiratory and expiratory tests. The name of each test will indicate whether the test records an inspiratory or expiratory result. 
-
-If the spirometry test is performed in association with the administration of bronchodilators or challenge substances, this can be recorded using the 'Challenge/reversibility' element. Details of what was administered should be recorded using an instance of the ACTION.medication archetype committed within the same COMPOSITION.
-
-If additional information about body temperature, ambient pressure or humidity is required, this can be recorded using additional archetypes. Body temperature can be recorded using an instance of the OBSERVATION.body_temperature archetype committed within the same COMPOSITION. Ambient pressure or humidity can be recorded using the CLUSTER.environmental_conditions in the 'Enviromental conditions' slot.
-
-The 'Any event' can be cloned and constrained to support the representation of:
-- Multiple measurements and their average - clone the 'Any event' as many times as needed, plus an additional event set to 'Interval' and selecting the 'Mean' attribute;
-- Pre- and post bronchial challenge or bronchodilator results - clone the 'Any event' and rename as 'Baseline' and 'Post challenge/bronchodilator', associated with a time offset if required.">
-			misuse = <"Not to be used to record the results of other types of lung function tests, for example body plethysmography or lung diffusion tests. Use specific archetypes for these purposes.
-
-Not to be used to record details about incentive spirometry. Use specific archetypes for these purposes.
-
-Not to be used to record the results of blood gas tests. Use the OBSERVATION.laboratory_test_result for this purpose.
-
-Not to be used to record measurements about pulse oximetry. Use the OBSERVATION.pulse_oximetry for this purpose.">
-		>
 		["sl"] = <
 			language = <[ISO_639-1::sl]>
 			purpose = <"*To record the results of a pulmonary function test performed using a spirometer or peak flow meter. (en)">
@@ -146,6 +119,33 @@ Not to be used to record the results of blood gas tests. Use the OBSERVATION.lab
 
 Not to be used to record measurements about pulse oximetry. Use the OBSERVATION.pulse_oximetry for this purpose. (en)">
 		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To record the results of a pulmonary function test performed using a spirometer or peak flow meter.">
+			keywords = <"respiratory","pulmonary","spirometry","peak flow","lung","bronchial","airway","pef","pefr">
+			copyright = <"© openEHR Foundation">
+			use = <"Use to record the results of a pulmonary function test performed using a spirometer or peak flow meter.
+
+This archetype is intended to be used to record the results from:
+- electronic or mechanical measurement devices. Use the 'Type of measurement' element in Protocol to record how the result was measured; 
+- oral, nasal or tracheostomy tests. Use the 'Method' element in Protocol to record the type of breathing equipment used to perform the test. For example: mouth piece or face mask. Measurements with different 'Method' will have to be recorded using separate instances of the archetype.
+- inspiratory and expiratory tests. The name of each test will indicate whether the test records an inspiratory or expiratory result. 
+
+If the spirometry test is performed in association with the administration of bronchodilators or challenge substances, this can be recorded using the 'Challenge/reversibility' element. Details of what was administered should be recorded using an instance of the ACTION.medication archetype committed within the same COMPOSITION.
+
+If additional information about body temperature, ambient pressure or humidity is required, this can be recorded using additional archetypes. Body temperature can be recorded using an instance of the OBSERVATION.body_temperature archetype committed within the same COMPOSITION. Ambient pressure or humidity can be recorded using the CLUSTER.environmental_conditions in the 'Enviromental conditions' slot.
+
+The 'Any event' can be cloned and constrained to support the representation of:
+- Multiple measurements and their average - clone the 'Any event' as many times as needed, plus an additional event set to 'Interval' and selecting the 'Mean' attribute;
+- Pre- and post bronchial challenge or bronchodilator results - clone the 'Any event' and rename as 'Baseline' and 'Post challenge/bronchodilator', associated with a time offset if required.">
+			misuse = <"Not to be used to record the results of other types of lung function tests, for example body plethysmography or lung diffusion tests. Use specific archetypes for these purposes.
+
+Not to be used to record details about incentive spirometry. Use specific archetypes for these purposes.
+
+Not to be used to record the results of blood gas tests. Use the OBSERVATION.laboratory_test_result for this purpose.
+
+Not to be used to record measurements about pulse oximetry. Use the OBSERVATION.pulse_oximetry for this purpose.">
+		>
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
@@ -162,7 +162,7 @@ Sheshadri A, Keus L, Blanco D, Lei X, Kellner C, Shannon VR, Balachandran DD, Ji
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"8C75665CB2BB8D77131D4F1DAC8F9E2D">
+		["MD5-CAM-1.0.1"] = <"47bed32006d55004727d8f17319a9935">
 		["build_uid"] = <"74bae2f5-2f72-4b3d-8096-dfb0a34ce1af">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"2.0.0">
@@ -415,7 +415,11 @@ definition
 													at0081,    -- FEV1/FVC ratio
 													at0080,    -- FEV1/SVC ratio
 													at0189,    -- FEV1/FEV6 ratio
-													at0190]    -- FEV1/IVC ratio
+													at0190,    -- FEV1/IVC ratio
+													at0210,    -- FEV1/VC ratio
+													at0211,    -- FEV0.5/FVC ratio
+													at0212,    -- FEV3/FVC ratio
+													at0213]    -- FEF50%/FIF50% ratio
 												}
 											}
 										}
@@ -860,6 +864,22 @@ ontology
 					text = <"Environmental conditions">
 					description = <"Details about environmental conditions undertaken at the time of spirometry recording.">
 				>
+				["at0210"] = <
+					text = <"FEV1/VC ratio">
+					description = <"The ratio of 'Forced expiratory volume in 1 second (FEV1)' to 'Vital capacity (VC)'.">
+				>
+				["at0211"] = <
+					text = <"FEV0.5/FVC ratio">
+					description = <"The ratio of 'Forced expiratory volume in 0.5 seconds (FEV0.5)' to 'Forced vital capacity (FVC)'.">
+				>
+				["at0212"] = <
+					text = <"FEV3/FVC ratio">
+					description = <"The ratio of 'Forced expiratory volume in 3 seconds (FEV3)' to 'Forced vital capacity (FVC)'.">
+				>
+				["at0213"] = <
+					text = <"FEF50%/FIF50% ratio">
+					description = <"The ratio of 'Forced Expiratory Flow at 50% of the manoeuvre (FEF50%)' to 'Forced Inspiratory Flow at 50% of the manoeuvre (FIF50%)'">
+				>
 			>
 		>
 		["sl"] = <
@@ -1189,6 +1209,22 @@ ontology
 				["at0209"] = <
 					text = <"*Environmental conditions (en)">
 					description = <"*Details about environmental conditions undertaken at the time of spirometry recording. (en)">
+				>
+				["at0210"] = <
+					text = <"*FEV1/VC ratio (en)">
+					description = <"*The ratio of 'Forced expiratory volume in 1 second (FEV1)' to 'Vital capacity (VC)'. (en)">
+				>
+				["at0211"] = <
+					text = <"*FEV0.5/FVC ratio (en)">
+					description = <"*The ratio of 'Forced expiratory volume in 0.5 seconds (FEV0.5)' to 'Forced vital capacity (FVC)'. (en)">
+				>
+				["at0212"] = <
+					text = <"*FEV3/FVC ratio (en)">
+					description = <"*The ratio of 'Forced expiratory volume in 3 seconds (FEV3)' to 'Forced vital capacity (FVC)'. (en)">
+				>
+				["at0213"] = <
+					text = <"*FEF50%/FIF50% ratio (en)">
+					description = <"*The ratio of 'Forced Expiratory Flow at 50% of the manoeuvre (FEF50%)' to 'Forced Inspiratory Flow at 50% of the manoeuvre (FIF50%)' (en)">
 				>
 			>
 		>
@@ -1521,6 +1557,22 @@ ontology
 					text = <"Omgivelsesforhold">
 					description = <"Detaljer om luftforhold i omgivelsene under spirometriundersøkelsen.">
 				>
+				["at0210"] = <
+					text = <"*FEV1/VC ratio (en)">
+					description = <"*The ratio of 'Forced expiratory volume in 1 second (FEV1)' to 'Vital capacity (VC)'. (en)">
+				>
+				["at0211"] = <
+					text = <"*FEV0.5/FVC ratio (en)">
+					description = <"*The ratio of 'Forced expiratory volume in 0.5 seconds (FEV0.5)' to 'Forced vital capacity (FVC)'. (en)">
+				>
+				["at0212"] = <
+					text = <"*FEV3/FVC ratio (en)">
+					description = <"*The ratio of 'Forced expiratory volume in 3 seconds (FEV3)' to 'Forced vital capacity (FVC)'. (en)">
+				>
+				["at0213"] = <
+					text = <"*FEF50%/FIF50% ratio (en)">
+					description = <"*The ratio of 'Forced Expiratory Flow at 50% of the manoeuvre (FEF50%)' to 'Forced Inspiratory Flow at 50% of the manoeuvre (FIF50%)' (en)">
+				>
 			>
 		>
 		["fi"] = <
@@ -1851,6 +1903,22 @@ ontology
 				["at0209"] = <
 					text = <"*Environmental conditions (en)">
 					description = <"*Details about environmental conditions undertaken at the time of spirometry recording. (en)">
+				>
+				["at0210"] = <
+					text = <"*FEV1/VC ratio (en)">
+					description = <"*The ratio of 'Forced expiratory volume in 1 second (FEV1)' to 'Vital capacity (VC)'. (en)">
+				>
+				["at0211"] = <
+					text = <"*FEV0.5/FVC ratio (en)">
+					description = <"*The ratio of 'Forced expiratory volume in 0.5 seconds (FEV0.5)' to 'Forced vital capacity (FVC)'. (en)">
+				>
+				["at0212"] = <
+					text = <"*FEV3/FVC ratio (en)">
+					description = <"*The ratio of 'Forced expiratory volume in 3 seconds (FEV3)' to 'Forced vital capacity (FVC)'. (en)">
+				>
+				["at0213"] = <
+					text = <"*FEF50%/FIF50% ratio (en)">
+					description = <"*The ratio of 'Forced Expiratory Flow at 50% of the manoeuvre (FEF50%)' to 'Forced Inspiratory Flow at 50% of the manoeuvre (FIF50%)' (en)">
 				>
 			>
 		>
