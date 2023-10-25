@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "95.0.0",
+      "sem_ver" : "96.0.0",
       "build_uid" : "e3b96713-a25b-460d-a320-b3efc3b64d08",
-      "MD5-CAM-1.0.1" : "5e70141c9a25b20f6fe2143c894eb60a",
+      "MD5-CAM-1.0.1" : "3a6e20a72f7fd6238f619fb3b24e0621",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -9282,67 +9282,11 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "CLUSTER",
-                      "occurrences" : "0..0",
-                      "nodeId" : "at0022.1",
+                      "nodeId" : "at0022",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "items",
                         "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "nodeId" : "at0004.1",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "value",
-                            "children" : [ {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_TEXT",
-                              "defaultValue" : {
-                                "defining_code" : {
-                                  "terminology_id" : {
-                                    "value" : "local_terms",
-                                    "@type" : "TERMINOLOGY_ID"
-                                  },
-                                  "code_string" : "WFDWSDF",
-                                  "@type" : "CODE_PHRASE"
-                                },
-                                "value" : "FEVER",
-                                "@type" : "DV_CODED_TEXT"
-                              },
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        }, {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "nodeId" : "at0005.1",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "value",
-                            "children" : [ {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_CODED_TEXT",
-                              "attributes" : [ {
-                                "@type" : "C_ATTRIBUTE",
-                                "rmAttributeName" : "defining_code",
-                                "children" : [ {
-                                  "@type" : "C_TERMINOLOGY_CODE",
-                                  "rmTypeName" : "TERMINOLOGY_CODE",
-                                  "occurrences" : "1..1",
-                                  "terminologyId" : {
-                                    "value" : "local"
-                                  },
-                                  "constraint" : [ "ac0.5" ],
-                                  "selectedTerminologies" : [ ]
-                                } ]
-                              } ],
-                              "attributeTuples" : [ ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        }, {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "ELEMENT",
                           "occurrences" : "0..0",
@@ -9419,38 +9363,11 @@
             "text" : "Fever during the labour?",
             "description" : "Is there a history of any issues, problems or diagnoses relevant for the screening purpose?",
             "comment" : "In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
-          },
-          "ac0.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.5",
-            "description" : ""
           }
         },
-        "nb" : {
-          "ac0.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.5",
-            "description" : ""
-          }
-        },
-        "de" : {
-          "ac0.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.5",
-            "description" : ""
-          }
-        },
-        "nl" : {
-          "ac0.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.5",
-            "description" : ""
-          }
-        }
+        "nb" : { },
+        "de" : { },
+        "nl" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
