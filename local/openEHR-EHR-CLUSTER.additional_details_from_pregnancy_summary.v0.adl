@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"23df27bb8a83ad637cd19d70d876015d">
+		["MD5-CAM-1.0.1"] = <"40fcb126b61e48cb7cf087d42736feef">
 		["build_uid"] = <"69de9a82-c0ba-3c8e-9a8c-8eb6b8fb56e2">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
@@ -82,7 +82,8 @@ definition
 							at0016,    -- Sitting
 							at0017,    -- Decubitus
 							at0018,    -- Vertical
-							at0019]    -- Others
+							at0019,    -- Others
+							at0061]    -- Lateral
 						}
 					}
 				}
@@ -418,6 +419,10 @@ ontology
 				>
 				["at0060"] = <
 					text = <">1000ml">
+					description = <"">
+				>
+				["at0061"] = <
+					text = <"Lateral">
 					description = <"">
 				>
 			>
