@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.1.0",
+      "sem_ver" : "1.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "ca6a66b258d311836a8be645196d16c9",
+      "MD5-CAM-1.0.1" : "9791bd597c63eaae444176ae3f862ccd",
       "PARENT:MD5-CAM-1.0.1" : "4716FC98A106AB9A4253294859C1B769"
     },
     "details" : {
@@ -170,11 +170,160 @@
                       }, {
                         "@type" : "C_ARCHETYPE_ROOT",
                         "rmTypeName" : "CLUSTER",
-                        "occurrences" : "0..1",
+                        "occurrences" : "0..*",
                         "nodeId" : "at0036.1",
                         "attributes" : [ ],
                         "attributeTuples" : [ ],
                         "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-inpatient_episode_details-001.v0",
+                        "referenceType" : "archetypeOverlay"
+                      }, {
+                        "@type" : "C_ARCHETYPE_ROOT",
+                        "rmTypeName" : "CLUSTER",
+                        "occurrences" : "0..*",
+                        "nodeId" : "at0036.4",
+                        "attributes" : [ ],
+                        "attributeTuples" : [ ],
+                        "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-inpatient_episode_details-004.v0",
+                        "referenceType" : "archetypeOverlay"
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  }, {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "CLUSTER",
+                    "nodeId" : "at0022.2",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "items",
+                      "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0004.2",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_TEXT",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ {
+                                "@type" : "C_STRING",
+                                "rmTypeName" : "STRING",
+                                "constraint" : [ "Admitted to hospital", "Admitted to ICU" ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0005.2",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_CODED_TEXT",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "defining_code",
+                              "children" : [ {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "rmTypeName" : "TERMINOLOGY_CODE",
+                                "occurrences" : "1..1",
+                                "terminologyId" : {
+                                  "value" : "local"
+                                },
+                                "constraint" : [ "ac0.3" ],
+                                "selectedTerminologies" : [ ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_ARCHETYPE_ROOT",
+                        "rmTypeName" : "CLUSTER",
+                        "occurrences" : "0..1",
+                        "nodeId" : "at0036.2",
+                        "attributes" : [ ],
+                        "attributeTuples" : [ ],
+                        "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-inpatient_episode_details-002.v0",
+                        "referenceType" : "archetypeOverlay"
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  }, {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "CLUSTER",
+                    "nodeId" : "at0022.3",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "items",
+                      "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0004.3",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_TEXT",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ {
+                                "@type" : "C_STRING",
+                                "rmTypeName" : "STRING",
+                                "constraint" : [ "Admitted to hospital", "Admitted to ICU" ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0005.3",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_CODED_TEXT",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "defining_code",
+                              "children" : [ {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "rmTypeName" : "TERMINOLOGY_CODE",
+                                "occurrences" : "1..1",
+                                "terminologyId" : {
+                                  "value" : "local"
+                                },
+                                "constraint" : [ "ac0.4" ],
+                                "selectedTerminologies" : [ ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_ARCHETYPE_ROOT",
+                        "rmTypeName" : "CLUSTER",
+                        "occurrences" : "0..1",
+                        "nodeId" : "at0036.3",
+                        "attributes" : [ ],
+                        "attributeTuples" : [ ],
+                        "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-inpatient_episode_details-003.v0",
                         "referenceType" : "archetypeOverlay"
                       } ]
                     } ],
@@ -204,6 +353,12 @@
           "description" : "Series of questions and associated answers used to screen for clinical management including, but not limited to treatments, therapies and hospitalisation.",
           "comment" : "The answers may be self-reported."
         },
+        "at0022.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0022.1",
+          "text" : "Admissions",
+          "description" : "Details about a specific management or treatment activity or grouping of management or treatment activities relevant for the screening purpose."
+        },
         "at0005.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0005.1",
@@ -216,6 +371,32 @@
           "text" : "(Synthesized)",
           "code" : "ac0.2",
           "description" : ""
+        },
+        "at0022.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0022.2",
+          "text" : "Intubations",
+          "description" : "Details about a specific management or treatment activity or grouping of management or treatment activities relevant for the screening purpose."
+        },
+        "at0005.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.1",
+          "text" : "Admission",
+          "description" : "Is there a history of the specific management or treatment activity?",
+          "comment" : "In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
+        },
+        "at0022.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0022.3",
+          "text" : "Transfusions",
+          "description" : "Details about a specific management or treatment activity or grouping of management or treatment activities relevant for the screening purpose."
+        },
+        "at0005.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.1",
+          "text" : "Admission",
+          "description" : "Is there a history of the specific management or treatment activity?",
+          "comment" : "In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
         }
       },
       "nb" : {
@@ -231,6 +412,18 @@
           "text" : "*(Synthesized) (en)",
           "code" : "ac0.2",
           "description" : ""
+        },
+        "at0022.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0022.1",
+          "text" : "Sykdomshåndteringsaktivitet (2)",
+          "description" : "Detaljer om en spesifikk sykdomshåndterings- eller behandlingsaktivitet eller gruppering av sykdomshåndterings- eller behandlingsaktiviteter som er innenfor kartleggingsformålet."
+        },
+        "at0022.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0022.1",
+          "text" : "Sykdomshåndteringsaktivitet (3)",
+          "description" : "Detaljer om en spesifikk sykdomshåndterings- eller behandlingsaktivitet eller gruppering av sykdomshåndterings- eller behandlingsaktiviteter som er innenfor kartleggingsformålet."
         }
       },
       "de" : {
@@ -246,6 +439,18 @@
           "text" : "*(Synthesized) (en)",
           "code" : "ac0.2",
           "description" : ""
+        },
+        "at0022.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0022.1",
+          "text" : "Managementaktivität (2)",
+          "description" : "Details zu einer bestimmten Management- oder Behandlungsaktivität oder einer Reihe von Management- oder Behandlungstätigkeiten, die für das Screening relevant sind."
+        },
+        "at0022.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0022.1",
+          "text" : "Managementaktivität (3)",
+          "description" : "Details zu einer bestimmten Management- oder Behandlungsaktivität oder einer Reihe von Management- oder Behandlungstätigkeiten, die für das Screening relevant sind."
         }
       },
       "it" : {
@@ -261,6 +466,18 @@
           "text" : "*(Synthesized) (en)",
           "code" : "ac0.2",
           "description" : ""
+        },
+        "at0022.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0022.1",
+          "text" : "*Management activity (en) (2)",
+          "description" : "*Details about a specific management or treatment activity or grouping of management or treatment activities relevant for the screening purpose. (en)"
+        },
+        "at0022.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0022.1",
+          "text" : "*Management activity (en) (3)",
+          "description" : "*Details about a specific management or treatment activity or grouping of management or treatment activities relevant for the screening purpose. (en)"
         }
       }
     },
@@ -275,6 +492,16 @@
       "ac0.2" : {
         "@type" : "VALUE_SET",
         "id" : "ac0.2",
+        "members" : [ "at0023", "at0024", "at0027" ]
+      },
+      "ac0.3" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.3",
+        "members" : [ "at0023", "at0024", "at0027" ]
+      },
+      "ac0.4" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.4",
         "members" : [ "at0023", "at0024", "at0027" ]
       }
     }
@@ -311,7 +538,27 @@
       "@type" : "C_COMPLEX_OBJECT",
       "rmTypeName" : "CLUSTER",
       "nodeId" : "at0000.1",
-      "attributes" : [ ],
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0005.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DATE_TIME",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
       "attributeTuples" : [ ]
     },
     "terminology" : {
@@ -319,6 +566,226 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "667d4891-b8b0-4b11-b074-3e2aae919876",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "2c2a370f-18ef-4563-a982-53d0f2d43df4",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "0BB813D41759289EA065235640802EA9"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.inpatient_episode_details.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-inpatient_episode_details-002.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0005.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DATE_TIME",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "667d4891-b8b0-4b11-b074-3e2aae919876",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "2c2a370f-18ef-4563-a982-53d0f2d43df4",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "0BB813D41759289EA065235640802EA9"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.inpatient_episode_details.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-inpatient_episode_details-003.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0005.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DATE_TIME",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "667d4891-b8b0-4b11-b074-3e2aae919876",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "2c2a370f-18ef-4563-a982-53d0f2d43df4",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "0BB813D41759289EA065235640802EA9"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.inpatient_episode_details.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-inpatient_episode_details-004.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0005.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DATE_TIME",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Inpatient episode details (2)",
+            "description" : "Details about an admission episode to an inpatient facility."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
