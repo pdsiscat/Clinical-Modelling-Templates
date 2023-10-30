@@ -1,0 +1,378 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "58a512b1-457b-4122-8ff5-16e346470188",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "date" : "2023-10-30"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "unmanaged"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "",
+      "custodian_organisation" : "",
+      "original_namespace" : "",
+      "original_publisher" : "",
+      "custodian_namespace" : "",
+      "sem_ver" : "0.1.0",
+      "build_uid" : "",
+      "MD5-CAM-1.0.1" : "ca6a66b258d311836a8be645196d16c9",
+      "PARENT:MD5-CAM-1.0.1" : "4716FC98A106AB9A4253294859C1B769"
+    },
+    "details" : {
+      "de" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "de"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "it" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "it"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-OBSERVATION.management_screening.v1",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-OBSERVATION.t_management_screening.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "OBSERVATION",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "data",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "HISTORY",
+        "nodeId" : "at0001",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "events",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "EVENT",
+            "nodeId" : "at0002",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "data",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ITEM_TREE",
+                "nodeId" : "at0003",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "items",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "CLUSTER",
+                    "nodeId" : "at0022.1",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "items",
+                      "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0004.1",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_TEXT",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ {
+                                "@type" : "C_STRING",
+                                "rmTypeName" : "STRING",
+                                "constraint" : [ "Admitted to hospital", "Admitted to ICU" ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0005.1",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_CODED_TEXT",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "defining_code",
+                              "children" : [ {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "rmTypeName" : "TERMINOLOGY_CODE",
+                                "occurrences" : "1..1",
+                                "terminologyId" : {
+                                  "value" : "local"
+                                },
+                                "constraint" : [ "ac0.2" ],
+                                "selectedTerminologies" : [ ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_ARCHETYPE_ROOT",
+                        "rmTypeName" : "CLUSTER",
+                        "occurrences" : "0..1",
+                        "nodeId" : "at0036.1",
+                        "attributes" : [ ],
+                        "attributeTuples" : [ ],
+                        "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-inpatient_episode_details-001.v0",
+                        "referenceType" : "archetypeOverlay"
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "en" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Our amazing archetype",
+          "description" : "Series of questions and associated answers used to screen for clinical management including, but not limited to treatments, therapies and hospitalisation.",
+          "comment" : "The answers may be self-reported."
+        },
+        "at0005.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.1",
+          "text" : "Admission",
+          "description" : "Is there a history of the specific management or treatment activity?",
+          "comment" : "In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
+        },
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.2",
+          "description" : ""
+        }
+      },
+      "nb" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Our amazing archetype",
+          "description" : "Spørsmål og tilhørende svar som brukes til å kartlegge sykdomshåndtering, inkludert men er ikke begrenset til behandlinger, terapier, sykehusinnleggelser.",
+          "comment" : "Svarene kan være selvrapporterte."
+        },
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.2",
+          "description" : ""
+        }
+      },
+      "de" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Our amazing archetype",
+          "description" : "Eine Reihe von Fragen und zugehörigen Antworten, die zum Screening für das klinische Management verwendet werden, einschließlich, aber nicht beschränkt auf Behandlungen, Therapien und Krankenhausaufenthalte.",
+          "comment" : "Die Antworten können selbst berichtet werden."
+        },
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.2",
+          "description" : ""
+        }
+      },
+      "it" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Our amazing archetype",
+          "description" : "*Series of questions and associated answers used to screen for clinical management including, but not limited to treatments, therapies and hospitalisation. (en)",
+          "comment" : "*The answers may be self-reported. (en)"
+        },
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.2",
+          "description" : ""
+        }
+      }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : {
+      "ac0.1" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.1",
+        "members" : [ "at0023", "at0024", "at0027" ]
+      },
+      "ac0.2" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.2",
+        "members" : [ "at0023", "at0024", "at0027" ]
+      }
+    }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "f2e8924b-5b81-3b4c-b871-71b1e33ad67c",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "Our amazing archetype ",
+  "otherMetaData" : { },
+  "templateOverlays" : [ {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "2c2a370f-18ef-4563-a982-53d0f2d43df4",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "0BB813D41759289EA065235640802EA9"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.inpatient_episode_details.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-inpatient_episode_details-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "667d4891-b8b0-4b11-b074-3e2aae919876",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ ]
+  } ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "de"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "it"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  } ]
+}
