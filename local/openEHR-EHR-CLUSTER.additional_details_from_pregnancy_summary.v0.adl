@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"63c5f1b10bc74a29c21aa30f9b6dc70c">
+		["MD5-CAM-1.0.1"] = <"369cbdc36e7320a9760ae4135860220b">
 		["build_uid"] = <"69de9a82-c0ba-3c8e-9a8c-8eb6b8fb56e2">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
@@ -84,6 +84,26 @@ definition
 							at0018,    -- Vertical
 							at0019,    -- Others
 							at0061]    -- Lateral
+						}
+					}
+				}
+			}
+			ELEMENT[at0062] occurrences matches {0..1} matches {    -- Tocosurgical indication
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0063,    -- Expulsive abbreviation
+							at0064,    -- Rotational dystocia
+							at0065,    -- SPBF-Suspected loss of fetal well-being
+							at0066,    -- Elective c-section
+							at0067,    -- Induction failed
+							at0068,    -- Stationed labor
+							at0069,    -- DPF-fetus-pelvis disproportion
+							at0070,    -- Maternal
+							at0071,    -- No instrument
+							at0072,    -- iterative caesarean section
+							at0073]    -- Others
 						}
 					}
 				}
@@ -169,26 +189,6 @@ definition
 							[local::
 							at0059,    -- 500-1000ml
 							at0060]    -- >1000ml
-						}
-					}
-				}
-			}
-			ELEMENT[at0062] occurrences matches {0..1} matches {    -- Tocosurgical indication
-				value matches {
-					DV_CODED_TEXT matches {
-						defining_code matches {
-							[local::
-							at0063,    -- Expulsive abbreviation
-							at0064,    -- Rotational dystocia
-							at0065,    -- SPBF-Suspected loss of fetal well-being
-							at0066,    -- Elective c-section
-							at0067,    -- Induction failed
-							at0068,    -- Stationed labor
-							at0069,    -- DPF-fetus-pelvis disproportion
-							at0070,    -- Maternal
-							at0071,    -- No instrument
-							at0072,    -- iterative caesarean section
-							at0073]    -- Others
 						}
 					}
 				}
