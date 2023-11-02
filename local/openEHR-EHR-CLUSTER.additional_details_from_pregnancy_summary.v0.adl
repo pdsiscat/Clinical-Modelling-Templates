@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"369cbdc36e7320a9760ae4135860220b">
+		["MD5-CAM-1.0.1"] = <"11f3c874270e94d9567dd65ae1b84e0b">
 		["build_uid"] = <"69de9a82-c0ba-3c8e-9a8c-8eb6b8fb56e2">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
@@ -191,6 +191,11 @@ definition
 							at0060]    -- >1000ml
 						}
 					}
+				}
+			}
+			ELEMENT[at0074] occurrences matches {0..1} matches {    -- Observations about the mother during labor
+				value matches {
+					DV_TEXT matches {*}
 				}
 			}
 		}
@@ -491,6 +496,10 @@ ontology
 				>
 				["at0073"] = <
 					text = <"Others">
+					description = <"">
+				>
+				["at0074"] = <
+					text = <"Observations about the mother during labor">
 					description = <"">
 				>
 			>
