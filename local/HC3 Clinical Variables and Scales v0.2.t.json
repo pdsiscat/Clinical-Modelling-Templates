@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "7.2.0",
+      "sem_ver" : "7.3.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "c4f2b9c936f3744b2f77cbccf95668eb",
+      "MD5-CAM-1.0.1" : "139f211a58d6b100a3a09ec814c3cff5",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -2398,6 +2398,12 @@
             "text" : "(Synthesized)",
             "code" : "ac0.19",
             "description" : ""
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Control arm",
+            "description" : "Simple body site where blood pressure was measured."
           }
         },
         "ja" : {
