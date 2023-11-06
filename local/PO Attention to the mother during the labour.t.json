@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "100.1.0",
+      "sem_ver" : "101.0.0",
       "build_uid" : "e3b96713-a25b-460d-a320-b3efc3b64d08",
-      "MD5-CAM-1.0.1" : "bc7d7971357bae7f3b23f13400015b96",
+      "MD5-CAM-1.0.1" : "4537a0fc1daec2ee93f6ece317bc1b64",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -932,12 +932,6 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0174.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0007.1",
               "attributes" : [ {
@@ -1836,13 +1830,6 @@
             "text" : "500",
             "description" : "millilitre",
             "code" : "ml"
-          },
-          "at0174.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0174.1",
-            "text" : "Labour date",
-            "description" : "The date and/or time marking the end of the pregnancy.",
-            "comment" : "This data element may be renamed in a template, depending on the pregnancy outcome. For example: date of delivery for a live birth or stillbirth; date of miscarriage; or date of termination."
           }
         },
         "pt-br" : {
