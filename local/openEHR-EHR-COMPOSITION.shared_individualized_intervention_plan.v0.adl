@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"cb206e876d4d8659e618a8853e777304">
+		["MD5-CAM-1.0.1"] = <"1096e2fa5cc673e2e38aedf40c1e1c56">
 		["build_uid"] = <"86d661a6-18c6-3bc8-bc0c-48376d65b5b2">
 	>
 
@@ -37,7 +37,18 @@ definition
 			}
 		}
 		context matches {
-			EVENT_CONTEXT matches {*}
+			EVENT_CONTEXT matches {
+				other_context matches {
+					ITEM_TREE[at0001] matches {    -- Item tree
+						items cardinality matches {0..*; unordered} matches {
+							allow_archetype CLUSTER[at0002] occurrences matches {0..*} matches {    -- Other context
+								include
+									archetype_id/value matches {/.*/}
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -48,6 +59,14 @@ ontology
 				["at0000"] = <
 					text = <"Shared Individualized Intervention Plan">
 					description = <"Shared Individualized Intervention Plan">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Other context">
+					description = <"">
 				>
 			>
 		>
