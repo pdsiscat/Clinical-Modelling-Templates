@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.1.1",
+      "sem_ver" : "0.2.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "14d3aa4396c1080e0995ba21a44e70b1",
+      "MD5-CAM-1.0.1" : "ba268d1f688de00949fa14ebaab3b679",
       "PARENT:MD5-CAM-1.0.1" : "611d3fa46b1e48f8fead5e6bcdb11c0b"
     },
     "details" : {
@@ -104,7 +104,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "HC3 Marcatge PCC/MACA",
+          "text" : "HC3 Marcatge PCC MACA",
           "description" : "Patient context"
         }
       }
